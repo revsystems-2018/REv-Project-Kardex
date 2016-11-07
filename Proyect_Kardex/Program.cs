@@ -16,7 +16,7 @@ namespace Proyect_Kardex
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Report_Devolucion());
+            Application.Run(new EditVentasDetFact());
         }
     }
 }

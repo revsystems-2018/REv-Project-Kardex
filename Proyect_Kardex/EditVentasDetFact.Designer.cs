@@ -33,7 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditVentasDetFact));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.dataGridDet = new System.Windows.Forms.DataGridView();
+            this.codProdtxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbtype = new System.Windows.Forms.ComboBox();
             this.codetxt = new System.Windows.Forms.TextBox();
@@ -61,20 +63,20 @@
             this.detalletxt = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.nameusrTxt = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.CodUsrtxt = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.nameClitxt = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.nitClitxt = new System.Windows.Forms.TextBox();
             this.codClitxt = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.nameClitxt = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.codProdtxt = new System.Windows.Forms.TextBox();
             this.toolTipEditVenta = new System.Windows.Forms.ToolTip(this.components);
-            this.addDet_Sale = new System.Windows.Forms.Button();
+            this.addDetVent = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.addFacture = new System.Windows.Forms.Button();
             this.SalirButton = new System.Windows.Forms.Button();
             this.CleanList = new System.Windows.Forms.Button();
             this.AddSale = new System.Windows.Forms.Button();
@@ -82,7 +84,6 @@
             this.findbtn = new System.Windows.Forms.Button();
             this.novoBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDet)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -102,6 +103,17 @@
             this.groupBox1.TabIndex = 236;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalle de Ventas";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(19, 23);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(97, 12);
+            this.label18.TabIndex = 264;
+            this.label18.Text = "Codigo de Barras";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // dataGridDet
             // 
@@ -131,6 +143,19 @@
             this.dataGridDet.ReadOnly = true;
             this.dataGridDet.Size = new System.Drawing.Size(433, 119);
             this.dataGridDet.TabIndex = 10;
+            // 
+            // codProdtxt
+            // 
+            this.codProdtxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codProdtxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.codProdtxt.Location = new System.Drawing.Point(122, 19);
+            this.codProdtxt.MaxLength = 555;
+            this.codProdtxt.Name = "codProdtxt";
+            this.codProdtxt.Size = new System.Drawing.Size(207, 20);
+            this.codProdtxt.TabIndex = 21;
+            this.codProdtxt.Text = "Codigo de Registro del Producto";
+            this.codProdtxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.codProdtxt_MouseClick);
+            this.codProdtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.codProdtxt_KeyPress);
             // 
             // label2
             // 
@@ -162,7 +187,7 @@
             this.codetxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codetxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.codetxt.Location = new System.Drawing.Point(108, 35);
-            this.codetxt.MaxLength = 5;
+            this.codetxt.MaxLength = 555;
             this.codetxt.Name = "codetxt";
             this.codetxt.Size = new System.Drawing.Size(329, 20);
             this.codetxt.TabIndex = 2;
@@ -212,6 +237,7 @@
             this.titulolabel.Size = new System.Drawing.Size(119, 19);
             this.titulolabel.TabIndex = 1;
             this.titulolabel.Text = "Modificar Ventas";
+            this.titulolabel.Click += new System.EventHandler(this.titulolabel_Click);
             // 
             // cantxt
             // 
@@ -231,7 +257,7 @@
             this.TotalPaytxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalPaytxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.TotalPaytxt.Location = new System.Drawing.Point(304, 146);
-            this.TotalPaytxt.MaxLength = 5;
+            this.TotalPaytxt.MaxLength = 555;
             this.TotalPaytxt.Name = "TotalPaytxt";
             this.TotalPaytxt.Size = new System.Drawing.Size(133, 20);
             this.TotalPaytxt.TabIndex = 11;
@@ -254,7 +280,7 @@
             this.ivatxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ivatxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.ivatxt.Location = new System.Drawing.Point(304, 94);
-            this.ivatxt.MaxLength = 5;
+            this.ivatxt.MaxLength = 555;
             this.ivatxt.Name = "ivatxt";
             this.ivatxt.Size = new System.Drawing.Size(133, 20);
             this.ivatxt.TabIndex = 9;
@@ -277,7 +303,7 @@
             this.subtxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subtxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.subtxt.Location = new System.Drawing.Point(304, 68);
-            this.subtxt.MaxLength = 5;
+            this.subtxt.MaxLength = 555;
             this.subtxt.Name = "subtxt";
             this.subtxt.Size = new System.Drawing.Size(133, 20);
             this.subtxt.TabIndex = 8;
@@ -300,7 +326,7 @@
             this.totaltxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totaltxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.totaltxt.Location = new System.Drawing.Point(304, 120);
-            this.totaltxt.MaxLength = 5;
+            this.totaltxt.MaxLength = 555;
             this.totaltxt.Name = "totaltxt";
             this.totaltxt.Size = new System.Drawing.Size(133, 20);
             this.totaltxt.TabIndex = 10;
@@ -323,7 +349,7 @@
             this.efectivetxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.efectivetxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.efectivetxt.Location = new System.Drawing.Point(73, 120);
-            this.efectivetxt.MaxLength = 5;
+            this.efectivetxt.MaxLength = 555;
             this.efectivetxt.Name = "efectivetxt";
             this.efectivetxt.Size = new System.Drawing.Size(133, 20);
             this.efectivetxt.TabIndex = 6;
@@ -356,7 +382,7 @@
             this.cambiotxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cambiotxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cambiotxt.Location = new System.Drawing.Point(73, 146);
-            this.cambiotxt.MaxLength = 5;
+            this.cambiotxt.MaxLength = 555;
             this.cambiotxt.Name = "cambiotxt";
             this.cambiotxt.Size = new System.Drawing.Size(133, 20);
             this.cambiotxt.TabIndex = 7;
@@ -406,7 +432,7 @@
             this.detalletxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detalletxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.detalletxt.Location = new System.Drawing.Point(73, 224);
-            this.detalletxt.MaxLength = 5;
+            this.detalletxt.MaxLength = 555;
             this.detalletxt.Name = "detalletxt";
             this.detalletxt.Size = new System.Drawing.Size(364, 20);
             this.detalletxt.TabIndex = 15;
@@ -432,13 +458,26 @@
             this.nameusrTxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameusrTxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.nameusrTxt.Location = new System.Drawing.Point(66, 41);
-            this.nameusrTxt.MaxLength = 5;
+            this.nameusrTxt.MaxLength = 555;
             this.nameusrTxt.Name = "nameusrTxt";
             this.nameusrTxt.Size = new System.Drawing.Size(133, 20);
             this.nameusrTxt.TabIndex = 17;
             this.nameusrTxt.Text = "Nombre de Usuario";
             this.nameusrTxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nameusrTxt_MouseClick);
             this.nameusrTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nameusrTxt_KeyPress);
+            // 
+            // CodUsrtxt
+            // 
+            this.CodUsrtxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CodUsrtxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.CodUsrtxt.Location = new System.Drawing.Point(66, 15);
+            this.CodUsrtxt.MaxLength = 555;
+            this.CodUsrtxt.Name = "CodUsrtxt";
+            this.CodUsrtxt.Size = new System.Drawing.Size(133, 20);
+            this.CodUsrtxt.TabIndex = 16;
+            this.CodUsrtxt.Text = "Codigo de Registro";
+            this.CodUsrtxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CodUsrtxt_MouseClick);
+            this.CodUsrtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodUsrtxt_KeyPress);
             // 
             // label13
             // 
@@ -449,19 +488,6 @@
             this.label13.Size = new System.Drawing.Size(48, 12);
             this.label13.TabIndex = 258;
             this.label13.Text = "Nombre";
-            // 
-            // CodUsrtxt
-            // 
-            this.CodUsrtxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CodUsrtxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.CodUsrtxt.Location = new System.Drawing.Point(66, 15);
-            this.CodUsrtxt.MaxLength = 5;
-            this.CodUsrtxt.Name = "CodUsrtxt";
-            this.CodUsrtxt.Size = new System.Drawing.Size(133, 20);
-            this.CodUsrtxt.TabIndex = 16;
-            this.CodUsrtxt.Text = "Codigo de Registro";
-            this.CodUsrtxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CodUsrtxt_MouseClick);
-            this.CodUsrtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodUsrtxt_KeyPress);
             // 
             // label14
             // 
@@ -488,12 +514,35 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Cliente";
             // 
+            // nameClitxt
+            // 
+            this.nameClitxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameClitxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.nameClitxt.Location = new System.Drawing.Point(78, 66);
+            this.nameClitxt.MaxLength = 555;
+            this.nameClitxt.Name = "nameClitxt";
+            this.nameClitxt.Size = new System.Drawing.Size(133, 20);
+            this.nameClitxt.TabIndex = 20;
+            this.nameClitxt.Text = "Nombre Cliente";
+            this.nameClitxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nameClitxt_MouseClick);
+            this.nameClitxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nameClitxt_KeyPress);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(24, 70);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 12);
+            this.label17.TabIndex = 261;
+            this.label17.Text = "Nombre";
+            // 
             // nitClitxt
             // 
             this.nitClitxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nitClitxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.nitClitxt.Location = new System.Drawing.Point(78, 41);
-            this.nitClitxt.MaxLength = 5;
+            this.nitClitxt.MaxLength = 555;
             this.nitClitxt.Name = "nitClitxt";
             this.nitClitxt.Size = new System.Drawing.Size(133, 20);
             this.nitClitxt.TabIndex = 19;
@@ -506,7 +555,7 @@
             this.codClitxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codClitxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.codClitxt.Location = new System.Drawing.Point(78, 15);
-            this.codClitxt.MaxLength = 5;
+            this.codClitxt.MaxLength = 555;
             this.codClitxt.Name = "codClitxt";
             this.codClitxt.Size = new System.Drawing.Size(133, 20);
             this.codClitxt.TabIndex = 18;
@@ -535,69 +584,57 @@
             this.label16.Text = "Codigo";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
-            // nameClitxt
+            // addDetVent
             // 
-            this.nameClitxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameClitxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.nameClitxt.Location = new System.Drawing.Point(78, 66);
-            this.nameClitxt.MaxLength = 5;
-            this.nameClitxt.Name = "nameClitxt";
-            this.nameClitxt.Size = new System.Drawing.Size(133, 20);
-            this.nameClitxt.TabIndex = 20;
-            this.nameClitxt.Text = "Nombre Cliente";
-            this.nameClitxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nameClitxt_MouseClick);
-            this.nameClitxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nameClitxt_KeyPress);
+            this.addDetVent.BackColor = System.Drawing.Color.Transparent;
+            this.addDetVent.BackgroundImage = global::Proyect_Kardex.Properties.Resources.addDetSale;
+            this.addDetVent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addDetVent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addDetVent.Enabled = false;
+            this.addDetVent.FlatAppearance.BorderSize = 0;
+            this.addDetVent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.addDetVent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.addDetVent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addDetVent.Location = new System.Drawing.Point(137, 518);
+            this.addDetVent.Name = "addDetVent";
+            this.addDetVent.Size = new System.Drawing.Size(40, 40);
+            this.addDetVent.TabIndex = 263;
+            this.addDetVent.UseVisualStyleBackColor = false;
+            this.addDetVent.Click += new System.EventHandler(this.addDetVent_Click);
             // 
-            // label17
+            // button1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(24, 70);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 12);
-            this.label17.TabIndex = 261;
-            this.label17.Text = "Nombre";
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.pay;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(185, 121);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(19, 18);
+            this.button1.TabIndex = 262;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label18
+            // addFacture
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(19, 23);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(97, 12);
-            this.label18.TabIndex = 264;
-            this.label18.Text = "Codigo de Barras";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // codProdtxt
-            // 
-            this.codProdtxt.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codProdtxt.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.codProdtxt.Location = new System.Drawing.Point(122, 19);
-            this.codProdtxt.MaxLength = 5;
-            this.codProdtxt.Name = "codProdtxt";
-            this.codProdtxt.Size = new System.Drawing.Size(207, 20);
-            this.codProdtxt.TabIndex = 21;
-            this.codProdtxt.Text = "Codigo de Registro del Producto";
-            this.codProdtxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.codProdtxt_MouseClick);
-            this.codProdtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.codProdtxt_KeyPress);
-            // 
-            // addDet_Sale
-            // 
-            this.addDet_Sale.BackColor = System.Drawing.Color.Transparent;
-            this.addDet_Sale.BackgroundImage = global::Proyect_Kardex.Properties.Resources.addDetSale;
-            this.addDet_Sale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.addDet_Sale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addDet_Sale.Enabled = false;
-            this.addDet_Sale.FlatAppearance.BorderSize = 0;
-            this.addDet_Sale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.addDet_Sale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.addDet_Sale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addDet_Sale.Location = new System.Drawing.Point(203, 518);
-            this.addDet_Sale.Name = "addDet_Sale";
-            this.addDet_Sale.Size = new System.Drawing.Size(40, 40);
-            this.addDet_Sale.TabIndex = 261;
-            this.addDet_Sale.UseVisualStyleBackColor = false;
+            this.addFacture.BackColor = System.Drawing.Color.Transparent;
+            this.addFacture.BackgroundImage = global::Proyect_Kardex.Properties.Resources.editFacture;
+            this.addFacture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.addFacture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addFacture.Enabled = false;
+            this.addFacture.FlatAppearance.BorderSize = 0;
+            this.addFacture.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.addFacture.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.addFacture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addFacture.Location = new System.Drawing.Point(203, 518);
+            this.addFacture.Name = "addFacture";
+            this.addFacture.Size = new System.Drawing.Size(40, 40);
+            this.addFacture.TabIndex = 261;
+            this.addFacture.UseVisualStyleBackColor = false;
             // 
             // SalirButton
             // 
@@ -614,6 +651,7 @@
             this.SalirButton.Size = new System.Drawing.Size(40, 40);
             this.SalirButton.TabIndex = 26;
             this.SalirButton.UseVisualStyleBackColor = false;
+            this.SalirButton.Click += new System.EventHandler(this.SalirButton_Click);
             // 
             // CleanList
             // 
@@ -718,31 +756,15 @@
             this.deleteBtn.UseVisualStyleBackColor = false;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.pay;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(185, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(19, 18);
-            this.button1.TabIndex = 262;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // EditVentasDetFact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(452, 562);
+            this.Controls.Add(this.addDetVent);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.addDet_Sale);
+            this.Controls.Add(this.addFacture);
             this.Controls.Add(this.SalirButton);
             this.Controls.Add(this.CleanList);
             this.Controls.Add(this.AddSale);
@@ -844,7 +866,8 @@
         public System.Windows.Forms.Button CleanList;
         public System.Windows.Forms.Button AddSale;
         public System.Windows.Forms.ToolTip toolTipEditVenta;
-        public System.Windows.Forms.Button addDet_Sale;
+        public System.Windows.Forms.Button addFacture;
         public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button addDetVent;
     }
 }

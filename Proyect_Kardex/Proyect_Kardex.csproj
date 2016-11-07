@@ -767,6 +767,7 @@
     <None Include="Resources\datetimeCancel.png" />
     <None Include="Resources\fechaventa_B.png" />
     <None Include="Resources\addDetSale.png" />
+    <None Include="Resources\editFacture.png" />
     <Content Include="REV_Project_Kardex_Logo.ico" />
     <None Include="Resources\weblogo.png" />
     <None Include="Resources\viewfoto.png" />

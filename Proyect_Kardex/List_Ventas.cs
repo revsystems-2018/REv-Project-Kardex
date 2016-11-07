@@ -93,7 +93,7 @@ namespace Proyect_Kardex
 
         private void List_Ventas_FormClosing(object sender, FormClosingEventArgs e)
         {
-            devcod = "";
+           
         }
 
         private void print_Click(object sender, EventArgs e)

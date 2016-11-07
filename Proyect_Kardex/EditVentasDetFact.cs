@@ -14,6 +14,7 @@ namespace Proyect_Kardex
     public partial class EditVentasDetFact : Form
     {
         ValidacionText ve = new ValidacionText();
+        Conexion cs = new Conexion();
         public int codUsr = 7906442;
         public String id_Venta = "";
 
@@ -46,7 +47,7 @@ namespace Proyect_Kardex
             toolTipEditVenta.SetToolTip(novoBtn, "Agregar Nuevo Producto");
             toolTipEditVenta.SetToolTip(deleteBtn, "Eliminar Producto");
             toolTipEditVenta.SetToolTip(SalirButton, "Salir");
-            toolTipEditVenta.SetToolTip(addDet_Sale, "Guardar Detalle de Venta");
+            toolTipEditVenta.SetToolTip(addFacture, "Guardar Detalle de Venta");
             toolTipEditVenta.SetToolTip(AddSale, "Modificar Venta");
             toolTipEditVenta.SetToolTip(CleanList, "Limpiar Detalle de Venta");
         }
@@ -577,6 +578,14 @@ namespace Proyect_Kardex
             return cnt;
         }
 
+        public DataTable CargarDatos()
+        {
+            String slq = "SELECT * FROM Detalle_Venta WHERE cod_Venta = '" + codetxt.Text + "' ;";
+            DataTable res = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(slq, cs.GetCONN());
+            sda.Fill(res);
+            return res;
+        }
 
         private void findbtn_Click(object sender, EventArgs e)
         {
@@ -658,19 +667,20 @@ namespace Proyect_Kardex
                         {
                             cantxt.Text = read.GetInt32(5).ToString();
                             efectivetxt.Text = read.GetDouble(11).ToString();
-                            cambiotxt.Text = read.GetDouble(14).ToString();
+                            cambiotxt.Text = read.GetDouble(13).ToString();
                             subtxt.Text = read.GetDouble(6).ToString();
                             ivatxt.Text = read.GetDouble(7).ToString();
                             totaltxt.Text = read.GetDouble(8).ToString();
                             TotalPaytxt.Text = read.GetDouble(9).ToString();
                             desctxt.Text = read.GetDouble(12).ToString();
-                            detalletxt.Text = read.GetString(13);
+                            detalletxt.Text = read.GetString(14);
                             CodUsrtxt.Text = read.GetInt32(1).ToString();
                             cbtype.SelectedItem = read.GetString(10);
                             nameusrTxt.Text = read.GetString(2);
-                            codClitxt.Text = read.GetString(3);
+                            codClitxt.Text = read.GetInt32(3).ToString();
                             nitClitxt.Text = read.GetString(16);
-                            nameClitxt.Text = read.GetString(4);                           
+                            nameClitxt.Text = read.GetString(4);
+                            dataGridDet.DataSource = CargarDatos();
                         }
                         f.CerrarCnn();
                     }
@@ -751,6 +761,7 @@ namespace Proyect_Kardex
                                     UpdateTotales();
                                     UpdatePayDesc();
                                     UpdateDetVenta(TotalPaytxt.Text);
+                                    ActualizarProducto(Convert.ToInt64(codProdtxt.Text), 1);
                                 }
                                 else
                                 {
@@ -759,6 +770,7 @@ namespace Proyect_Kardex
                                     UpdateTotales();
                                     UpdatePayDesc();
                                     UpdateDetVenta(TotalPaytxt.Text);
+                                    ActualizarProducto(Convert.ToInt64(codProdtxt.Text), 1);
                                 }
                             }
                             else
@@ -780,6 +792,7 @@ namespace Proyect_Kardex
                                         UpdateTotales();
                                         UpdatePayDesc();
                                         UpdateDetVenta(TotalPaytxt.Text);
+                                        ActualizarProducto(Convert.ToInt64(codProdtxt.Text), 1);
                                     }
                                     else
                                     {
@@ -788,6 +801,7 @@ namespace Proyect_Kardex
                                         UpdateTotales();
                                         UpdatePayDesc();
                                         UpdateDetVenta(TotalPaytxt.Text);
+                                        ActualizarProducto(Convert.ToInt64(codProdtxt.Text), 1);
                                     }
                                 }
                             }
@@ -840,7 +854,7 @@ namespace Proyect_Kardex
                 nameClitxt.Text = "";
                 codProdtxt.Text = "";
                 codetxt.Enabled = true;
-                addDet_Sale.Enabled = true;
+                addFacture.Enabled = true;
                 AddSale.Enabled = false;
                 SalirButton.Enabled = false;
                 novoBtn.Enabled = true;
@@ -975,6 +989,10 @@ namespace Proyect_Kardex
             }
         }
 
+
+
+
+
         private void deleteBtn_Click(object sender, EventArgs e)
         {
             Double res = 0;
@@ -992,6 +1010,7 @@ namespace Proyect_Kardex
                     UpdateTotales();
                     UpdatePayDesc();
                     UpdateDetVenta(TotalPaytxt.Text);
+                    AumentarDelProducto(Convert.ToInt64(codProdtxt.Text), 1);
                 }
                 else
                 {
@@ -1000,6 +1019,7 @@ namespace Proyect_Kardex
                     UpdateTotales();
                     UpdatePayDesc();
                     UpdateDetVenta(TotalPaytxt.Text);
+                    AumentarDelProducto(Convert.ToInt64(codProdtxt.Text), 1);
                 }
             }
             catch (Exception) { }
@@ -1069,7 +1089,7 @@ namespace Proyect_Kardex
                     {
 
                         cambiotxt.Text = Devuelto.ToString();
-                        addDet_Sale.Enabled = true;
+                        addFacture.Enabled = true;
                         AddSale.Enabled = false;
                         codProdtxt.Text = "";
                         codProdtxt.Enabled = false;
@@ -1090,6 +1110,188 @@ namespace Proyect_Kardex
             }
 
         }
+
+        private void SalirButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void titulolabel_Click(object sender, EventArgs e)
+        {
+            List_Ventas lv = new List_Ventas();
+            lv.codUser = codUsr;
+            lv.ShowDialog();
+            codetxt.Text = "";
+            codetxt.ForeColor = SystemColors.WindowText;
+            codetxt.Font = new Font(codetxt.Font, FontStyle.Regular);
+            codetxt.Text = lv.devcod;
+        }
+
+
+        private void ActuaCantProd(Int64 qqq, int www, int rrr) //disminuye la cantidad del producto (ADD)
+        {
+            Conexion ert = new Conexion();
+            try
+            {   // Objetos de conexión y comando
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                // Estableciento propiedades
+                cmd.Connection = ert.GetCONN();
+                cmd.CommandText = "UPDATE Productos SET CantProd=@id WHERE CodBarP = @ciid ;";
+
+                cmd.Parameters.Add("@id", System.Data.SqlDbType.Int);
+                cmd.Parameters.Add("@ciid", System.Data.SqlDbType.BigInt);
+
+                // Asignando los valores a los atributos
+                cmd.Parameters["@id"].Value = (rrr - www);
+                cmd.Parameters["@ciid"].Value = qqq;
+
+                ert.OpenCnn();
+                cmd.ExecuteNonQuery();
+                ert.CerrarCnn();
+            }
+            catch (Exception) { }
+        }
+
+        private void ActuaDelCantProd(Int64 qqq, int www, int rrr) //aumenta la cantidad del producto (DELETE)
+        {
+            Conexion ert = new Conexion();
+            try
+            {   // Objetos de conexión y comando
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                // Estableciento propiedades
+                cmd.Connection = ert.GetCONN();
+                cmd.CommandText = "UPDATE Productos SET CantProd=@id WHERE CodBarP = @ciid ;";
+
+                cmd.Parameters.Add("@id", System.Data.SqlDbType.Int);
+                cmd.Parameters.Add("@ciid", System.Data.SqlDbType.BigInt);
+
+                // Asignando los valores a los atributos
+                cmd.Parameters["@id"].Value = (rrr + www);
+                cmd.Parameters["@ciid"].Value = qqq;
+
+                ert.OpenCnn();
+                cmd.ExecuteNonQuery();
+                ert.CerrarCnn();
+            }
+            catch (Exception) { }
+        }
+
+        public void ActualizarProducto(Int64 aaa, int bbb) //disminuye la cantidad del producto (ADD)
+        {
+            int ccc = 0;
+            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            Conexion d = new Conexion();
+            string buscar = "SELECT * FROM Productos WHERE CodBarP = '" + aaa + "' ; ";
+            d.OpenCnn();
+            SqlCommand find = new SqlCommand(buscar, d.GetCONN());
+            try
+            {
+                SqlDataReader fb;
+                fb = find.ExecuteReader();
+                while (fb.Read())
+                {
+                    ccc = fb.GetInt32(13);
+                }
+                ActuaCantProd(aaa, bbb, ccc);
+            }
+            catch (Exception) { }
+            d.CerrarCnn();
+        }
+
+        private void AumentarDelProducto(Int64 aaa, int bbb) //aumenta la cantidad del producto (DELETE)
+        { 
+            int ccc = 0;
+            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            Conexion d = new Conexion();
+            string buscar = "SELECT * FROM Productos WHERE CodBarP = '" + aaa + "' ; ";
+            d.OpenCnn();
+            SqlCommand find = new SqlCommand(buscar, d.GetCONN());
+            try
+            {
+                SqlDataReader fb;
+                fb = find.ExecuteReader();
+                while (fb.Read())
+                {
+                    ccc = fb.GetInt32(13);
+                }
+                ActuaDelCantProd(aaa, bbb, ccc);
+            }
+            catch (Exception) { }
+            d.CerrarCnn();
+        }
+
+        private void BorrarDetalleVenta(String codv) 
+        {
+            try
+            {
+                // Objetos de conexión y comando
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                // Estableciento propiedades
+                cmd.Connection = cs.GetCONN();
+                cmd.CommandText = "DELETE FROM Detalle_Venta WHERE cod_Venta = '" + codetxt.Text + "' ;";
+
+                cs.OpenCnn();
+                cmd.ExecuteNonQuery();
+                cs.CerrarCnn();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show( ex.Message, "ERROR" , MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void addDetVent_Click(object sender, EventArgs e)
+        {
+            dateday = DateTime.UtcNow;
+            Conexion c = new Conexion();
+            BorrarDetalleVenta(codetxt.Text);
+
+            try
+            {   // Objetos de conexión y comando
+                foreach (DataGridViewRow row in dataGridDet.Rows)
+                {
+                    System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                    // Estableciento propiedades
+                    cmd.Connection = c.GetCONN();
+                    cmd.CommandText = "INSERT INTO Detalle_Venta VALUES (@id, @name, @cant, @price, @fecha, @ubica, @total, @codv)";
+
+                    // Creando los parámetros necesarios
+                    cmd.Parameters.Add("@id", System.Data.SqlDbType.BigInt);
+                    cmd.Parameters.Add("@name", System.Data.SqlDbType.VarChar);
+                    cmd.Parameters.Add("@cant", System.Data.SqlDbType.Int);
+                    cmd.Parameters.Add("@price", System.Data.SqlDbType.Float);
+                    cmd.Parameters.Add("@fecha", System.Data.SqlDbType.DateTime);
+                    cmd.Parameters.Add("@ubica", System.Data.SqlDbType.VarChar);
+                    cmd.Parameters.Add("@total", System.Data.SqlDbType.Float);
+                    cmd.Parameters.Add("@codv", System.Data.SqlDbType.VarChar);
+
+                    // Asignando los valores a los atributos
+                    //row.Cells[0].Value
+                    cmd.Parameters["@id"].Value = Convert.ToInt64(row.Cells[0].Value);
+                    cmd.Parameters["@name"].Value = Convert.ToString(row.Cells[1].Value);
+                    cmd.Parameters["@cant"].Value = Convert.ToInt32(row.Cells[2].Value);
+                    cmd.Parameters["@price"].Value = Convert.ToDouble(row.Cells[3].Value);
+                    cmd.Parameters["@fecha"].Value = dateday;
+                    cmd.Parameters["@ubica"].Value = "Almacen Principal";
+                    cmd.Parameters["@total"].Value = Convert.ToDouble(row.Cells[4].Value);
+                    cmd.Parameters["@codv"].Value = codetxt.Text;
+
+                    c.OpenCnn();
+                    cmd.ExecuteNonQuery();
+                    c.CerrarCnn();
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. Al Insertar Los Datos del Detalle de Venta. " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
     }
 }

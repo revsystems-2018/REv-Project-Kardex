@@ -282,7 +282,7 @@ namespace Proyect_Kardex
 
         private void List_Productos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            codUser = 0;
+
         }
 
 
