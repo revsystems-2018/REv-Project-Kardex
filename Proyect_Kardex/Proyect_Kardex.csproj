@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD8A057F-7ED8-4B31-AB36-B12E7F349B40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proyect_Kardex</RootNamespace>
+    <AssemblyName>Proyect_Kardex</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>REV_Project_Kardex_Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>D:\Proyect kardex\Aforge NET Camera\Aforge Net Framework\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>D:\Proyect kardex\Aforge NET Camera\Aforge Net Framework\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>D:\Proyect kardex\Aforge NET Camera\Aforge Net Framework\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib, Version=1.0.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.1.0.0.20\lib\net20\BarcodeLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>D:\Proyect kardex\Qr Code TW\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing">
+      <HintPath>D:\Proyect kardex\Zxing Net\net4.0\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>D:\Proyect kardex\Zxing Net\net4.0\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductos.Designer.cs">
+      <DependentUpon>AddProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEECategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEECategoria.Designer.cs">
+      <DependentUpon>AEECategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEEMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEEMarca.Designer.cs">
+      <DependentUpon>AEEMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEEMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEEMedida.Designer.cs">
+      <DependentUpon>AEEMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEESubCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEESubCat.Designer.cs">
+      <DependentUpon>AEESubCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProductos.Designer.cs">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarUser.Designer.cs">
+      <DependentUpon>BuscarUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculadora.Designer.cs">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Correo.cs" />
+    <Compile Include="DetMontoFactura.cs" />
+    <Compile Include="Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devoluciones.Designer.cs">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditVentasDetFact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditVentasDetFact.Designer.cs">
+      <DependentUpon>EditVentasDetFact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export_Excel.cs" />
+    <Compile Include="FechaMensseger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FechaMensseger.Designer.cs">
+      <DependentUpon>FechaMensseger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenCodeQrEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenCodeQrEmpresa.Designer.cs">
+      <DependentUpon>GenCodeQrEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphic_Products.Designer.cs">
+      <DependentUpon>Graphic_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Productos.Designer.cs">
+      <DependentUpon>List_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Ventas.Designer.cs">
+      <DependentUpon>List_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messengers.Designer.cs">
+      <DependentUpon>Messengers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidosCompras.Designer.cs">
+      <DependentUpon>PedidosCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelCliente.Designer.cs">
+      <DependentUpon>DelCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelProveedor.Designer.cs">
+      <DependentUpon>DelProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelUser.Designer.cs">
+      <DependentUpon>DelUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCliente.Designer.cs">
+      <DependentUpon>EditCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductos.Designer.cs">
+      <DependentUpon>EditProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProveedor.Designer.cs">
+      <DependentUpon>EditProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal-UserCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal-UserCajero.Designer.cs">
+      <DependentUpon>Principal-UserCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Read_Code_Qr_Bar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Read_Code_Qr_Bar.Designer.cs">
+      <DependentUpon>Read_Code_Qr_Bar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegAdmin.Designer.cs">
+      <DependentUpon>RegAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegCliente.Designer.cs">
+      <DependentUpon>RegCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegEmpresa.Designer.cs">
+      <DependentUpon>RegEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroMarcas.Designer.cs">
+      <DependentUpon>RegistroMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroUnidad.Designer.cs">
+      <DependentUpon>RegistroUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Categoria.Designer.cs">
+      <DependentUpon>Registro_Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Clientes.Designer.cs">
+      <DependentUpon>Registro_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Productos.Designer.cs">
+      <DependentUpon>Registro_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Proveedores.Designer.cs">
+      <DependentUpon>Registro_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Usuario.Designer.cs">
+      <DependentUpon>Registro_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Ventas.Designer.cs">
+      <DependentUpon>Registro_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegProveedor.Designer.cs">
+      <DependentUpon>RegProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSolClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSolClientes.Designer.cs">
+      <DependentUpon>ReportSolClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_DetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_DetalleVenta.Designer.cs">
+      <DependentUpon>Report_DetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Devolucion.Designer.cs">
+      <DependentUpon>Report_Devolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Factura.Designer.cs">
+      <DependentUpon>Report_Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REV_BarCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REV_BarCode.Designer.cs">
+      <DependentUpon>REV_BarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REV_Camera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REV_Camera.Designer.cs">
+      <DependentUpon>REV_Camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REV_CodeQr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REV_CodeQr.Designer.cs">
+      <DependentUpon>REV_CodeQr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REV_DataBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>REV_DataBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REV_SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REV_SendEmail.Designer.cs">
+      <DependentUpon>REV_SendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REV_WebStudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REV_WebStudio.Designer.cs">
+      <DependentUpon>REV_WebStudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMensseger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMensseger.Designer.cs">
+      <DependentUpon>SearchMensseger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSolClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSolClientes.Designer.cs">
+      <DependentUpon>ShowSolClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSolUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportSolUser.Designer.cs">
+      <DependentUpon>ReportSolUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSolUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSolUser.Designer.cs">
+      <DependentUpon>ShowSolUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolCliente.Designer.cs">
+      <DependentUpon>SolCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolUser.Designer.cs">
+      <DependentUpon>SolUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidacionText.cs" />
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerAdmin.Designer.cs">
+      <DependentUpon>VerAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerCliente.Designer.cs">
+      <DependentUpon>VerCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerEmpresa.Designer.cs">
+      <DependentUpon>VerEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerProductos.Designer.cs">
+      <DependentUpon>VerProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerProveedor.Designer.cs">
+      <DependentUpon>VerProveedor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProductos.resx">
+      <DependentUpon>AddProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEECategoria.resx">
+      <DependentUpon>AEECategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEEMarca.resx">
+      <DependentUpon>AEEMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEEMedida.resx">
+      <DependentUpon>AEEMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEESubCat.resx">
+      <DependentUpon>AEESubCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProductos.resx">
+      <DependentUpon>BuscarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarUser.resx">
+      <DependentUpon>BuscarUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculadora.resx">
+      <DependentUpon>Calculadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devoluciones.resx">
+      <DependentUpon>Devoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditVentasDetFact.resx">
+      <DependentUpon>EditVentasDetFact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FechaMensseger.resx">
+      <DependentUpon>FechaMensseger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenCodeQrEmpresa.resx">
+      <DependentUpon>GenCodeQrEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphic_Products.resx">
+      <DependentUpon>Graphic_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Productos.resx">
+      <DependentUpon>List_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Ventas.resx">
+      <DependentUpon>List_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messengers.resx">
+      <DependentUpon>Messengers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidosCompras.resx">
+      <DependentUpon>PedidosCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelCliente.resx">
+      <DependentUpon>DelCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelProveedor.resx">
+      <DependentUpon>DelProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelUser.resx">
+      <DependentUpon>DelUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCliente.resx">
+      <DependentUpon>EditCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProductos.resx">
+      <DependentUpon>EditProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProveedor.resx">
+      <DependentUpon>EditProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal-UserCajero.resx">
+      <DependentUpon>Principal-UserCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Read_Code_Qr_Bar.resx">
+      <DependentUpon>Read_Code_Qr_Bar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegAdmin.resx">
+      <DependentUpon>RegAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegCliente.resx">
+      <DependentUpon>RegCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegEmpresa.resx">
+      <DependentUpon>RegEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroMarcas.resx">
+      <DependentUpon>RegistroMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroUnidad.resx">
+      <DependentUpon>RegistroUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Categoria.resx">
+      <DependentUpon>Registro_Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Clientes.resx">
+      <DependentUpon>Registro_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Productos.resx">
+      <DependentUpon>Registro_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Proveedores.resx">
+      <DependentUpon>Registro_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Usuario.resx">
+      <DependentUpon>Registro_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Ventas.resx">
+      <DependentUpon>Registro_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegProveedor.resx">
+      <DependentUpon>RegProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSolClientes.resx">
+      <DependentUpon>ReportSolClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_DetalleVenta.resx">
+      <DependentUpon>Report_DetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Devolucion.resx">
+      <DependentUpon>Report_Devolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Factura.resx">
+      <DependentUpon>Report_Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REV_BarCode.resx">
+      <DependentUpon>REV_BarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REV_Camera.resx">
+      <DependentUpon>REV_Camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REV_CodeQr.resx">
+      <DependentUpon>REV_CodeQr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REV_SendEmail.resx">
+      <DependentUpon>REV_SendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REV_WebStudio.resx">
+      <DependentUpon>REV_WebStudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMensseger.resx">
+      <DependentUpon>SearchMensseger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSolClientes.resx">
+      <DependentUpon>ShowSolClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportSolUser.resx">
+      <DependentUpon>ReportSolUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSolUser.resx">
+      <DependentUpon>ShowSolUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolCliente.resx">
+      <DependentUpon>SolCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolUser.resx">
+      <DependentUpon>SolUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerAdmin.resx">
+      <DependentUpon>VerAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerCliente.resx">
+      <DependentUpon>VerCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerEmpresa.resx">
+      <DependentUpon>VerEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerProductos.resx">
+      <DependentUpon>VerProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerProveedor.resx">
+      <DependentUpon>VerProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="REV_DataBaseDataSet.xsc">
+      <DependentUpon>REV_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="REV_DataBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>REV_DataBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="REV_DataBaseDataSet.xss">
+      <DependentUpon>REV_DataBaseDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio PPP2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12_10_11_login_01 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subcat-settings.png" />
+    <None Include="Resources\infoProd.png" />
+    <None Include="Resources\VerProduct.png" />
+    <None Include="Resources\BuscarName.png" />
+    <None Include="Resources\buscarDetalle.png" />
+    <None Include="Resources\buscarCode.png" />
+    <None Include="Resources\BuscarName_B.png" />
+    <None Include="Resources\buscarDetalle_B.png" />
+    <None Include="Resources\buscarCode_B.png" />
+    <None Include="Resources\on.png" />
+    <None Include="Resources\offA.png" />
+    <None Include="Resources\icamera2.png" />
+    <None Include="Resources\savePhoto.png" />
+    <None Include="Resources\btnPhoto.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\start1.png" />
+    <None Include="Resources\no_Photo.png" />
+    <None Include="Resources\playGame.png" />
+    <None Include="Resources\Scannear.png" />
+    <None Include="Resources\LoadCode.png" />
+    <None Include="Resources\LectorCodeBarQr.png" />
+    <None Include="Resources\LoadCode2.png" />
+    <None Include="Resources\playGame_B.png" />
+    <None Include="Resources\GenQr.png" />
+    <None Include="Resources\GroupUser.png" />
+    <None Include="Resources\subcat-settings_B.png" />
+    <None Include="Resources\unidad.png" />
+    <None Include="Resources\RegMedidas.png" />
+    <None Include="Resources\Pre-vista.png" />
+    <None Include="Resources\icamera.png" />
+    <None Include="Resources\adjuntar.png" />
+    <None Include="Resources\seePassword.png" />
+    <None Include="Resources\sendSMS.png" />
+    <None Include="Resources\qr_code.png" />
+    <None Include="Resources\scan.png" />
+    <None Include="Resources\listVentas.png" />
+    <None Include="Resources\detalleDocx.png" />
+    <None Include="Resources\seeCliente.png" />
+    <None Include="Resources\FacturaDocx.png" />
+    <None Include="Resources\devolDocxs.png" />
+    <None Include="Resources\fechaventa.png" />
+    <None Include="Resources\datetimeCancel.png" />
+    <None Include="Resources\fechaventa_B.png" />
+    <None Include="Resources\addDetSale.png" />
+    <Content Include="REV_Project_Kardex_Logo.ico" />
+    <None Include="Resources\weblogo.png" />
+    <None Include="Resources\viewfoto.png" />
+    <None Include="Resources\vencimiento.png" />
+    <None Include="Resources\window-Normal.png" />
+    <None Include="Resources\window-expand.png" />
+    <None Include="Resources\1455514112_User.png" />
+    <None Include="Resources\261-512.png" />
+    <Content Include="Resources\4416.png" />
+    <None Include="Resources\Cash_register.png" />
+    <None Include="Resources\buy.png" />
+    <None Include="Resources\close_off-512.png" />
+    <None Include="Resources\ClientesGrupo.png" />
+    <None Include="Resources\add-discount.png" />
+    <None Include="Resources\bolivia-boliviano.png" />
+    <None Include="Resources\clear-List.png" />
+    <None Include="Resources\addListC.png" />
+    <None Include="Resources\bookmark_green-star-512.png" />
+    <None Include="Resources\cate.png" />
+    <None Include="Resources\barcodcol.png" />
+    <None Include="Resources\barcodneg.png" />
+    <None Include="Resources\backpage.png" />
+    <Content Include="Resources\config.png" />
+    <None Include="Resources\editUser.png" />
+    <None Include="Resources\editCliente.png" />
+    <None Include="Resources\editprove.png" />
+    <None Include="Resources\delcaj.png" />
+    <None Include="Resources\deluser.png" />
+    <None Include="Resources\delpro.png" />
+    <None Include="Resources\editdocx.png" />
+    <None Include="Resources\document_text.png" />
+    <None Include="Resources\editdocumento.png" />
+    <None Include="Resources\document_delete.png" />
+    <None Include="Resources\devolucionVentas.png" />
+    <None Include="Resources\cross_close_quit-512.png" />
+    <None Include="Resources\editdocumentob.png" />
+    <None Include="Resources\document_deleteb.png" />
+    <None Include="Resources\Copywriting-Facture.png" />
+    <None Include="Resources\document_Select.png" />
+    <None Include="Resources\document_Selectb.png" />
+    <None Include="Resources\editListC.png" />
+    <None Include="Resources\delListC.png" />
+    <None Include="Resources\editpencil.png" />
+    <None Include="Resources\eliminardata.png" />
+    <None Include="Resources\dosnotify.png" />
+    <None Include="Resources\docxListLow.png" />
+    <Content Include="Resources\empresa.png" />
+    <None Include="Resources\Fondo logotipo REV HD2.png" />
+    <None Include="Resources\Hosting-512.png" />
+    <None Include="Resources\factureinfo.png" />
+    <None Include="Resources\gr.png" />
+    <None Include="Resources\homepage.png" />
+    <None Include="Resources\gopage.png" />
+    <None Include="Resources\GenerarCode.png" />
+    <Content Include="Resources\icono-busqueda.png" />
+    <None Include="Resources\irgo.png" />
+    <None Include="Resources\inicio PPP21.png" />
+    <None Include="Resources\intocar.png" />
+    <None Include="Resources\kg.png" />
+    <Content Include="Resources\list-1.png" />
+    <None Include="Resources\tick7.png" />
+    <None Include="Resources\next21.png" />
+    <None Include="Resources\message.png" />
+    <None Include="Resources\magic.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\lupa.png" />
+    <None Include="Resources\more.png" />
+    <None Include="Resources\Loop-512.png" />
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\maximizar.png" />
+    <None Include="Resources\listClients.png" />
+    <None Include="Resources\listProduct.png" />
+    <None Include="Resources\listProve.png" />
+    <None Include="Resources\listCateg.png" />
+    <None Include="Resources\listMarca.png" />
+    <None Include="Resources\listMedida.png" />
+    <Content Include="Resources\logo RV studio.png" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\medidas.png" />
+    <None Include="Resources\ml.png" />
+    <None Include="Resources\m3.png" />
+    <None Include="Resources\nextpage.png" />
+    <None Include="Resources\magicode.png" />
+    <None Include="Resources\newListC.png" />
+    <Content Include="Resources\notifi.png" />
+    <None Include="Resources\ver.png" />
+    <None Include="Resources\play-button4.png" />
+    <None Include="Resources\proveedor.png" />
+    <None Include="Resources\ProveData.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\printDocx.png" />
+    <None Include="Resources\novo.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\Question-512.png" />
+    <None Include="Resources\novob.png" />
+    <None Include="Resources\percentage.png" />
+    <None Include="Resources\pay.png" />
+    <None Include="Resources\regcate.png" />
+    <None Include="Resources\promocion.png" />
+    <None Include="Resources\Package-add.png" />
+    <Content Include="Resources\remove_logo.png" />
+    <None Include="Resources\REV  TM Studio.png" />
+    <None Include="Resources\reportventas.png" />
+    <Content Include="Resources\REV_Project_Kardex_Logo.ico" />
+    <Content Include="Resources\Salir.png" />
+    <Content Include="Resources\save.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\see.png" />
+    <None Include="Resources\saved.png" />
+    <None Include="Resources\save_all.png" />
+    <None Include="Resources\seePicture.png" />
+    <None Include="Resources\seguridad.png" />
+    <None Include="Resources\SEO_Calculator-512.png" />
+    <None Include="Resources\shopping-04-512.png" />
+    <None Include="Resources\search-good-512.png" />
+    <None Include="Resources\shopping-21-512.png" />
+    <None Include="Resources\save_allb.png" />
+    <None Include="Resources\saveblok.png" />
+    <None Include="Resources\savedexcel.png" />
+    <None Include="Resources\savedpdf.png" />
+    <None Include="Resources\saveExcel.png" />
+    <None Include="Resources\seePerfil.png" />
+    <Content Include="Resources\Sin título-7.png" />
+    <None Include="Resources\useradd.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\solicitudyo.png" />
+    <None Include="Resources\SolicitudDestacado.png" />
+    <None Include="Resources\toolview.png" />
+    <None Include="Resources\stoppage.png" />
+    <None Include="Resources\updatepage.png" />
+    <Content Include="Resources\userCajero.png" />
+    <None Include="Resources\userData.png" />
+    <Content Include="Resources\userProv.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
