@@ -589,7 +589,6 @@ namespace Proyect_Kardex
 
         private void findbtn_Click(object sender, EventArgs e)
         {
-            Conexion f = new Conexion();
             if (codetxt.Text != "" && codetxt.Font.Italic == true)
             {
                 if (codetxt.Text == "")
@@ -612,8 +611,8 @@ namespace Proyect_Kardex
             {  //Codigo de Buscar Cliente.
                 string query = "SELECT * FROM REV_Ventas WHERE id_Venta ='" + codetxt.Text + "' ; ";
 
-                SqlCommand sqlQ = new SqlCommand(query, f.GetCONN());
-                f.OpenCnn();
+                SqlCommand sqlQ = new SqlCommand(query, cs.GetCONN());
+                cs.OpenCnn();
                 SqlDataReader read;
                 if (comprobar() == 1)
                 {
@@ -679,10 +678,12 @@ namespace Proyect_Kardex
                             nameusrTxt.Text = read.GetString(2);
                             codClitxt.Text = read.GetInt32(3).ToString();
                             nitClitxt.Text = read.GetString(16);
-                            nameClitxt.Text = read.GetString(4);
-                            dataGridDet.DataSource = CargarDatos();
+                            nameClitxt.Text = read.GetString(4);                           
                         }
-                        f.CerrarCnn();
+                        codetxt.Size = new System.Drawing.Size(303, 20);
+                        findbtn.Location = new System.Drawing.Point(391, 36);
+                        updetbtn.Visible = true;
+                        cs.CerrarCnn();
                     }
                     catch (Exception ex)
                     {
@@ -1290,6 +1291,19 @@ namespace Proyect_Kardex
             {
                 MessageBox.Show("ERROR. Al Insertar Los Datos del Detalle de Venta. " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void updetbtn_Click(object sender, EventArgs e)
+        {
+            dataGridDet.DataSource = CargarDatos();
+
+            codetxt.Size = new System.Drawing.Size(328, 20);
+            findbtn.Location = new System.Drawing.Point(416, 36);
+            updetbtn.Visible = false;
         }
 
 

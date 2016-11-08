@@ -74,6 +74,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.toolTipEditVenta = new System.Windows.Forms.ToolTip(this.components);
+            this.updetbtn = new System.Windows.Forms.Button();
             this.addDetVent = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.addFacture = new System.Windows.Forms.Button();
@@ -103,6 +104,7 @@
             this.groupBox1.TabIndex = 236;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalle de Ventas";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label18
             // 
@@ -189,7 +191,7 @@
             this.codetxt.Location = new System.Drawing.Point(108, 35);
             this.codetxt.MaxLength = 555;
             this.codetxt.Name = "codetxt";
-            this.codetxt.Size = new System.Drawing.Size(329, 20);
+            this.codetxt.Size = new System.Drawing.Size(328, 20);
             this.codetxt.TabIndex = 2;
             this.codetxt.Text = "Codigo de Registro en Ventas";
             this.codetxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.codetxt_MouseClick);
@@ -584,6 +586,24 @@
             this.label16.Text = "Codigo";
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
+            // updetbtn
+            // 
+            this.updetbtn.BackColor = System.Drawing.Color.Transparent;
+            this.updetbtn.BackgroundImage = global::Proyect_Kardex.Properties.Resources.list;
+            this.updetbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.updetbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updetbtn.FlatAppearance.BorderSize = 0;
+            this.updetbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.updetbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.updetbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updetbtn.Location = new System.Drawing.Point(417, 35);
+            this.updetbtn.Name = "updetbtn";
+            this.updetbtn.Size = new System.Drawing.Size(19, 18);
+            this.updetbtn.TabIndex = 264;
+            this.updetbtn.UseVisualStyleBackColor = false;
+            this.updetbtn.Visible = false;
+            this.updetbtn.Click += new System.EventHandler(this.updetbtn_Click);
+            // 
             // addDetVent
             // 
             this.addDetVent.BackColor = System.Drawing.Color.Transparent;
@@ -714,7 +734,7 @@
             this.findbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.findbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.findbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.findbtn.Location = new System.Drawing.Point(417, 36);
+            this.findbtn.Location = new System.Drawing.Point(416, 36);
             this.findbtn.Name = "findbtn";
             this.findbtn.Size = new System.Drawing.Size(19, 18);
             this.findbtn.TabIndex = 3;
@@ -744,7 +764,6 @@
             this.deleteBtn.BackgroundImage = global::Proyect_Kardex.Properties.Resources.delListC;
             this.deleteBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteBtn.Enabled = false;
             this.deleteBtn.FlatAppearance.BorderSize = 0;
             this.deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.deleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -769,7 +788,6 @@
             this.Controls.Add(this.CleanList);
             this.Controls.Add(this.AddSale);
             this.Controls.Add(this.descbtn);
-            this.Controls.Add(this.findbtn);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label12);
@@ -793,11 +811,13 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbtype);
-            this.Controls.Add(this.codetxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.desctxt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.titulolabel);
+            this.Controls.Add(this.findbtn);
+            this.Controls.Add(this.codetxt);
+            this.Controls.Add(this.updetbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditVentasDetFact";
@@ -869,5 +889,6 @@
         public System.Windows.Forms.Button addFacture;
         public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button addDetVent;
+        public System.Windows.Forms.Button updetbtn;
     }
 }
