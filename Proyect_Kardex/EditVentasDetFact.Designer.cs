@@ -33,9 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditVentasDetFact));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.listProdlb = new System.Windows.Forms.Label();
             this.dataGridDet = new System.Windows.Forms.DataGridView();
             this.codProdtxt = new System.Windows.Forms.TextBox();
+            this.novoBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cbtype = new System.Windows.Forms.ComboBox();
             this.codetxt = new System.Windows.Forms.TextBox();
@@ -72,7 +74,7 @@
             this.nitClitxt = new System.Windows.Forms.TextBox();
             this.codClitxt = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.listClilb = new System.Windows.Forms.Label();
             this.toolTipEditVenta = new System.Windows.Forms.ToolTip(this.components);
             this.updetbtn = new System.Windows.Forms.Button();
             this.addDetVent = new System.Windows.Forms.Button();
@@ -83,8 +85,6 @@
             this.AddSale = new System.Windows.Forms.Button();
             this.descbtn = new System.Windows.Forms.Button();
             this.findbtn = new System.Windows.Forms.Button();
-            this.novoBtn = new System.Windows.Forms.Button();
-            this.deleteBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDet)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -93,7 +93,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.listProdlb);
             this.groupBox1.Controls.Add(this.dataGridDet);
             this.groupBox1.Controls.Add(this.codProdtxt);
             this.groupBox1.Controls.Add(this.novoBtn);
@@ -106,16 +106,16 @@
             this.groupBox1.Text = "Detalle de Ventas";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label18
+            // listProdlb
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(19, 23);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(97, 12);
-            this.label18.TabIndex = 264;
-            this.label18.Text = "Codigo de Barras";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.listProdlb.AutoSize = true;
+            this.listProdlb.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listProdlb.Location = new System.Drawing.Point(19, 23);
+            this.listProdlb.Name = "listProdlb";
+            this.listProdlb.Size = new System.Drawing.Size(97, 12);
+            this.listProdlb.TabIndex = 264;
+            this.listProdlb.Text = "Codigo de Barras";
+            this.listProdlb.Click += new System.EventHandler(this.label18_Click);
             // 
             // dataGridDet
             // 
@@ -158,6 +158,40 @@
             this.codProdtxt.Text = "Codigo de Registro del Producto";
             this.codProdtxt.MouseClick += new System.Windows.Forms.MouseEventHandler(this.codProdtxt_MouseClick);
             this.codProdtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.codProdtxt_KeyPress);
+            // 
+            // novoBtn
+            // 
+            this.novoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.novoBtn.BackgroundImage = global::Proyect_Kardex.Properties.Resources.newListC;
+            this.novoBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.novoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.novoBtn.FlatAppearance.BorderSize = 0;
+            this.novoBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.novoBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.novoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.novoBtn.Location = new System.Drawing.Point(349, 13);
+            this.novoBtn.Name = "novoBtn";
+            this.novoBtn.Size = new System.Drawing.Size(30, 30);
+            this.novoBtn.TabIndex = 22;
+            this.novoBtn.UseVisualStyleBackColor = false;
+            this.novoBtn.Click += new System.EventHandler(this.novoBtn_Click);
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.BackColor = System.Drawing.Color.Transparent;
+            this.deleteBtn.BackgroundImage = global::Proyect_Kardex.Properties.Resources.delListC;
+            this.deleteBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteBtn.FlatAppearance.BorderSize = 0;
+            this.deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.deleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteBtn.Location = new System.Drawing.Point(399, 13);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(30, 30);
+            this.deleteBtn.TabIndex = 23;
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // label2
             // 
@@ -508,7 +542,7 @@
             this.groupBox3.Controls.Add(this.nitClitxt);
             this.groupBox3.Controls.Add(this.codClitxt);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.listClilb);
             this.groupBox3.Location = new System.Drawing.Point(226, 250);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(219, 90);
@@ -575,16 +609,16 @@
             this.label15.TabIndex = 258;
             this.label15.Text = "NIT/CI";
             // 
-            // label16
+            // listClilb
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(28, 19);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 12);
-            this.label16.TabIndex = 256;
-            this.label16.Text = "Codigo";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            this.listClilb.AutoSize = true;
+            this.listClilb.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listClilb.Location = new System.Drawing.Point(28, 19);
+            this.listClilb.Name = "listClilb";
+            this.listClilb.Size = new System.Drawing.Size(44, 12);
+            this.listClilb.TabIndex = 256;
+            this.listClilb.Text = "Codigo";
+            this.listClilb.Click += new System.EventHandler(this.label16_Click);
             // 
             // updetbtn
             // 
@@ -610,7 +644,6 @@
             this.addDetVent.BackgroundImage = global::Proyect_Kardex.Properties.Resources.addDetSale;
             this.addDetVent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.addDetVent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addDetVent.Enabled = false;
             this.addDetVent.FlatAppearance.BorderSize = 0;
             this.addDetVent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.addDetVent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -618,7 +651,7 @@
             this.addDetVent.Location = new System.Drawing.Point(137, 518);
             this.addDetVent.Name = "addDetVent";
             this.addDetVent.Size = new System.Drawing.Size(40, 40);
-            this.addDetVent.TabIndex = 263;
+            this.addDetVent.TabIndex = 24;
             this.addDetVent.UseVisualStyleBackColor = false;
             this.addDetVent.Click += new System.EventHandler(this.addDetVent_Click);
             // 
@@ -653,8 +686,9 @@
             this.addFacture.Location = new System.Drawing.Point(203, 518);
             this.addFacture.Name = "addFacture";
             this.addFacture.Size = new System.Drawing.Size(40, 40);
-            this.addFacture.TabIndex = 261;
+            this.addFacture.TabIndex = 25;
             this.addFacture.UseVisualStyleBackColor = false;
+            this.addFacture.Click += new System.EventHandler(this.addFacture_Click);
             // 
             // SalirButton
             // 
@@ -669,7 +703,7 @@
             this.SalirButton.Location = new System.Drawing.Point(396, 518);
             this.SalirButton.Name = "SalirButton";
             this.SalirButton.Size = new System.Drawing.Size(40, 40);
-            this.SalirButton.TabIndex = 26;
+            this.SalirButton.TabIndex = 28;
             this.SalirButton.UseVisualStyleBackColor = false;
             this.SalirButton.Click += new System.EventHandler(this.SalirButton_Click);
             // 
@@ -686,7 +720,7 @@
             this.CleanList.Location = new System.Drawing.Point(330, 518);
             this.CleanList.Name = "CleanList";
             this.CleanList.Size = new System.Drawing.Size(40, 40);
-            this.CleanList.TabIndex = 25;
+            this.CleanList.TabIndex = 27;
             this.CleanList.UseVisualStyleBackColor = false;
             this.CleanList.Click += new System.EventHandler(this.CleanList_Click);
             // 
@@ -704,8 +738,9 @@
             this.AddSale.Location = new System.Drawing.Point(269, 518);
             this.AddSale.Name = "AddSale";
             this.AddSale.Size = new System.Drawing.Size(40, 40);
-            this.AddSale.TabIndex = 24;
+            this.AddSale.TabIndex = 26;
             this.AddSale.UseVisualStyleBackColor = false;
+            this.AddSale.Click += new System.EventHandler(this.AddSale_Click);
             // 
             // descbtn
             // 
@@ -740,40 +775,6 @@
             this.findbtn.TabIndex = 3;
             this.findbtn.UseVisualStyleBackColor = false;
             this.findbtn.Click += new System.EventHandler(this.findbtn_Click);
-            // 
-            // novoBtn
-            // 
-            this.novoBtn.BackColor = System.Drawing.Color.Transparent;
-            this.novoBtn.BackgroundImage = global::Proyect_Kardex.Properties.Resources.newListC;
-            this.novoBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.novoBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.novoBtn.FlatAppearance.BorderSize = 0;
-            this.novoBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.novoBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.novoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.novoBtn.Location = new System.Drawing.Point(349, 13);
-            this.novoBtn.Name = "novoBtn";
-            this.novoBtn.Size = new System.Drawing.Size(30, 30);
-            this.novoBtn.TabIndex = 22;
-            this.novoBtn.UseVisualStyleBackColor = false;
-            this.novoBtn.Click += new System.EventHandler(this.novoBtn_Click);
-            // 
-            // deleteBtn
-            // 
-            this.deleteBtn.BackColor = System.Drawing.Color.Transparent;
-            this.deleteBtn.BackgroundImage = global::Proyect_Kardex.Properties.Resources.delListC;
-            this.deleteBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.deleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteBtn.FlatAppearance.BorderSize = 0;
-            this.deleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.deleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteBtn.Location = new System.Drawing.Point(399, 13);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(30, 30);
-            this.deleteBtn.TabIndex = 23;
-            this.deleteBtn.UseVisualStyleBackColor = false;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // EditVentasDetFact
             // 
@@ -877,10 +878,8 @@
         public System.Windows.Forms.TextBox nitClitxt;
         public System.Windows.Forms.TextBox codClitxt;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         public System.Windows.Forms.Button findbtn;
         public System.Windows.Forms.Button descbtn;
-        private System.Windows.Forms.Label label18;
         public System.Windows.Forms.TextBox codProdtxt;
         public System.Windows.Forms.Button SalirButton;
         public System.Windows.Forms.Button CleanList;
@@ -890,5 +889,7 @@
         public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button addDetVent;
         public System.Windows.Forms.Button updetbtn;
+        public System.Windows.Forms.Label listClilb;
+        public System.Windows.Forms.Label listProdlb;
     }
 }

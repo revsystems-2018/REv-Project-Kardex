@@ -43,13 +43,19 @@ namespace Proyect_Kardex
             toolTipEditVenta.SetToolTip(nitClitxt, "NIT o CI del Cliente");
             toolTipEditVenta.SetToolTip(nameusrTxt, "Nombre del Cliente");
             toolTipEditVenta.SetToolTip(findbtn, "Buscar Venta");
-            toolTipEditVenta.SetToolTip(codProdtxt, "Codigo de Registro/Barras del Producto");
+            toolTipEditVenta.SetToolTip(codProdtxt, "Ingresar Codigo de Registro/Barras del Producto");
             toolTipEditVenta.SetToolTip(novoBtn, "Agregar Nuevo Producto");
             toolTipEditVenta.SetToolTip(deleteBtn, "Eliminar Producto");
             toolTipEditVenta.SetToolTip(SalirButton, "Salir");
-            toolTipEditVenta.SetToolTip(addFacture, "Guardar Detalle de Venta");
+            toolTipEditVenta.SetToolTip(addFacture, "Modificar/Guardar Factura");
             toolTipEditVenta.SetToolTip(AddSale, "Modificar Venta");
             toolTipEditVenta.SetToolTip(CleanList, "Limpiar Detalle de Venta");
+            toolTipEditVenta.SetToolTip(addDetVent, "Modificar/Guardar Detalle de Venta");
+            toolTipEditVenta.SetToolTip(titulolabel, "Seleccionar ID de Venta");
+            toolTipEditVenta.SetToolTip(updetbtn, "Mostrar/Actualizar Detalle de Venta");
+            toolTipEditVenta.SetToolTip(listClilb, "Seleccionar ID de Cliente");
+            toolTipEditVenta.SetToolTip(listProdlb, "Seleccionar ID de Producto");
+
         }
 
         private void codetxt_MouseClick(object sender, MouseEventArgs e)
@@ -580,7 +586,7 @@ namespace Proyect_Kardex
 
         public DataTable CargarDatos()
         {
-            String slq = "SELECT * FROM Detalle_Venta WHERE cod_Venta = '" + codetxt.Text + "' ;";
+            String slq = "SELECT id_prod, name_prod, cant_prod, precio_prod, importe_sell FROM Detalle_Venta WHERE cod_Venta = '" + codetxt.Text + "' ;";
             DataTable res = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter(slq, cs.GetCONN());
             sda.Fill(res);
@@ -1081,7 +1087,7 @@ namespace Proyect_Kardex
                 }
                 else
                 {
-                    Devuelto = Convert.ToDouble(efectivetxt.Text) - Convert.ToDouble(efectivetxt.Text);
+                    Devuelto = Convert.ToDouble(efectivetxt.Text) - Convert.ToDouble(TotalPaytxt.Text);
                     if (Devuelto < 0)
                     {
                         MessageBox.Show("ERROR, Debe Ingresar el Monto Mayor o Igual Para Cumplir con la Deuda del Cliente.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1304,6 +1310,150 @@ namespace Proyect_Kardex
             codetxt.Size = new System.Drawing.Size(328, 20);
             findbtn.Location = new System.Drawing.Point(416, 36);
             updetbtn.Visible = false;
+        }
+
+        private void addFacture_Click(object sender, EventArgs e)
+        {
+            dateday = DateTime.UtcNow;
+            Conexion c = new Conexion();
+
+            try
+            {   // Objetos de conexión y comando
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                // Estableciento propiedades
+                cmd.Connection = c.GetCONN();
+                cmd.CommandText = "UPDATE Facturas SET nitciCliente=@id, nomFCli=@nom, montoTotalF=@ape, detalleVenF=@nit WHERE codVenF = @code ;";
+
+                // Creando los parámetros necesarios
+                cmd.Parameters.Add("@id", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@nom", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@ape", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@nit", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@code", System.Data.SqlDbType.VarChar);
+
+                // Asignando los valores a los atributos
+                //row.Cells[0].Value
+                cmd.Parameters["@id"].Value = nitClitxt.Text;
+                cmd.Parameters["@nom"].Value = nameClitxt.Text;
+                cmd.Parameters["@ape"].Value = Convert.ToDouble(TotalPaytxt.Text);
+                cmd.Parameters["@nit"].Value = detalletxt.Text;
+                cmd.Parameters["@code"].Value = codetxt.Text;
+
+                c.OpenCnn();
+                cmd.ExecuteNonQuery();
+                c.CerrarCnn();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private int GetIdCliente()
+        {
+            int res = 0;
+            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            Conexion d = new Conexion();
+            string buscar = "SELECT * FROM Clientes WHERE nitCliente = '" + nitClitxt.Text + "' ; ";
+            d.OpenCnn();
+            SqlCommand find = new SqlCommand(buscar, d.GetCONN());
+            try
+            {
+                SqlDataReader fb;
+                fb = find.ExecuteReader();
+                while (fb.Read())
+                {
+                    res = fb.GetInt32(0);
+                }
+            }
+            catch (Exception ex) { MessageBox.Show("ERROR. En el Comparador. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            d.CerrarCnn();
+            return res;
+        }
+
+        private int VerClienteDB()
+        {
+            int res = 0;
+            //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["default"].ToString());
+            Conexion d = new Conexion();
+            string buscar = "SELECT * FROM Clientes WHERE nitCliente = '" + nitClitxt.Text + "' ; ";
+            d.OpenCnn();
+            SqlCommand find = new SqlCommand(buscar, d.GetCONN());
+            try
+            {
+                SqlDataReader fb;
+                fb = find.ExecuteReader();
+                while (fb.Read())
+                {
+                    res = res + 1;
+                }
+            }
+            catch (Exception) { }
+            d.CerrarCnn();
+            return res;
+        }
+
+
+        private void AddSale_Click(object sender, EventArgs e)
+        {
+            Conexion d = new Conexion();
+            try
+            {   // Objetos de conexión y comando
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                // Estableciento propiedades
+                cmd.Connection = d.GetCONN();
+                cmd.CommandText = "UPDATE REV_Ventas SET id_User=@idusr, name_User=@nameusr, id_Cliente=@nit, name_Cliente=@namecli, num_Prod=@num, sub_Total=@sub, RC_iva=@iva, total_Pay=@total, pago_Cliente=@pago, type_Pay=@type, to_Pay=@apay, Descuent_Pay=@desc, cambio_Sell=@cambio, Detalle_Cash=@det, Fecha_Venta=@fechav, nit_to_cli=@tonit WHERE id_Venta = @id ; ";
+
+                // Creando los parámetros necesarios
+                cmd.Parameters.Add("@idusr", System.Data.SqlDbType.Int);
+                cmd.Parameters.Add("@nameusr", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@nit", System.Data.SqlDbType.Int);
+                cmd.Parameters.Add("@namecli", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@num", System.Data.SqlDbType.Int);
+                cmd.Parameters.Add("@sub", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@iva", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@total", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@pago", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@type", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@apay", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@desc", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@cambio", System.Data.SqlDbType.Float);
+                cmd.Parameters.Add("@det", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@fechav", System.Data.SqlDbType.DateTime2);
+                cmd.Parameters.Add("@tonit", System.Data.SqlDbType.VarChar);
+                cmd.Parameters.Add("@id", System.Data.SqlDbType.VarChar);
+
+                // Asignando los valores a los atributos
+
+                cmd.Parameters["@idusr"].Value = Int32.Parse(CodUsrtxt.Text);
+                cmd.Parameters["@nameusr"].Value = nameusrTxt.Text;
+                cmd.Parameters["@namecli"].Value = nameClitxt.Text;
+                cmd.Parameters["@num"].Value = Int32.Parse(cantxt.Text);
+                cmd.Parameters["@sub"].Value = double.Parse(subtxt.Text);
+                cmd.Parameters["@iva"].Value = double.Parse(ivatxt.Text);
+                cmd.Parameters["@total"].Value = double.Parse(totaltxt.Text);
+                cmd.Parameters["@pago"].Value = double.Parse(efectivetxt.Text);
+                cmd.Parameters["@type"].Value = cbtype.Text;
+                cmd.Parameters["@apay"].Value = double.Parse(TotalPaytxt.Text);
+                cmd.Parameters["@desc"].Value = double.Parse(desctxt.Text);
+                cmd.Parameters["@cambio"].Value = double.Parse(cambiotxt.Text);
+                cmd.Parameters["@det"].Value = detalletxt.Text;
+                cmd.Parameters["@fechav"].Value = dateday;
+                cmd.Parameters["@tonit"].Value = nitClitxt.Text;
+                cmd.Parameters["@id"].Value = codetxt.Text;
+                if (VerClienteDB() == 1) { cmd.Parameters["@nit"].Value = GetIdCliente(); } else { cmd.Parameters["@nit"].Value = DBNull.Value; }
+
+                d.OpenCnn();
+                cmd.ExecuteNonQuery();
+                d.CerrarCnn();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. Al Modificar Los Datos Ventas. " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
