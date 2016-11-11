@@ -860,12 +860,20 @@ namespace Proyect_Kardex
                 nitClitxt.Text = "";
                 nameClitxt.Text = "";
                 codProdtxt.Text = "";
+                addDetVent.Enabled = true;
                 codetxt.Enabled = true;
-                addFacture.Enabled = true;
+                addFacture.Enabled = false;
                 AddSale.Enabled = false;
-                SalirButton.Enabled = false;
+                SalirButton.Enabled = true;
                 novoBtn.Enabled = true;
                 deleteBtn.Enabled = true;
+                codProdtxt.Text = "";
+                codProdtxt.Enabled = true;
+                novoBtn.Enabled = true;
+                deleteBtn.Enabled = true;
+                findbtn.Enabled = true;
+                descbtn.Enabled = true;
+                desctxt.Enabled = true;
             }
         }
 
@@ -1096,7 +1104,7 @@ namespace Proyect_Kardex
                     {
 
                         cambiotxt.Text = Devuelto.ToString();
-                        addFacture.Enabled = true;
+                        addFacture.Enabled = false;
                         AddSale.Enabled = false;
                         codProdtxt.Text = "";
                         codProdtxt.Enabled = false;
@@ -1108,6 +1116,7 @@ namespace Proyect_Kardex
                         desctxt.Enabled = false;
                         CleanList.Enabled = false;
                         SalirButton.Enabled = false;
+                        addDetVent.Enabled = true;
                     }
                 }
             }
@@ -1290,6 +1299,11 @@ namespace Proyect_Kardex
                     c.OpenCnn();
                     cmd.ExecuteNonQuery();
                     c.CerrarCnn();
+
+                    addFacture.Enabled = true;
+                    AddSale.Enabled = true;
+                    addDetVent.Enabled = false;
+
                 }
                 
             }
@@ -1343,6 +1357,8 @@ namespace Proyect_Kardex
                 c.OpenCnn();
                 cmd.ExecuteNonQuery();
                 c.CerrarCnn();
+
+                addFacture.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -1449,6 +1465,10 @@ namespace Proyect_Kardex
                 cmd.ExecuteNonQuery();
                 d.CerrarCnn();
 
+                addDetVent.Enabled = false;
+                SalirButton.Enabled = true;
+                CleanList.Enabled = true;
+                AddSale.Enabled = false;
             }
             catch (Exception ex)
             {
