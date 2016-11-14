@@ -26,6 +26,22 @@ namespace Proyect_Kardex
         public Registro_Ventas()
         {
             InitializeComponent();
+
+            toolTipRegVen.SetToolTip(nuevo, "Nueva Venta");
+            toolTipRegVen.SetToolTip(editar, "Editar Venta");
+            toolTipRegVen.SetToolTip(eliminar, "Eliminar Venta");
+            toolTipRegVen.SetToolTip(verbtn, "Mostrar Usuario");
+            toolTipRegVen.SetToolTip(btnCli, "Mostrar Cliente");
+            toolTipRegVen.SetToolTip(btnDetVen, "Mostrar Detalle de Venta");
+            toolTipRegVen.SetToolTip(btnFac, "Mostrar Factura");
+            toolTipRegVen.SetToolTip(btnDevo, "Mostrar Devolucion en Ventas");
+            toolTipRegVen.SetToolTip(actualizar, "Actualizar");
+            toolTipRegVen.SetToolTip(print, "Imprimir");
+            toolTipRegVen.SetToolTip(printview, "PRE-Vista");
+            toolTipRegVen.SetToolTip(btnFecha, "Mostrar Ventas por Fechas");
+            toolTipRegVen.SetToolTip(save, "Exportar a Excel");
+            toolTipRegVen.SetToolTip(salir, "Salir");
+
         }
 
         public int GetIDUsuario(int idu) 
@@ -369,6 +385,205 @@ namespace Proyect_Kardex
             rd.codUser = codUser;
             rd.coddet = idSell;
             rd.ShowDialog();
+        }
+
+        private void editar_Click(object sender, EventArgs e)
+        {
+            EditVentasDetFact ed = new EditVentasDetFact();
+            ed.codUsr = codUser;
+            ed.id_Venta = idSell;
+            ed.codProdtxt.Text = "";
+            ed.codProdtxt.ForeColor = SystemColors.WindowText;
+            ed.codProdtxt.Font = new Font(ed.codProdtxt.Font, FontStyle.Regular);
+            ed.codProdtxt.Text = idSell; 
+            ed.ShowDialog();
+        }
+
+
+        public int compidDevo()
+        {
+            int res = 0;
+            Conexion r = new Conexion();
+            string buscar = "SELECT * FROM Detalle_Venta WHERE cod_Venta= '" + idSell + "' ; ";
+            try
+            {
+                r.OpenCnn();
+                SqlCommand find = new SqlCommand(buscar, r.GetCONN());
+                SqlDataReader fb;
+                fb = find.ExecuteReader();
+
+                while (fb.Read())
+                {
+                    res = res + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. En el Comparador. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                r.CerrarCnn();
+            }
+            r.CerrarCnn();
+            return res;
+        }
+
+        private void DeleteDevo() 
+        {
+            try
+            {
+                if (compidDevo() == 1)
+                {
+                    // Objetos de conexión y comando
+                    System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                    // Estableciento propiedades
+                    cmd.Connection = fu.GetCONN();
+                    cmd.CommandText = "DELETE FROM Devolucion_Ventas WHERE IDV_dev = '" + idSell + "' ;";
+
+                    fu.OpenCnn();
+                    cmd.ExecuteNonQuery();
+                    fu.CerrarCnn();
+                }
+                else { }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. Al Eliminar Los Datos. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }  
+        }
+
+
+        public int CompIdFact()
+        {
+            int res = 0;
+            Conexion r = new Conexion();
+            string buscar = "SELECT * FROM Facturas WHERE codVenF= '" + idSell + "' ; ";
+            try
+            {
+                r.OpenCnn();
+                SqlCommand find = new SqlCommand(buscar, r.GetCONN());
+                SqlDataReader fb;
+                fb = find.ExecuteReader();
+
+                while (fb.Read())
+                {
+                    res = res + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. En el Comparador. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                r.CerrarCnn();
+            }
+            r.CerrarCnn();
+            return res;
+        }
+
+        private void DeleteFactura() 
+        {
+            try
+            {
+                if (CompIdFact() == 1)
+                {
+                    // Objetos de conexión y comando
+                    System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                    // Estableciento propiedades
+                    cmd.Connection = fu.GetCONN();
+                    cmd.CommandText = "DELETE FROM Facturas WHERE codVenF = '" + idSell + "' ;";
+
+                    fu.OpenCnn();
+                    cmd.ExecuteNonQuery();
+                    fu.CerrarCnn();
+                }
+                else { }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. Al Eliminar Los Datos. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } 
+        }
+
+
+        public int CompIdDet()
+        {
+            int res = 0;
+            Conexion r = new Conexion();
+            string buscar = "SELECT * FROM Detalle_Venta WHERE cod_Venta= '" + idSell + "' ; ";
+            try
+            {
+                r.OpenCnn();
+                SqlCommand find = new SqlCommand(buscar, r.GetCONN());
+                SqlDataReader fb;
+                fb = find.ExecuteReader();
+
+                while (fb.Read())
+                {
+                    res = res + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. En el Comparador. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                r.CerrarCnn();
+            }
+            r.CerrarCnn();
+            return res;
+        }
+
+        private void DeleteDetalle() 
+        {
+            try
+            {
+                if (CompIdDet() == 1)
+                {
+                    // Objetos de conexión y comando
+                    System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                    // Estableciento propiedades
+                    cmd.Connection = fu.GetCONN();
+                    cmd.CommandText = "DELETE FROM Detalle_Venta WHERE cod_Venta = '" + idSell + "' ;";
+
+                    fu.OpenCnn();
+                    cmd.ExecuteNonQuery();
+                    fu.CerrarCnn();
+                }
+                else 
+                { 
+                
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. Al Eliminar Los Datos. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }     
+        }
+
+        private void eliminar_Click(object sender, EventArgs e)
+        {
+            DeleteDetalle();
+            DeleteFactura();
+            DeleteDevo();
+
+            try
+            {   // Objetos de conexión y comando
+                System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+
+                // Estableciento propiedades
+                cmd.Connection = fu.GetCONN();
+                cmd.CommandText = "DELETE FROM REV_Ventas WHERE id_Venta = '" + idSell + "' ;";
+
+                fu.OpenCnn();
+                cmd.ExecuteNonQuery();
+                fu.CerrarCnn();
+
+                Messengers mr = new Messengers();
+                mr.textolb.Text = "Venta Eliminada";
+                mr.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR. Al Eliminar Los Datos. " + ex.Message, " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Ventas));
             this.dataGridClientes = new System.Windows.Forms.DataGridView();
             this.idVentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,15 +53,11 @@
             this.rEVVentasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rEV_DataBaseDataSet = new Proyect_Kardex.REV_DataBaseDataSet();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rEV_VentasTableAdapter = new Proyect_Kardex.REV_DataBaseDataSetTableAdapters.REV_VentasTableAdapter();
-            this.printMain = new System.Windows.Forms.PrintDialog();
-            this.printDocx = new System.Drawing.Printing.PrintDocument();
-            this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFecha = new System.Windows.Forms.Button();
+            this.btnDevo = new System.Windows.Forms.Button();
+            this.btnFac = new System.Windows.Forms.Button();
+            this.btnDetVen = new System.Windows.Forms.Button();
+            this.btnCli = new System.Windows.Forms.Button();
             this.printview = new System.Windows.Forms.Button();
             this.verbtn = new System.Windows.Forms.Button();
             this.actualizar = new System.Windows.Forms.Button();
@@ -71,6 +67,11 @@
             this.eliminar = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
             this.salir = new System.Windows.Forms.Button();
+            this.rEV_VentasTableAdapter = new Proyect_Kardex.REV_DataBaseDataSetTableAdapters.REV_VentasTableAdapter();
+            this.printMain = new System.Windows.Forms.PrintDialog();
+            this.printDocx = new System.Drawing.Printing.PrintDocument();
+            this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
+            this.toolTipRegVen = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEVVentasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEV_DataBaseDataSet)).BeginInit();
@@ -87,14 +88,14 @@
             this.dataGridClientes.AutoGenerateColumns = false;
             this.dataGridClientes.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idVentaDataGridViewTextBoxColumn,
@@ -115,14 +116,14 @@
             this.fechaVentaDataGridViewTextBoxColumn,
             this.nittocliDataGridViewTextBoxColumn});
             this.dataGridClientes.DataSource = this.rEVVentasBindingSource;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Menu;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridClientes.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Menu;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridClientes.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridClientes.Location = new System.Drawing.Point(1, 51);
             this.dataGridClientes.Name = "dataGridClientes";
             this.dataGridClientes.ReadOnly = true;
@@ -274,11 +275,11 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnFecha);
+            this.panel1.Controls.Add(this.btnDevo);
+            this.panel1.Controls.Add(this.btnFac);
+            this.panel1.Controls.Add(this.btnDetVen);
+            this.panel1.Controls.Add(this.btnCli);
             this.panel1.Controls.Add(this.printview);
             this.panel1.Controls.Add(this.verbtn);
             this.panel1.Controls.Add(this.actualizar);
@@ -293,115 +294,90 @@
             this.panel1.Size = new System.Drawing.Size(784, 51);
             this.panel1.TabIndex = 298;
             // 
-            // rEV_VentasTableAdapter
+            // btnFecha
             // 
-            this.rEV_VentasTableAdapter.ClearBeforeFill = true;
+            this.btnFecha.BackColor = System.Drawing.Color.Transparent;
+            this.btnFecha.BackgroundImage = global::Proyect_Kardex.Properties.Resources.fechaventa;
+            this.btnFecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFecha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFecha.FlatAppearance.BorderSize = 0;
+            this.btnFecha.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnFecha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFecha.Location = new System.Drawing.Point(604, 5);
+            this.btnFecha.Name = "btnFecha";
+            this.btnFecha.Size = new System.Drawing.Size(40, 40);
+            this.btnFecha.TabIndex = 301;
+            this.btnFecha.UseVisualStyleBackColor = false;
+            this.btnFecha.Click += new System.EventHandler(this.button5_Click);
             // 
-            // printMain
+            // btnDevo
             // 
-            this.printMain.Document = this.printDocx;
-            this.printMain.UseEXDialog = true;
+            this.btnDevo.BackColor = System.Drawing.Color.Transparent;
+            this.btnDevo.BackgroundImage = global::Proyect_Kardex.Properties.Resources.devolDocxs;
+            this.btnDevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDevo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDevo.FlatAppearance.BorderSize = 0;
+            this.btnDevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnDevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDevo.Location = new System.Drawing.Point(409, 5);
+            this.btnDevo.Name = "btnDevo";
+            this.btnDevo.Size = new System.Drawing.Size(40, 40);
+            this.btnDevo.TabIndex = 300;
+            this.btnDevo.UseVisualStyleBackColor = false;
+            this.btnDevo.Click += new System.EventHandler(this.button4_Click);
             // 
-            // printDocx
+            // btnFac
             // 
-            this.printDocx.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocx_PrintPage);
+            this.btnFac.BackColor = System.Drawing.Color.Transparent;
+            this.btnFac.BackgroundImage = global::Proyect_Kardex.Properties.Resources.FacturaDocx;
+            this.btnFac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFac.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFac.FlatAppearance.BorderSize = 0;
+            this.btnFac.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnFac.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnFac.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFac.Location = new System.Drawing.Point(353, 5);
+            this.btnFac.Name = "btnFac";
+            this.btnFac.Size = new System.Drawing.Size(40, 40);
+            this.btnFac.TabIndex = 299;
+            this.btnFac.UseVisualStyleBackColor = false;
+            this.btnFac.Click += new System.EventHandler(this.button3_Click);
             // 
-            // printPreview
+            // btnDetVen
             // 
-            this.printPreview.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreview.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreview.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreview.Document = this.printDocx;
-            this.printPreview.Enabled = true;
-            this.printPreview.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreview.Icon")));
-            this.printPreview.Name = "printPreview";
-            this.printPreview.ShowIcon = false;
-            this.printPreview.Visible = false;
+            this.btnDetVen.BackColor = System.Drawing.Color.Transparent;
+            this.btnDetVen.BackgroundImage = global::Proyect_Kardex.Properties.Resources.detalleDocx;
+            this.btnDetVen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDetVen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetVen.FlatAppearance.BorderSize = 0;
+            this.btnDetVen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDetVen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnDetVen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetVen.Location = new System.Drawing.Point(297, 5);
+            this.btnDetVen.Name = "btnDetVen";
+            this.btnDetVen.Size = new System.Drawing.Size(40, 40);
+            this.btnDetVen.TabIndex = 298;
+            this.btnDetVen.UseVisualStyleBackColor = false;
+            this.btnDetVen.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button5
+            // btnCli
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::Proyect_Kardex.Properties.Resources.fechaventa;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(604, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 40);
-            this.button5.TabIndex = 301;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::Proyect_Kardex.Properties.Resources.devolDocxs;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(409, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 40);
-            this.button4.TabIndex = 300;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::Proyect_Kardex.Properties.Resources.FacturaDocx;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(353, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 40);
-            this.button3.TabIndex = 299;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Proyect_Kardex.Properties.Resources.detalleDocx;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(297, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
-            this.button2.TabIndex = 298;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.seeCliente;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(231, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
-            this.button1.TabIndex = 297;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCli.BackColor = System.Drawing.Color.Transparent;
+            this.btnCli.BackgroundImage = global::Proyect_Kardex.Properties.Resources.seeCliente;
+            this.btnCli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCli.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCli.FlatAppearance.BorderSize = 0;
+            this.btnCli.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCli.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCli.Location = new System.Drawing.Point(231, 5);
+            this.btnCli.Name = "btnCli";
+            this.btnCli.Size = new System.Drawing.Size(40, 40);
+            this.btnCli.TabIndex = 297;
+            this.btnCli.UseVisualStyleBackColor = false;
+            this.btnCli.Click += new System.EventHandler(this.button1_Click);
             // 
             // printview
             // 
@@ -486,6 +462,7 @@
             this.editar.Size = new System.Drawing.Size(40, 40);
             this.editar.TabIndex = 291;
             this.editar.UseVisualStyleBackColor = false;
+            this.editar.Click += new System.EventHandler(this.editar_Click);
             // 
             // nuevo
             // 
@@ -519,6 +496,7 @@
             this.eliminar.Size = new System.Drawing.Size(40, 40);
             this.eliminar.TabIndex = 289;
             this.eliminar.UseVisualStyleBackColor = false;
+            this.eliminar.Click += new System.EventHandler(this.eliminar_Click);
             // 
             // save
             // 
@@ -553,6 +531,31 @@
             this.salir.TabIndex = 251;
             this.salir.UseVisualStyleBackColor = false;
             this.salir.Click += new System.EventHandler(this.salir_Click);
+            // 
+            // rEV_VentasTableAdapter
+            // 
+            this.rEV_VentasTableAdapter.ClearBeforeFill = true;
+            // 
+            // printMain
+            // 
+            this.printMain.Document = this.printDocx;
+            this.printMain.UseEXDialog = true;
+            // 
+            // printDocx
+            // 
+            this.printDocx.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocx_PrintPage);
+            // 
+            // printPreview
+            // 
+            this.printPreview.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreview.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreview.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreview.Document = this.printDocx;
+            this.printPreview.Enabled = true;
+            this.printPreview.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreview.Icon")));
+            this.printPreview.Name = "printPreview";
+            this.printPreview.ShowIcon = false;
+            this.printPreview.Visible = false;
             // 
             // Registro_Ventas
             // 
@@ -609,13 +612,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cambioSellDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaVentaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nittocliDataGridViewTextBoxColumn;
-        public System.Windows.Forms.Button button5;
-        public System.Windows.Forms.Button button4;
-        public System.Windows.Forms.Button button3;
-        public System.Windows.Forms.Button button2;
-        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnFecha;
+        public System.Windows.Forms.Button btnDevo;
+        public System.Windows.Forms.Button btnFac;
+        public System.Windows.Forms.Button btnDetVen;
+        public System.Windows.Forms.Button btnCli;
         private System.Windows.Forms.PrintDialog printMain;
         private System.Drawing.Printing.PrintDocument printDocx;
         private System.Windows.Forms.PrintPreviewDialog printPreview;
+        public System.Windows.Forms.ToolTip toolTipRegVen;
     }
 }

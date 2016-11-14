@@ -843,7 +843,7 @@ namespace Proyect_Kardex
 
             if (result == System.Windows.Forms.DialogResult.Yes)
             { // Closes the parent form.
-                dataGridDet.Rows.Clear();
+                //dataGridDet.Rows.Clear();
                 codetxt.Text = "";
                 cantxt.Text = "";
                 efectivetxt.Text = "";
@@ -1474,6 +1474,11 @@ namespace Proyect_Kardex
             {
                 MessageBox.Show("ERROR. Al Modificar Los Datos Ventas. " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void EditVentasDetFact_Load(object sender, EventArgs e)
+        {
+
         }
 
 
