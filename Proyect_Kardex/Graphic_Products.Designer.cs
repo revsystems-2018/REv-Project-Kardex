@@ -43,6 +43,9 @@
             this.chartorta = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataprodgrid = new System.Windows.Forms.DataGridView();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.titulolabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartorta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataprodgrid)).BeginInit();
@@ -50,26 +53,29 @@
             // 
             // chartProd
             // 
+            this.chartProd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.chartProd.BackColor = System.Drawing.SystemColors.ControlLight;
             this.chartProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.chartProd.BorderlineColor = System.Drawing.SystemColors.ControlLight;
             chartArea1.Name = "ChartArea1";
             this.chartProd.ChartAreas.Add(chartArea1);
-            this.chartProd.Dock = System.Windows.Forms.DockStyle.Top;
             legend1.Name = "Legend1";
             this.chartProd.Legends.Add(legend1);
-            this.chartProd.Location = new System.Drawing.Point(0, 0);
+            this.chartProd.Location = new System.Drawing.Point(0, 17);
             this.chartProd.Name = "chartProd";
             this.chartProd.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
             series1.LabelForeColor = System.Drawing.Color.BlanchedAlmond;
             series1.Legend = "Legend1";
+            series1.LegendToolTip = "Cantidad";
             series1.MarkerSize = 7;
             series1.Name = "Series1";
             series1.YValuesPerPoint = 4;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
             series2.Legend = "Legend1";
+            series2.LegendToolTip = "Precios";
             series2.Name = "Series2";
             this.chartProd.Series.Add(series1);
             this.chartProd.Series.Add(series2);
@@ -84,7 +90,7 @@
             this.chartorta.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chartorta.Legends.Add(legend2);
-            this.chartorta.Location = new System.Drawing.Point(0, 245);
+            this.chartorta.Location = new System.Drawing.Point(0, 279);
             this.chartorta.Name = "chartorta";
             this.chartorta.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series3.ChartArea = "ChartArea1";
@@ -120,18 +126,51 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataprodgrid.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataprodgrid.Location = new System.Drawing.Point(368, 245);
+            this.dataprodgrid.Location = new System.Drawing.Point(368, 279);
             this.dataprodgrid.Name = "dataprodgrid";
             this.dataprodgrid.ReadOnly = true;
             this.dataprodgrid.Size = new System.Drawing.Size(319, 256);
             this.dataprodgrid.TabIndex = 2;
+            // 
+            // titulolabel
+            // 
+            this.titulolabel.AutoSize = true;
+            this.titulolabel.Font = new System.Drawing.Font("Exotc350 Bd BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titulolabel.Location = new System.Drawing.Point(283, 4);
+            this.titulolabel.Name = "titulolabel";
+            this.titulolabel.Size = new System.Drawing.Size(162, 19);
+            this.titulolabel.TabIndex = 3;
+            this.titulolabel.Text = "Reporte De Productos";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(12, 264);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(182, 12);
+            this.label5.TabIndex = 217;
+            this.label5.Text = "Diagrama % por Precios Unitarios";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(377, 264);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 12);
+            this.label1.TabIndex = 218;
+            this.label1.Text = "Registro de Productos";
             // 
             // Graphic_Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(687, 502);
+            this.ClientSize = new System.Drawing.Size(687, 536);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.titulolabel);
             this.Controls.Add(this.dataprodgrid);
             this.Controls.Add(this.chartorta);
             this.Controls.Add(this.chartProd);
@@ -139,12 +178,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Graphic_Products";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reporte Grafico";
+            this.Text = "Grafico Estadistico";
             this.Load += new System.EventHandler(this.Graphic_Products_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartorta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataprodgrid)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -154,6 +194,9 @@
         public System.Windows.Forms.DataVisualization.Charting.Chart chartorta;
         public System.Windows.Forms.DataGridView dataprodgrid;
         public System.Windows.Forms.ToolTip toolTip1;
+        public System.Windows.Forms.Label titulolabel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
 
     }
 }
