@@ -392,10 +392,10 @@ namespace Proyect_Kardex
             EditVentasDetFact ed = new EditVentasDetFact();
             ed.codUsr = codUser;
             ed.id_Venta = idSell;
-            ed.codProdtxt.Text = "";
-            ed.codProdtxt.ForeColor = SystemColors.WindowText;
-            ed.codProdtxt.Font = new Font(ed.codProdtxt.Font, FontStyle.Regular);
-            ed.codProdtxt.Text = idSell; 
+            ed.codetxt.Text = "";
+            ed.codetxt.ForeColor = SystemColors.WindowText;
+            ed.codetxt.Font = new Font(ed.codetxt.Font, FontStyle.Regular);
+            ed.codetxt.Text = idSell; 
             ed.ShowDialog();
         }
 

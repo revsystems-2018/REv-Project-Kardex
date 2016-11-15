@@ -702,6 +702,11 @@ namespace Proyect_Kardex
             }
         }
 
+        private void Devoluciones_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

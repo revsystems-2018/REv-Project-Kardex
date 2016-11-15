@@ -304,15 +304,9 @@ namespace Proyect_Kardex
 
         private void Devolbutton_Click(object sender, EventArgs e)
         {
-            Ventas ved = new Ventas();
-            ved.tituloVentas.Text = "Confirmación En Devoluciones";
-            ved.Descuentext.Enabled = false;
-            ved.addDescuent.Enabled = false;
-            ved.groupBoxPay.Enabled = false;
-            ved.typePayCombo.Enabled = false;
-            ved.PayText.Enabled = false;
-            ved.PayButton.Enabled = false;
-            ved.ShowDialog();
+            Devoluciones de = new Devoluciones();
+            de.codUsr = Cod;
+            de.ShowDialog();
         }
 
         private void cerrarcomplete(object sender, FormClosingEventArgs e)
@@ -1115,6 +1109,52 @@ namespace Proyect_Kardex
         {
             REV_SendEmail re = new REV_SendEmail();
             re.ShowDialog();
+        }
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            EditVentasDetFact de = new EditVentasDetFact();
+            de.codUsr = Cod;
+            de.ShowDialog();
+        }
+
+        private void toolStripMenuItem15_Click(object sender, EventArgs e)
+        {
+            Registro_Ventas re = new Registro_Ventas();
+            re.codUser = Cod;
+            re.ShowDialog();
+        }
+
+        private void toolStripMenuItem16_Click(object sender, EventArgs e)
+        {
+            List_Ventas zz = new List_Ventas();
+            zz.codUser = Cod;
+            zz.ShowDialog();
+        }
+
+        private void toolStripMenuItem18_Click(object sender, EventArgs e)
+        {
+            Report_DetalleVenta dv = new Report_DetalleVenta();
+            dv.ShowDialog();
+        }
+
+        private void realizarDevoluciónDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Devoluciones de = new Devoluciones();
+            de.codUsr = Cod;
+            de.ShowDialog();
+        }
+
+        private void toolStripMenuItem17_Click(object sender, EventArgs e)
+        {
+            Report_Devolucion de = new Report_Devolucion();
+            de.ShowDialog();
+        }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Report_Factura de = new Report_Factura();
+            de.ShowDialog();
         }
 
 

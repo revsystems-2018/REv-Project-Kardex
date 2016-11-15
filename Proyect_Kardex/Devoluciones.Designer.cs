@@ -43,13 +43,19 @@
             this.NumProd = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.SalirButton = new System.Windows.Forms.Button();
+            this.CleanList = new System.Windows.Forms.Button();
+            this.AddSale = new System.Windows.Forms.Button();
             this.groupBoxCantPay = new System.Windows.Forms.GroupBox();
             this.groupBoxIva = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnListventas = new System.Windows.Forms.Button();
             this.txtCodeV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listClient = new System.Windows.Forms.Button();
+            this.searchprod = new System.Windows.Forms.Button();
             this.nameClient = new System.Windows.Forms.TextBox();
             this.nitciclient = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,12 +69,6 @@
             this.buscarprod = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tituloVentas = new System.Windows.Forms.Label();
-            this.btnListventas = new System.Windows.Forms.Button();
-            this.SalirButton = new System.Windows.Forms.Button();
-            this.CleanList = new System.Windows.Forms.Button();
-            this.AddSale = new System.Windows.Forms.Button();
-            this.listClient = new System.Windows.Forms.Button();
-            this.searchprod = new System.Windows.Forms.Button();
             this.enterboton = new System.Windows.Forms.Button();
             this.listProd = new System.Windows.Forms.Button();
             this.toolTipdevo = new System.Windows.Forms.ToolTip(this.components);
@@ -212,6 +212,58 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resumen de la Devolución";
             // 
+            // SalirButton
+            // 
+            this.SalirButton.BackColor = System.Drawing.Color.Transparent;
+            this.SalirButton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
+            this.SalirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SalirButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SalirButton.FlatAppearance.BorderSize = 0;
+            this.SalirButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.SalirButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.SalirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SalirButton.Location = new System.Drawing.Point(203, 222);
+            this.SalirButton.Name = "SalirButton";
+            this.SalirButton.Size = new System.Drawing.Size(40, 40);
+            this.SalirButton.TabIndex = 24;
+            this.SalirButton.UseVisualStyleBackColor = false;
+            this.SalirButton.Click += new System.EventHandler(this.SalirButton_Click);
+            // 
+            // CleanList
+            // 
+            this.CleanList.BackColor = System.Drawing.Color.Transparent;
+            this.CleanList.BackgroundImage = global::Proyect_Kardex.Properties.Resources.clear_List;
+            this.CleanList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CleanList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CleanList.FlatAppearance.BorderSize = 0;
+            this.CleanList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.CleanList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.CleanList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CleanList.Location = new System.Drawing.Point(125, 222);
+            this.CleanList.Name = "CleanList";
+            this.CleanList.Size = new System.Drawing.Size(40, 40);
+            this.CleanList.TabIndex = 23;
+            this.CleanList.UseVisualStyleBackColor = false;
+            this.CleanList.Click += new System.EventHandler(this.CleanList_Click);
+            // 
+            // AddSale
+            // 
+            this.AddSale.BackColor = System.Drawing.Color.Transparent;
+            this.AddSale.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Hosting_512;
+            this.AddSale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AddSale.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddSale.Enabled = false;
+            this.AddSale.FlatAppearance.BorderSize = 0;
+            this.AddSale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.AddSale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.AddSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddSale.Location = new System.Drawing.Point(55, 222);
+            this.AddSale.Name = "AddSale";
+            this.AddSale.Size = new System.Drawing.Size(40, 40);
+            this.AddSale.TabIndex = 21;
+            this.AddSale.UseVisualStyleBackColor = false;
+            this.AddSale.Click += new System.EventHandler(this.AddSale_Click);
+            // 
             // groupBoxCantPay
             // 
             this.groupBoxCantPay.Controls.Add(this.CantPay);
@@ -260,6 +312,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos de la Venta";
             // 
+            // btnListventas
+            // 
+            this.btnListventas.BackColor = System.Drawing.Color.Transparent;
+            this.btnListventas.BackgroundImage = global::Proyect_Kardex.Properties.Resources.listVentas;
+            this.btnListventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnListventas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListventas.FlatAppearance.BorderSize = 0;
+            this.btnListventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnListventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnListventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListventas.Location = new System.Drawing.Point(222, 20);
+            this.btnListventas.Name = "btnListventas";
+            this.btnListventas.Size = new System.Drawing.Size(40, 40);
+            this.btnListventas.TabIndex = 8;
+            this.btnListventas.UseVisualStyleBackColor = false;
+            this.btnListventas.Click += new System.EventHandler(this.btnListventas_Click);
+            // 
             // txtCodeV
             // 
             this.txtCodeV.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,6 +368,39 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Cliente";
+            // 
+            // listClient
+            // 
+            this.listClient.BackColor = System.Drawing.Color.Transparent;
+            this.listClient.BackgroundImage = global::Proyect_Kardex.Properties.Resources.listClients;
+            this.listClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.listClient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listClient.FlatAppearance.BorderSize = 0;
+            this.listClient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.listClient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.listClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listClient.Location = new System.Drawing.Point(222, 67);
+            this.listClient.Name = "listClient";
+            this.listClient.Size = new System.Drawing.Size(40, 40);
+            this.listClient.TabIndex = 8;
+            this.listClient.UseVisualStyleBackColor = false;
+            this.listClient.Click += new System.EventHandler(this.listClient_Click);
+            // 
+            // searchprod
+            // 
+            this.searchprod.BackgroundImage = global::Proyect_Kardex.Properties.Resources.lupa;
+            this.searchprod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.searchprod.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchprod.FlatAppearance.BorderSize = 0;
+            this.searchprod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.searchprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.searchprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchprod.Location = new System.Drawing.Point(242, 35);
+            this.searchprod.Name = "searchprod";
+            this.searchprod.Size = new System.Drawing.Size(19, 18);
+            this.searchprod.TabIndex = 6;
+            this.searchprod.UseVisualStyleBackColor = true;
+            this.searchprod.Click += new System.EventHandler(this.searchprod_Click);
             // 
             // nameClient
             // 
@@ -448,108 +550,6 @@
             this.tituloVentas.Text = "Confirmar Devolución ";
             this.tituloVentas.Click += new System.EventHandler(this.tituloVentas_Click);
             // 
-            // btnListventas
-            // 
-            this.btnListventas.BackColor = System.Drawing.Color.Transparent;
-            this.btnListventas.BackgroundImage = global::Proyect_Kardex.Properties.Resources.listVentas;
-            this.btnListventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnListventas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnListventas.FlatAppearance.BorderSize = 0;
-            this.btnListventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnListventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnListventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListventas.Location = new System.Drawing.Point(222, 20);
-            this.btnListventas.Name = "btnListventas";
-            this.btnListventas.Size = new System.Drawing.Size(40, 40);
-            this.btnListventas.TabIndex = 8;
-            this.btnListventas.UseVisualStyleBackColor = false;
-            this.btnListventas.Click += new System.EventHandler(this.btnListventas_Click);
-            // 
-            // SalirButton
-            // 
-            this.SalirButton.BackColor = System.Drawing.Color.Transparent;
-            this.SalirButton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
-            this.SalirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SalirButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SalirButton.FlatAppearance.BorderSize = 0;
-            this.SalirButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.SalirButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.SalirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SalirButton.Location = new System.Drawing.Point(203, 222);
-            this.SalirButton.Name = "SalirButton";
-            this.SalirButton.Size = new System.Drawing.Size(40, 40);
-            this.SalirButton.TabIndex = 24;
-            this.SalirButton.UseVisualStyleBackColor = false;
-            this.SalirButton.Click += new System.EventHandler(this.SalirButton_Click);
-            // 
-            // CleanList
-            // 
-            this.CleanList.BackColor = System.Drawing.Color.Transparent;
-            this.CleanList.BackgroundImage = global::Proyect_Kardex.Properties.Resources.clear_List;
-            this.CleanList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CleanList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CleanList.FlatAppearance.BorderSize = 0;
-            this.CleanList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.CleanList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.CleanList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CleanList.Location = new System.Drawing.Point(125, 222);
-            this.CleanList.Name = "CleanList";
-            this.CleanList.Size = new System.Drawing.Size(40, 40);
-            this.CleanList.TabIndex = 23;
-            this.CleanList.UseVisualStyleBackColor = false;
-            this.CleanList.Click += new System.EventHandler(this.CleanList_Click);
-            // 
-            // AddSale
-            // 
-            this.AddSale.BackColor = System.Drawing.Color.Transparent;
-            this.AddSale.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Hosting_512;
-            this.AddSale.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AddSale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddSale.Enabled = false;
-            this.AddSale.FlatAppearance.BorderSize = 0;
-            this.AddSale.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.AddSale.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.AddSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddSale.Location = new System.Drawing.Point(55, 222);
-            this.AddSale.Name = "AddSale";
-            this.AddSale.Size = new System.Drawing.Size(40, 40);
-            this.AddSale.TabIndex = 21;
-            this.AddSale.UseVisualStyleBackColor = false;
-            this.AddSale.Click += new System.EventHandler(this.AddSale_Click);
-            // 
-            // listClient
-            // 
-            this.listClient.BackColor = System.Drawing.Color.Transparent;
-            this.listClient.BackgroundImage = global::Proyect_Kardex.Properties.Resources.listClients;
-            this.listClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.listClient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.listClient.FlatAppearance.BorderSize = 0;
-            this.listClient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.listClient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.listClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.listClient.Location = new System.Drawing.Point(222, 67);
-            this.listClient.Name = "listClient";
-            this.listClient.Size = new System.Drawing.Size(40, 40);
-            this.listClient.TabIndex = 8;
-            this.listClient.UseVisualStyleBackColor = false;
-            this.listClient.Click += new System.EventHandler(this.listClient_Click);
-            // 
-            // searchprod
-            // 
-            this.searchprod.BackgroundImage = global::Proyect_Kardex.Properties.Resources.lupa;
-            this.searchprod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.searchprod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.searchprod.FlatAppearance.BorderSize = 0;
-            this.searchprod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.searchprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.searchprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchprod.Location = new System.Drawing.Point(242, 35);
-            this.searchprod.Name = "searchprod";
-            this.searchprod.Size = new System.Drawing.Size(19, 18);
-            this.searchprod.TabIndex = 6;
-            this.searchprod.UseVisualStyleBackColor = true;
-            this.searchprod.Click += new System.EventHandler(this.searchprod_Click);
-            // 
             // enterboton
             // 
             this.enterboton.BackColor = System.Drawing.SystemColors.Window;
@@ -601,6 +601,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Devoluciones";
             this.Text = " Devolución en Ventas";
+            this.Load += new System.EventHandler(this.Devoluciones_Load);
             this.groupBoxSubTotal.ResumeLayout(false);
             this.groupBoxSubTotal.PerformLayout();
             this.groupBoxNumProd.ResumeLayout(false);

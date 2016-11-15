@@ -29,22 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal_UserCajero));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.printview = new System.Windows.Forms.Button();
-            this.Updatebutton = new System.Windows.Forms.Button();
-            this.Verbutton = new System.Windows.Forms.Button();
-            this.save = new System.Windows.Forms.Button();
-            this.Devolbutton = new System.Windows.Forms.Button();
-            this.Reportbutton = new System.Windows.Forms.Button();
-            this.Calcubutton = new System.Windows.Forms.Button();
-            this.Ventasbutton = new System.Windows.Forms.Button();
-            this.Printbutton = new System.Windows.Forms.Button();
-            this.Salirbutton = new System.Windows.Forms.Button();
-            this.Buscarbutton = new System.Windows.Forms.Button();
-            this.ClientesButton = new System.Windows.Forms.Button();
             this.listproduct = new System.Windows.Forms.DataGridView();
             this.codBarPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomProdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,62 +66,114 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aRCHIVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuser = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.cLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.pRODUCTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator23 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator28 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator31 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator32 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator30 = new System.Windows.Forms.ToolStripSeparator();
+            this.vENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.vENTANAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.actualizaciónDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.busquedaDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.TSSemp = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TSSname = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TSSdate = new System.Windows.Forms.ToolStripStatusLabel();
+            this.UsertoolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.productosTableAdapter = new Proyect_Kardex.REV_DataBaseDataSetTableAdapters.ProductosTableAdapter();
+            this.printMain = new System.Windows.Forms.PrintDialog();
+            this.printDocx = new System.Drawing.Printing.PrintDocument();
+            this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
+            this.toolStripSeparator33 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator34 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator35 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem17 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem18 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator36 = new System.Windows.Forms.ToolStripSeparator();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Logobutton = new System.Windows.Forms.Button();
+            this.printview = new System.Windows.Forms.Button();
+            this.Updatebutton = new System.Windows.Forms.Button();
+            this.Verbutton = new System.Windows.Forms.Button();
+            this.save = new System.Windows.Forms.Button();
+            this.Devolbutton = new System.Windows.Forms.Button();
+            this.Reportbutton = new System.Windows.Forms.Button();
+            this.Calcubutton = new System.Windows.Forms.Button();
+            this.Ventasbutton = new System.Windows.Forms.Button();
+            this.Printbutton = new System.Windows.Forms.Button();
+            this.Salirbutton = new System.Windows.Forms.Button();
+            this.Buscarbutton = new System.Windows.Forms.Button();
+            this.ClientesButton = new System.Windows.Forms.Button();
+            this.configuser = new System.Windows.Forms.ToolStripMenuItem();
             this.verUser = new System.Windows.Forms.ToolStripMenuItem();
             this.verEmp = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator22 = new System.Windows.Forms.ToolStripSeparator();
             this.registroDeSolicitudDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.cerrarsesion = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.closetool = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novotool = new System.Windows.Forms.ToolStripMenuItem();
             this.edittool = new System.Windows.Forms.ToolStripMenuItem();
             this.deltool = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.SolClientool = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.reportooldes = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.regCliEmp = new System.Windows.Forms.ToolStripMenuItem();
-            this.pRODUCTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirListaDeMarcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.categoriasEnAlmacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeCategoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
             this.tipoDeUnidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeMedidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
             this.buscarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.actualizarRegistroDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator23 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator24 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.vistaPreviaDeImpresionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
             this.imprimirReporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator19 = new System.Windows.Forms.ToolStripSeparator();
             this.exportarRegistroDeProductosAExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockMinimoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockMaximoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -148,55 +188,25 @@
             this.productosDisponiblesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosInactivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosSuspendidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.generadorDeCodigosDeBarrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generadorDeCodigosQRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator28 = new System.Windows.Forms.ToolStripSeparator();
             this.scannerLectorDeCodigosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator31 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator32 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.calculadoraSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator30 = new System.Windows.Forms.ToolStripSeparator();
             this.navegadorWebStudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem16 = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarDevoluciónDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.facturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.reportesDeVentasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.vENTANAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minimizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.pantallaCompletaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.pantallaNormalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizaciónDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.busquedaDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.TSSemp = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TSSname = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TSSdate = new System.Windows.Forms.ToolStripStatusLabel();
-            this.UsertoolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.productosTableAdapter = new Proyect_Kardex.REV_DataBaseDataSetTableAdapters.ProductosTableAdapter();
-            this.printMain = new System.Windows.Forms.PrintDialog();
-            this.printDocx = new System.Drawing.Printing.PrintDocument();
-            this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
-            this.button3 = new System.Windows.Forms.Button();
-            this.Logobutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -227,201 +237,6 @@
             this.panel1.Size = new System.Drawing.Size(756, 52);
             this.panel1.TabIndex = 4;
             // 
-            // printview
-            // 
-            this.printview.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.printview.BackColor = System.Drawing.Color.Transparent;
-            this.printview.BackgroundImage = global::Proyect_Kardex.Properties.Resources.dosnotify;
-            this.printview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.printview.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.printview.FlatAppearance.BorderSize = 0;
-            this.printview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.printview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.printview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printview.Location = new System.Drawing.Point(324, 5);
-            this.printview.Name = "printview";
-            this.printview.Size = new System.Drawing.Size(20, 20);
-            this.printview.TabIndex = 297;
-            this.printview.UseVisualStyleBackColor = false;
-            this.printview.Click += new System.EventHandler(this.printview_Click);
-            // 
-            // Updatebutton
-            // 
-            this.Updatebutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Updatebutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.update;
-            this.Updatebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Updatebutton.FlatAppearance.BorderSize = 0;
-            this.Updatebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Updatebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Updatebutton.Location = new System.Drawing.Point(355, 4);
-            this.Updatebutton.Name = "Updatebutton";
-            this.Updatebutton.Size = new System.Drawing.Size(45, 45);
-            this.Updatebutton.TabIndex = 253;
-            this.Updatebutton.UseVisualStyleBackColor = true;
-            this.Updatebutton.Click += new System.EventHandler(this.Updatebutton_Click_1);
-            // 
-            // Verbutton
-            // 
-            this.Verbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Verbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.VerProduct;
-            this.Verbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Verbutton.FlatAppearance.BorderSize = 0;
-            this.Verbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Verbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Verbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Verbutton.Location = new System.Drawing.Point(219, 4);
-            this.Verbutton.Name = "Verbutton";
-            this.Verbutton.Size = new System.Drawing.Size(45, 45);
-            this.Verbutton.TabIndex = 252;
-            this.Verbutton.UseVisualStyleBackColor = true;
-            this.Verbutton.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // save
-            // 
-            this.save.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.save.BackColor = System.Drawing.Color.Transparent;
-            this.save.BackgroundImage = global::Proyect_Kardex.Properties.Resources.savedexcel;
-            this.save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.save.FlatAppearance.BorderSize = 0;
-            this.save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save.Location = new System.Drawing.Point(630, 4);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(45, 45);
-            this.save.TabIndex = 251;
-            this.save.UseVisualStyleBackColor = false;
-            this.save.Click += new System.EventHandler(this.save_Click);
-            // 
-            // Devolbutton
-            // 
-            this.Devolbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Devolbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.devolucionVentas;
-            this.Devolbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Devolbutton.FlatAppearance.BorderSize = 0;
-            this.Devolbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Devolbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Devolbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Devolbutton.Location = new System.Drawing.Point(492, 4);
-            this.Devolbutton.Name = "Devolbutton";
-            this.Devolbutton.Size = new System.Drawing.Size(45, 45);
-            this.Devolbutton.TabIndex = 7;
-            this.Devolbutton.UseVisualStyleBackColor = true;
-            this.Devolbutton.Click += new System.EventHandler(this.Devolbutton_Click);
-            // 
-            // Reportbutton
-            // 
-            this.Reportbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Reportbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.shopping_21_512;
-            this.Reportbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Reportbutton.FlatAppearance.BorderSize = 0;
-            this.Reportbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Reportbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Reportbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Reportbutton.Location = new System.Drawing.Point(428, 4);
-            this.Reportbutton.Name = "Reportbutton";
-            this.Reportbutton.Size = new System.Drawing.Size(45, 45);
-            this.Reportbutton.TabIndex = 6;
-            this.Reportbutton.UseVisualStyleBackColor = true;
-            // 
-            // Calcubutton
-            // 
-            this.Calcubutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Calcubutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.SEO_Calculator_512;
-            this.Calcubutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Calcubutton.FlatAppearance.BorderSize = 0;
-            this.Calcubutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Calcubutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Calcubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Calcubutton.Location = new System.Drawing.Point(153, 4);
-            this.Calcubutton.Name = "Calcubutton";
-            this.Calcubutton.Size = new System.Drawing.Size(45, 45);
-            this.Calcubutton.TabIndex = 5;
-            this.Calcubutton.UseVisualStyleBackColor = true;
-            this.Calcubutton.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // Ventasbutton
-            // 
-            this.Ventasbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Ventasbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Cash_register;
-            this.Ventasbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Ventasbutton.FlatAppearance.BorderSize = 0;
-            this.Ventasbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Ventasbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Ventasbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Ventasbutton.Location = new System.Drawing.Point(87, 4);
-            this.Ventasbutton.Name = "Ventasbutton";
-            this.Ventasbutton.Size = new System.Drawing.Size(45, 45);
-            this.Ventasbutton.TabIndex = 4;
-            this.Ventasbutton.UseVisualStyleBackColor = true;
-            this.Ventasbutton.Click += new System.EventHandler(this.Ventasbutton_Click);
-            // 
-            // Printbutton
-            // 
-            this.Printbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Printbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.print;
-            this.Printbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Printbutton.FlatAppearance.BorderSize = 0;
-            this.Printbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Printbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Printbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Printbutton.Location = new System.Drawing.Point(294, 4);
-            this.Printbutton.Name = "Printbutton";
-            this.Printbutton.Size = new System.Drawing.Size(45, 45);
-            this.Printbutton.TabIndex = 3;
-            this.Printbutton.UseVisualStyleBackColor = true;
-            this.Printbutton.Click += new System.EventHandler(this.Updatebutton_Click);
-            // 
-            // Salirbutton
-            // 
-            this.Salirbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Salirbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
-            this.Salirbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Salirbutton.FlatAppearance.BorderSize = 0;
-            this.Salirbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Salirbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Salirbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Salirbutton.Location = new System.Drawing.Point(694, 4);
-            this.Salirbutton.Name = "Salirbutton";
-            this.Salirbutton.Size = new System.Drawing.Size(45, 45);
-            this.Salirbutton.TabIndex = 3;
-            this.Salirbutton.UseVisualStyleBackColor = true;
-            this.Salirbutton.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // Buscarbutton
-            // 
-            this.Buscarbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Buscarbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.search_good_512;
-            this.Buscarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Buscarbutton.FlatAppearance.BorderSize = 0;
-            this.Buscarbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Buscarbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Buscarbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Buscarbutton.Location = new System.Drawing.Point(561, 4);
-            this.Buscarbutton.Name = "Buscarbutton";
-            this.Buscarbutton.Size = new System.Drawing.Size(50, 45);
-            this.Buscarbutton.TabIndex = 3;
-            this.Buscarbutton.UseVisualStyleBackColor = true;
-            this.Buscarbutton.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // ClientesButton
-            // 
-            this.ClientesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.ClientesButton.BackgroundImage = global::Proyect_Kardex.Properties.Resources._1455514112_User;
-            this.ClientesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientesButton.FlatAppearance.BorderSize = 0;
-            this.ClientesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.ClientesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.ClientesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClientesButton.Location = new System.Drawing.Point(18, 4);
-            this.ClientesButton.Name = "ClientesButton";
-            this.ClientesButton.Size = new System.Drawing.Size(45, 45);
-            this.ClientesButton.TabIndex = 3;
-            this.ClientesButton.UseVisualStyleBackColor = true;
-            this.ClientesButton.Click += new System.EventHandler(this.button6_Click);
-            // 
             // listproduct
             // 
             this.listproduct.AllowUserToAddRows = false;
@@ -432,14 +247,14 @@
             this.listproduct.AutoGenerateColumns = false;
             this.listproduct.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.listproduct.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.listproduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.listproduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.listproduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listproduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codBarPDataGridViewTextBoxColumn,
@@ -463,14 +278,14 @@
             this.medCodDataGridViewTextBoxColumn,
             this.subCodDataGridViewTextBoxColumn});
             this.listproduct.DataSource = this.productosBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.listproduct.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.listproduct.DefaultCellStyle = dataGridViewCellStyle14;
             this.listproduct.Location = new System.Drawing.Point(0, 152);
             this.listproduct.Name = "listproduct";
             this.listproduct.ReadOnly = true;
@@ -794,6 +609,648 @@
             this.aRCHIVOToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.aRCHIVOToolStripMenuItem.Text = "ARCHIVO";
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(355, 6);
+            // 
+            // toolStripSeparator15
+            // 
+            this.toolStripSeparator15.Name = "toolStripSeparator15";
+            this.toolStripSeparator15.Size = new System.Drawing.Size(355, 6);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(355, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(355, 6);
+            // 
+            // cLIENTESToolStripMenuItem
+            // 
+            this.cLIENTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novotool,
+            this.edittool,
+            this.deltool,
+            this.toolStripSeparator5,
+            this.SolClientool,
+            this.toolStripSeparator7,
+            this.reportooldes,
+            this.toolStripSeparator6,
+            this.regCliEmp});
+            this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
+            this.cLIENTESToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
+            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(379, 6);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(379, 6);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(379, 6);
+            // 
+            // pRODUCTOSToolStripMenuItem
+            // 
+            this.pRODUCTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.marcasDeProductosToolStripMenuItem,
+            this.toolStripSeparator13,
+            this.categoriasEnAlmacenToolStripMenuItem,
+            this.toolStripSeparator14,
+            this.tipoDeUnidadToolStripMenuItem,
+            this.toolStripSeparator16,
+            this.buscarProductoToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6,
+            this.toolStripSeparator17,
+            this.actualizarRegistroDeProductosToolStripMenuItem,
+            this.toolStripSeparator23,
+            this.toolStripMenuItem7,
+            this.toolStripSeparator18,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripSeparator24,
+            this.toolStripMenuItem8,
+            this.toolStripSeparator19,
+            this.exportarRegistroDeProductosAExcelToolStripMenuItem,
+            this.toolStripSeparator20,
+            this.herramientasToolStripMenuItem});
+            this.pRODUCTOSToolStripMenuItem.Name = "pRODUCTOSToolStripMenuItem";
+            this.pRODUCTOSToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
+            this.pRODUCTOSToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.pRODUCTOSToolStripMenuItem.Text = "PRODUCTOS";
+            // 
+            // toolStripSeparator13
+            // 
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
+            this.toolStripSeparator13.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripSeparator14
+            // 
+            this.toolStripSeparator14.Name = "toolStripSeparator14";
+            this.toolStripSeparator14.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripSeparator16
+            // 
+            this.toolStripSeparator16.Name = "toolStripSeparator16";
+            this.toolStripSeparator16.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripSeparator23
+            // 
+            this.toolStripSeparator23.Name = "toolStripSeparator23";
+            this.toolStripSeparator23.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripSeparator18
+            // 
+            this.toolStripSeparator18.Name = "toolStripSeparator18";
+            this.toolStripSeparator18.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripSeparator24
+            // 
+            this.toolStripSeparator24.Name = "toolStripSeparator24";
+            this.toolStripSeparator24.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vistaPreviaDeImpresionToolStripMenuItem,
+            this.toolStripSeparator25,
+            this.imprimirReporteToolStripMenuItem});
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(397, 22);
+            this.toolStripMenuItem8.Text = "Imprimir...";
+            // 
+            // toolStripSeparator25
+            // 
+            this.toolStripSeparator25.Name = "toolStripSeparator25";
+            this.toolStripSeparator25.Size = new System.Drawing.Size(310, 6);
+            // 
+            // toolStripSeparator19
+            // 
+            this.toolStripSeparator19.Name = "toolStripSeparator19";
+            this.toolStripSeparator19.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripSeparator20
+            // 
+            this.toolStripSeparator20.Name = "toolStripSeparator20";
+            this.toolStripSeparator20.Size = new System.Drawing.Size(394, 6);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generadorDeCodigosDeBarrasToolStripMenuItem,
+            this.generadorDeCodigosQRToolStripMenuItem,
+            this.toolStripSeparator28,
+            this.scannerLectorDeCodigosToolStripMenuItem,
+            this.toolStripSeparator31,
+            this.toolStripMenuItem11,
+            this.toolStripSeparator32,
+            this.toolStripMenuItem12,
+            this.toolStripSeparator29,
+            this.calculadoraSimpleToolStripMenuItem,
+            this.toolStripSeparator30,
+            this.navegadorWebStudioToolStripMenuItem});
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(111, 20);
+            this.toolStripMenuItem10.Text = "HERRAMIENTAS";
+            // 
+            // toolStripSeparator28
+            // 
+            this.toolStripSeparator28.Name = "toolStripSeparator28";
+            this.toolStripSeparator28.Size = new System.Drawing.Size(384, 6);
+            // 
+            // toolStripSeparator31
+            // 
+            this.toolStripSeparator31.Name = "toolStripSeparator31";
+            this.toolStripSeparator31.Size = new System.Drawing.Size(384, 6);
+            // 
+            // toolStripSeparator32
+            // 
+            this.toolStripSeparator32.Name = "toolStripSeparator32";
+            this.toolStripSeparator32.Size = new System.Drawing.Size(384, 6);
+            // 
+            // toolStripSeparator29
+            // 
+            this.toolStripSeparator29.Name = "toolStripSeparator29";
+            this.toolStripSeparator29.Size = new System.Drawing.Size(384, 6);
+            // 
+            // toolStripSeparator30
+            // 
+            this.toolStripSeparator30.Name = "toolStripSeparator30";
+            this.toolStripSeparator30.Size = new System.Drawing.Size(384, 6);
+            // 
+            // vENTASToolStripMenuItem
+            // 
+            this.vENTASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.realizarVentasToolStripMenuItem,
+            this.toolStripMenuItem13,
+            this.toolStripMenuItem14,
+            this.toolStripSeparator33,
+            this.toolStripMenuItem4,
+            this.toolStripSeparator12,
+            this.toolStripMenuItem15,
+            this.toolStripSeparator34,
+            this.toolStripMenuItem16,
+            this.toolStripSeparator35,
+            this.toolStripMenuItem18,
+            this.toolStripSeparator36,
+            this.realizarDevoluciónDeVentasToolStripMenuItem,
+            this.toolStripMenuItem17,
+            this.toolStripSeparator11,
+            this.facturasToolStripMenuItem,
+            this.toolStripSeparator10,
+            this.reportesDeVentasToolStripMenuItem1});
+            this.vENTASToolStripMenuItem.Name = "vENTASToolStripMenuItem";
+            this.vENTASToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.V)));
+            this.vENTASToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.vENTASToolStripMenuItem.Text = "VENTAS";
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(322, 6);
+            // 
+            // toolStripSeparator11
+            // 
+            this.toolStripSeparator11.Name = "toolStripSeparator11";
+            this.toolStripSeparator11.Size = new System.Drawing.Size(322, 6);
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(322, 6);
+            // 
+            // vENTANAToolStripMenuItem
+            // 
+            this.vENTANAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.minimizarToolStripMenuItem,
+            this.toolStripSeparator9,
+            this.pantallaCompletaToolStripMenuItem,
+            this.toolStripSeparator8,
+            this.pantallaNormalToolStripMenuItem});
+            this.vENTANAToolStripMenuItem.Name = "vENTANAToolStripMenuItem";
+            this.vENTANAToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.W)));
+            this.vENTANAToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.vENTANAToolStripMenuItem.Text = "VENTANA";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(259, 6);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(259, 6);
+            // 
+            // aYUDAToolStripMenuItem
+            // 
+            this.aYUDAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem1,
+            this.ventasToolStripMenuItem1,
+            this.actualizaciónDeProductosToolStripMenuItem,
+            this.reportesDeVentasToolStripMenuItem,
+            this.busquedaDeProductosToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.acercaDeToolStripMenuItem});
+            this.aYUDAToolStripMenuItem.Name = "aYUDAToolStripMenuItem";
+            this.aYUDAToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.H)));
+            this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.aYUDAToolStripMenuItem.Text = "AYUDA";
+            // 
+            // clientesToolStripMenuItem1
+            // 
+            this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(251, 22);
+            this.clientesToolStripMenuItem1.Text = "Clientes";
+            // 
+            // ventasToolStripMenuItem1
+            // 
+            this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(251, 22);
+            this.ventasToolStripMenuItem1.Text = "Ventas";
+            // 
+            // actualizaciónDeProductosToolStripMenuItem
+            // 
+            this.actualizaciónDeProductosToolStripMenuItem.Name = "actualizaciónDeProductosToolStripMenuItem";
+            this.actualizaciónDeProductosToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.actualizaciónDeProductosToolStripMenuItem.Text = "Actualización de Productos";
+            // 
+            // reportesDeVentasToolStripMenuItem
+            // 
+            this.reportesDeVentasToolStripMenuItem.Name = "reportesDeVentasToolStripMenuItem";
+            this.reportesDeVentasToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.reportesDeVentasToolStripMenuItem.Text = "Reportes de Ventas";
+            // 
+            // busquedaDeProductosToolStripMenuItem
+            // 
+            this.busquedaDeProductosToolStripMenuItem.Name = "busquedaDeProductosToolStripMenuItem";
+            this.busquedaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
+            this.busquedaDeProductosToolStripMenuItem.Text = "Busqueda de Productos";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(248, 6);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.Silver;
+            this.statusStrip1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSSemp,
+            this.toolStripStatusLabel2,
+            this.TSSname,
+            this.toolStripStatusLabel4,
+            this.TSSdate});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 563);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(756, 22);
+            this.statusStrip1.TabIndex = 28;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // TSSemp
+            // 
+            this.TSSemp.Name = "TSSemp";
+            this.TSSemp.Size = new System.Drawing.Size(175, 17);
+            this.TSSemp.Text = "Nombre de la Empresa NULL";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(19, 17);
+            this.toolStripStatusLabel2.Text = " | ";
+            // 
+            // TSSname
+            // 
+            this.TSSname.Name = "TSSname";
+            this.TSSname.Size = new System.Drawing.Size(107, 17);
+            this.TSSname.Text = "USUARIO_CAJERO";
+            // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(19, 17);
+            this.toolStripStatusLabel4.Text = " | ";
+            // 
+            // TSSdate
+            // 
+            this.TSSdate.Name = "TSSdate";
+            this.TSSdate.Size = new System.Drawing.Size(85, 17);
+            this.TSSdate.Text = "31-03-2016";
+            // 
+            // productosTableAdapter
+            // 
+            this.productosTableAdapter.ClearBeforeFill = true;
+            // 
+            // printMain
+            // 
+            this.printMain.Document = this.printDocx;
+            this.printMain.UseEXDialog = true;
+            // 
+            // printDocx
+            // 
+            this.printDocx.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocx_PrintPage);
+            // 
+            // printPreview
+            // 
+            this.printPreview.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreview.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreview.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreview.Document = this.printDocx;
+            this.printPreview.Enabled = true;
+            this.printPreview.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreview.Icon")));
+            this.printPreview.Name = "printPreview";
+            this.printPreview.ShowIcon = false;
+            this.printPreview.Visible = false;
+            // 
+            // toolStripSeparator33
+            // 
+            this.toolStripSeparator33.Name = "toolStripSeparator33";
+            this.toolStripSeparator33.Size = new System.Drawing.Size(322, 6);
+            // 
+            // toolStripMenuItem15
+            // 
+            this.toolStripMenuItem15.Name = "toolStripMenuItem15";
+            this.toolStripMenuItem15.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D9)));
+            this.toolStripMenuItem15.Size = new System.Drawing.Size(325, 22);
+            this.toolStripMenuItem15.Text = "Registro de Ventas";
+            this.toolStripMenuItem15.Click += new System.EventHandler(this.toolStripMenuItem15_Click);
+            // 
+            // toolStripSeparator34
+            // 
+            this.toolStripSeparator34.Name = "toolStripSeparator34";
+            this.toolStripSeparator34.Size = new System.Drawing.Size(322, 6);
+            // 
+            // toolStripSeparator35
+            // 
+            this.toolStripSeparator35.Name = "toolStripSeparator35";
+            this.toolStripSeparator35.Size = new System.Drawing.Size(322, 6);
+            // 
+            // toolStripMenuItem17
+            // 
+            this.toolStripMenuItem17.Name = "toolStripMenuItem17";
+            this.toolStripMenuItem17.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D7)));
+            this.toolStripMenuItem17.Size = new System.Drawing.Size(325, 22);
+            this.toolStripMenuItem17.Text = "Registro en Devoluciones de Ventas";
+            this.toolStripMenuItem17.Click += new System.EventHandler(this.toolStripMenuItem17_Click);
+            // 
+            // toolStripMenuItem18
+            // 
+            this.toolStripMenuItem18.Name = "toolStripMenuItem18";
+            this.toolStripMenuItem18.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D8)));
+            this.toolStripMenuItem18.Size = new System.Drawing.Size(325, 22);
+            this.toolStripMenuItem18.Text = "Registro en Detalles de Ventas";
+            this.toolStripMenuItem18.Click += new System.EventHandler(this.toolStripMenuItem18_Click);
+            // 
+            // toolStripSeparator36
+            // 
+            this.toolStripSeparator36.Name = "toolStripSeparator36";
+            this.toolStripSeparator36.Size = new System.Drawing.Size(322, 6);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.SystemColors.Window;
+            this.button3.BackgroundImage = global::Proyect_Kardex.Properties.Resources.seguridad;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Window;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(679, 93);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(19, 19);
+            this.button3.TabIndex = 26;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // Logobutton
+            // 
+            this.Logobutton.BackColor = System.Drawing.Color.Transparent;
+            this.Logobutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.logo;
+            this.Logobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Logobutton.FlatAppearance.BorderSize = 0;
+            this.Logobutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Logobutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Logobutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logobutton.Location = new System.Drawing.Point(0, 85);
+            this.Logobutton.Name = "Logobutton";
+            this.Logobutton.Size = new System.Drawing.Size(176, 61);
+            this.Logobutton.TabIndex = 20;
+            this.Logobutton.UseVisualStyleBackColor = false;
+            // 
+            // printview
+            // 
+            this.printview.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.printview.BackColor = System.Drawing.Color.Transparent;
+            this.printview.BackgroundImage = global::Proyect_Kardex.Properties.Resources.dosnotify;
+            this.printview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.printview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.printview.FlatAppearance.BorderSize = 0;
+            this.printview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.printview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.printview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printview.Location = new System.Drawing.Point(324, 5);
+            this.printview.Name = "printview";
+            this.printview.Size = new System.Drawing.Size(20, 20);
+            this.printview.TabIndex = 297;
+            this.printview.UseVisualStyleBackColor = false;
+            this.printview.Click += new System.EventHandler(this.printview_Click);
+            // 
+            // Updatebutton
+            // 
+            this.Updatebutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Updatebutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.update;
+            this.Updatebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Updatebutton.FlatAppearance.BorderSize = 0;
+            this.Updatebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Updatebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Updatebutton.Location = new System.Drawing.Point(355, 4);
+            this.Updatebutton.Name = "Updatebutton";
+            this.Updatebutton.Size = new System.Drawing.Size(45, 45);
+            this.Updatebutton.TabIndex = 253;
+            this.Updatebutton.UseVisualStyleBackColor = true;
+            this.Updatebutton.Click += new System.EventHandler(this.Updatebutton_Click_1);
+            // 
+            // Verbutton
+            // 
+            this.Verbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Verbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.VerProduct;
+            this.Verbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Verbutton.FlatAppearance.BorderSize = 0;
+            this.Verbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Verbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Verbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Verbutton.Location = new System.Drawing.Point(219, 4);
+            this.Verbutton.Name = "Verbutton";
+            this.Verbutton.Size = new System.Drawing.Size(45, 45);
+            this.Verbutton.TabIndex = 252;
+            this.Verbutton.UseVisualStyleBackColor = true;
+            this.Verbutton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // save
+            // 
+            this.save.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.save.BackColor = System.Drawing.Color.Transparent;
+            this.save.BackgroundImage = global::Proyect_Kardex.Properties.Resources.savedexcel;
+            this.save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.save.FlatAppearance.BorderSize = 0;
+            this.save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.save.Location = new System.Drawing.Point(630, 4);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(45, 45);
+            this.save.TabIndex = 251;
+            this.save.UseVisualStyleBackColor = false;
+            this.save.Click += new System.EventHandler(this.save_Click);
+            // 
+            // Devolbutton
+            // 
+            this.Devolbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Devolbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.devolucionVentas;
+            this.Devolbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Devolbutton.FlatAppearance.BorderSize = 0;
+            this.Devolbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Devolbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Devolbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Devolbutton.Location = new System.Drawing.Point(492, 4);
+            this.Devolbutton.Name = "Devolbutton";
+            this.Devolbutton.Size = new System.Drawing.Size(45, 45);
+            this.Devolbutton.TabIndex = 7;
+            this.Devolbutton.UseVisualStyleBackColor = true;
+            this.Devolbutton.Click += new System.EventHandler(this.Devolbutton_Click);
+            // 
+            // Reportbutton
+            // 
+            this.Reportbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Reportbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.shopping_21_512;
+            this.Reportbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reportbutton.FlatAppearance.BorderSize = 0;
+            this.Reportbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Reportbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Reportbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reportbutton.Location = new System.Drawing.Point(428, 4);
+            this.Reportbutton.Name = "Reportbutton";
+            this.Reportbutton.Size = new System.Drawing.Size(45, 45);
+            this.Reportbutton.TabIndex = 6;
+            this.Reportbutton.UseVisualStyleBackColor = true;
+            // 
+            // Calcubutton
+            // 
+            this.Calcubutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Calcubutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.SEO_Calculator_512;
+            this.Calcubutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Calcubutton.FlatAppearance.BorderSize = 0;
+            this.Calcubutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Calcubutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Calcubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Calcubutton.Location = new System.Drawing.Point(153, 4);
+            this.Calcubutton.Name = "Calcubutton";
+            this.Calcubutton.Size = new System.Drawing.Size(45, 45);
+            this.Calcubutton.TabIndex = 5;
+            this.Calcubutton.UseVisualStyleBackColor = true;
+            this.Calcubutton.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // Ventasbutton
+            // 
+            this.Ventasbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Ventasbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Cash_register;
+            this.Ventasbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ventasbutton.FlatAppearance.BorderSize = 0;
+            this.Ventasbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Ventasbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Ventasbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Ventasbutton.Location = new System.Drawing.Point(87, 4);
+            this.Ventasbutton.Name = "Ventasbutton";
+            this.Ventasbutton.Size = new System.Drawing.Size(45, 45);
+            this.Ventasbutton.TabIndex = 4;
+            this.Ventasbutton.UseVisualStyleBackColor = true;
+            this.Ventasbutton.Click += new System.EventHandler(this.Ventasbutton_Click);
+            // 
+            // Printbutton
+            // 
+            this.Printbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Printbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.print;
+            this.Printbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Printbutton.FlatAppearance.BorderSize = 0;
+            this.Printbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Printbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Printbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Printbutton.Location = new System.Drawing.Point(294, 4);
+            this.Printbutton.Name = "Printbutton";
+            this.Printbutton.Size = new System.Drawing.Size(45, 45);
+            this.Printbutton.TabIndex = 3;
+            this.Printbutton.UseVisualStyleBackColor = true;
+            this.Printbutton.Click += new System.EventHandler(this.Updatebutton_Click);
+            // 
+            // Salirbutton
+            // 
+            this.Salirbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Salirbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
+            this.Salirbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Salirbutton.FlatAppearance.BorderSize = 0;
+            this.Salirbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Salirbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Salirbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Salirbutton.Location = new System.Drawing.Point(694, 4);
+            this.Salirbutton.Name = "Salirbutton";
+            this.Salirbutton.Size = new System.Drawing.Size(45, 45);
+            this.Salirbutton.TabIndex = 3;
+            this.Salirbutton.UseVisualStyleBackColor = true;
+            this.Salirbutton.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // Buscarbutton
+            // 
+            this.Buscarbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Buscarbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.search_good_512;
+            this.Buscarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Buscarbutton.FlatAppearance.BorderSize = 0;
+            this.Buscarbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Buscarbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Buscarbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Buscarbutton.Location = new System.Drawing.Point(561, 4);
+            this.Buscarbutton.Name = "Buscarbutton";
+            this.Buscarbutton.Size = new System.Drawing.Size(50, 45);
+            this.Buscarbutton.TabIndex = 3;
+            this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // ClientesButton
+            // 
+            this.ClientesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ClientesButton.BackgroundImage = global::Proyect_Kardex.Properties.Resources._1455514112_User;
+            this.ClientesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientesButton.FlatAppearance.BorderSize = 0;
+            this.ClientesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.ClientesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.ClientesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClientesButton.Location = new System.Drawing.Point(18, 4);
+            this.ClientesButton.Name = "ClientesButton";
+            this.ClientesButton.Size = new System.Drawing.Size(45, 45);
+            this.ClientesButton.TabIndex = 3;
+            this.ClientesButton.UseVisualStyleBackColor = true;
+            this.ClientesButton.Click += new System.EventHandler(this.button6_Click);
+            // 
             // configuser
             // 
             this.configuser.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -804,11 +1261,6 @@
             this.configuser.Size = new System.Drawing.Size(358, 22);
             this.configuser.Text = "Configuración de Cuenta de Usuario";
             this.configuser.Click += new System.EventHandler(this.configuser_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(355, 6);
             // 
             // verUser
             // 
@@ -829,11 +1281,6 @@
             this.verEmp.Size = new System.Drawing.Size(358, 22);
             this.verEmp.Text = "Ver Empresa";
             this.verEmp.Click += new System.EventHandler(this.verEmp_Click);
-            // 
-            // toolStripSeparator15
-            // 
-            this.toolStripSeparator15.Name = "toolStripSeparator15";
-            this.toolStripSeparator15.Size = new System.Drawing.Size(355, 6);
             // 
             // toolStripMenuItem1
             // 
@@ -883,11 +1330,6 @@
             this.registroDeSolicitudDeUsuariosToolStripMenuItem.Text = "Registro de Solicitud de Usuarios";
             this.registroDeSolicitudDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.registroDeSolicitudDeUsuariosToolStripMenuItem_Click);
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(355, 6);
-            // 
             // cerrarsesion
             // 
             this.cerrarsesion.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -899,11 +1341,6 @@
             this.cerrarsesion.Text = "Cerrar Sesión";
             this.cerrarsesion.Click += new System.EventHandler(this.cerrarsesion_Click);
             // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(355, 6);
-            // 
             // closetool
             // 
             this.closetool.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -913,23 +1350,6 @@
             this.closetool.Size = new System.Drawing.Size(358, 22);
             this.closetool.Text = "Salir";
             this.closetool.Click += new System.EventHandler(this.closetool_Click);
-            // 
-            // cLIENTESToolStripMenuItem
-            // 
-            this.cLIENTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novotool,
-            this.edittool,
-            this.deltool,
-            this.toolStripSeparator5,
-            this.SolClientool,
-            this.toolStripSeparator7,
-            this.reportooldes,
-            this.toolStripSeparator6,
-            this.regCliEmp});
-            this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
-            this.cLIENTESToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
             // 
             // novotool
             // 
@@ -964,11 +1384,6 @@
             this.deltool.Text = "Eliminar Cliente";
             this.deltool.Click += new System.EventHandler(this.deltool_Click);
             // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(379, 6);
-            // 
             // SolClientool
             // 
             this.SolClientool.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -978,11 +1393,6 @@
             this.SolClientool.Size = new System.Drawing.Size(382, 22);
             this.SolClientool.Text = "Reporte de Solicitud de Clientes";
             this.SolClientool.Click += new System.EventHandler(this.SolClientool_Click);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(379, 6);
             // 
             // reportooldes
             // 
@@ -994,11 +1404,6 @@
             this.reportooldes.Text = "Reporte de Solicitudes de Clientes Destacados";
             this.reportooldes.Click += new System.EventHandler(this.reportooldes_Click);
             // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(379, 6);
-            // 
             // regCliEmp
             // 
             this.regCliEmp.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1008,36 +1413,6 @@
             this.regCliEmp.Size = new System.Drawing.Size(382, 22);
             this.regCliEmp.Text = "Registro de Clientes de la Empresa";
             this.regCliEmp.Click += new System.EventHandler(this.regCliEmp_Click);
-            // 
-            // pRODUCTOSToolStripMenuItem
-            // 
-            this.pRODUCTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.marcasDeProductosToolStripMenuItem,
-            this.toolStripSeparator13,
-            this.categoriasEnAlmacenToolStripMenuItem,
-            this.toolStripSeparator14,
-            this.tipoDeUnidadToolStripMenuItem,
-            this.toolStripSeparator16,
-            this.buscarProductoToolStripMenuItem,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6,
-            this.toolStripSeparator17,
-            this.actualizarRegistroDeProductosToolStripMenuItem,
-            this.toolStripSeparator23,
-            this.toolStripMenuItem7,
-            this.toolStripSeparator18,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripSeparator24,
-            this.toolStripMenuItem8,
-            this.toolStripSeparator19,
-            this.exportarRegistroDeProductosAExcelToolStripMenuItem,
-            this.toolStripSeparator20,
-            this.herramientasToolStripMenuItem});
-            this.pRODUCTOSToolStripMenuItem.Name = "pRODUCTOSToolStripMenuItem";
-            this.pRODUCTOSToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
-            this.pRODUCTOSToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.pRODUCTOSToolStripMenuItem.Text = "PRODUCTOS";
             // 
             // marcasDeProductosToolStripMenuItem
             // 
@@ -1069,11 +1444,6 @@
             this.abrirListaDeMarcasToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
             this.abrirListaDeMarcasToolStripMenuItem.Text = "Registro de Marcas";
             this.abrirListaDeMarcasToolStripMenuItem.Click += new System.EventHandler(this.abrirListaDeMarcasToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator13
-            // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(394, 6);
             // 
             // categoriasEnAlmacenToolStripMenuItem
             // 
@@ -1117,11 +1487,6 @@
             this.registroDeCategoríasToolStripMenuItem.Text = "Registro de Categorías";
             this.registroDeCategoríasToolStripMenuItem.Click += new System.EventHandler(this.registroDeCategoríasToolStripMenuItem_Click);
             // 
-            // toolStripSeparator14
-            // 
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(394, 6);
-            // 
             // tipoDeUnidadToolStripMenuItem
             // 
             this.tipoDeUnidadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1154,11 +1519,6 @@
             this.registroDeMedidasToolStripMenuItem.Text = "Registro de Medidas";
             this.registroDeMedidasToolStripMenuItem.Click += new System.EventHandler(this.registroDeMedidasToolStripMenuItem_Click);
             // 
-            // toolStripSeparator16
-            // 
-            this.toolStripSeparator16.Name = "toolStripSeparator16";
-            this.toolStripSeparator16.Size = new System.Drawing.Size(394, 6);
-            // 
             // buscarProductoToolStripMenuItem
             // 
             this.buscarProductoToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1190,11 +1550,6 @@
             this.toolStripMenuItem6.Text = "Mostrar Producto";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
-            // toolStripSeparator17
-            // 
-            this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(394, 6);
-            // 
             // actualizarRegistroDeProductosToolStripMenuItem
             // 
             this.actualizarRegistroDeProductosToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1205,11 +1560,6 @@
             this.actualizarRegistroDeProductosToolStripMenuItem.Text = "Actualizar Registro de Productos";
             this.actualizarRegistroDeProductosToolStripMenuItem.Click += new System.EventHandler(this.actualizarRegistroDeProductosToolStripMenuItem_Click);
             // 
-            // toolStripSeparator23
-            // 
-            this.toolStripSeparator23.Name = "toolStripSeparator23";
-            this.toolStripSeparator23.Size = new System.Drawing.Size(394, 6);
-            // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Image = global::Proyect_Kardex.Properties.Resources.shopping_21_512;
@@ -1218,11 +1568,6 @@
             this.toolStripMenuItem7.Size = new System.Drawing.Size(397, 22);
             this.toolStripMenuItem7.Text = "Reporte Grafico de Inventario";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
-            // 
-            // toolStripSeparator18
-            // 
-            this.toolStripSeparator18.Name = "toolStripSeparator18";
-            this.toolStripSeparator18.Size = new System.Drawing.Size(394, 6);
             // 
             // toolStripMenuItem2
             // 
@@ -1246,21 +1591,6 @@
             this.toolStripMenuItem3.Text = "Productos en Vencimiento";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
-            // toolStripSeparator24
-            // 
-            this.toolStripSeparator24.Name = "toolStripSeparator24";
-            this.toolStripSeparator24.Size = new System.Drawing.Size(394, 6);
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vistaPreviaDeImpresionToolStripMenuItem,
-            this.toolStripSeparator25,
-            this.imprimirReporteToolStripMenuItem});
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(397, 22);
-            this.toolStripMenuItem8.Text = "Imprimir...";
-            // 
             // vistaPreviaDeImpresionToolStripMenuItem
             // 
             this.vistaPreviaDeImpresionToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.Pre_vista;
@@ -1269,11 +1599,6 @@
             this.vistaPreviaDeImpresionToolStripMenuItem.Size = new System.Drawing.Size(313, 22);
             this.vistaPreviaDeImpresionToolStripMenuItem.Text = "Vista Previa de Impresion";
             this.vistaPreviaDeImpresionToolStripMenuItem.Click += new System.EventHandler(this.vistaPreviaDeImpresionToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator25
-            // 
-            this.toolStripSeparator25.Name = "toolStripSeparator25";
-            this.toolStripSeparator25.Size = new System.Drawing.Size(310, 6);
             // 
             // imprimirReporteToolStripMenuItem
             // 
@@ -1284,11 +1609,6 @@
             this.imprimirReporteToolStripMenuItem.Text = "Imprimir Reporte";
             this.imprimirReporteToolStripMenuItem.Click += new System.EventHandler(this.imprimirReporteToolStripMenuItem_Click);
             // 
-            // toolStripSeparator19
-            // 
-            this.toolStripSeparator19.Name = "toolStripSeparator19";
-            this.toolStripSeparator19.Size = new System.Drawing.Size(394, 6);
-            // 
             // exportarRegistroDeProductosAExcelToolStripMenuItem
             // 
             this.exportarRegistroDeProductosAExcelToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.savedexcel;
@@ -1298,11 +1618,6 @@
             this.exportarRegistroDeProductosAExcelToolStripMenuItem.Size = new System.Drawing.Size(397, 22);
             this.exportarRegistroDeProductosAExcelToolStripMenuItem.Text = "Exportar Registro de Productos a Excel";
             this.exportarRegistroDeProductosAExcelToolStripMenuItem.Click += new System.EventHandler(this.exportarRegistroDeProductosAExcelToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator20
-            // 
-            this.toolStripSeparator20.Name = "toolStripSeparator20";
-            this.toolStripSeparator20.Size = new System.Drawing.Size(394, 6);
             // 
             // herramientasToolStripMenuItem
             // 
@@ -1425,25 +1740,6 @@
             this.productosSuspendidosToolStripMenuItem.Text = "Productos Suspendidos";
             this.productosSuspendidosToolStripMenuItem.Click += new System.EventHandler(this.productosSuspendidosToolStripMenuItem_Click);
             // 
-            // toolStripMenuItem10
-            // 
-            this.toolStripMenuItem10.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generadorDeCodigosDeBarrasToolStripMenuItem,
-            this.generadorDeCodigosQRToolStripMenuItem,
-            this.toolStripSeparator28,
-            this.scannerLectorDeCodigosToolStripMenuItem,
-            this.toolStripSeparator31,
-            this.toolStripMenuItem11,
-            this.toolStripSeparator32,
-            this.toolStripMenuItem12,
-            this.toolStripSeparator29,
-            this.calculadoraSimpleToolStripMenuItem,
-            this.toolStripSeparator30,
-            this.navegadorWebStudioToolStripMenuItem});
-            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(111, 20);
-            this.toolStripMenuItem10.Text = "HERRAMIENTAS";
-            // 
             // generadorDeCodigosDeBarrasToolStripMenuItem
             // 
             this.generadorDeCodigosDeBarrasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.barcodneg;
@@ -1466,11 +1762,6 @@
             this.generadorDeCodigosQRToolStripMenuItem.Text = "Generador de Codigos QR";
             this.generadorDeCodigosQRToolStripMenuItem.Click += new System.EventHandler(this.generadorDeCodigosQRToolStripMenuItem_Click);
             // 
-            // toolStripSeparator28
-            // 
-            this.toolStripSeparator28.Name = "toolStripSeparator28";
-            this.toolStripSeparator28.Size = new System.Drawing.Size(384, 6);
-            // 
             // scannerLectorDeCodigosToolStripMenuItem
             // 
             this.scannerLectorDeCodigosToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.scan;
@@ -1480,11 +1771,6 @@
             this.scannerLectorDeCodigosToolStripMenuItem.Size = new System.Drawing.Size(387, 22);
             this.scannerLectorDeCodigosToolStripMenuItem.Text = "Scanner/Lector de Codigos ";
             this.scannerLectorDeCodigosToolStripMenuItem.Click += new System.EventHandler(this.scannerLectorDeCodigosToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator31
-            // 
-            this.toolStripSeparator31.Name = "toolStripSeparator31";
-            this.toolStripSeparator31.Size = new System.Drawing.Size(384, 6);
             // 
             // toolStripMenuItem11
             // 
@@ -1497,11 +1783,6 @@
             this.toolStripMenuItem11.Text = "Cámara";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
-            // toolStripSeparator32
-            // 
-            this.toolStripSeparator32.Name = "toolStripSeparator32";
-            this.toolStripSeparator32.Size = new System.Drawing.Size(384, 6);
-            // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Image = global::Proyect_Kardex.Properties.Resources.sendSMS;
@@ -1513,11 +1794,6 @@
             this.toolStripMenuItem12.Text = "Enviar SMS a Correo Electrónico";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
             // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(384, 6);
-            // 
             // calculadoraSimpleToolStripMenuItem
             // 
             this.calculadoraSimpleToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.SEO_Calculator_512;
@@ -1527,11 +1803,6 @@
             this.calculadoraSimpleToolStripMenuItem.Size = new System.Drawing.Size(387, 22);
             this.calculadoraSimpleToolStripMenuItem.Text = "Calculadora Simple";
             this.calculadoraSimpleToolStripMenuItem.Click += new System.EventHandler(this.calculadoraSimpleToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator30
-            // 
-            this.toolStripSeparator30.Name = "toolStripSeparator30";
-            this.toolStripSeparator30.Size = new System.Drawing.Size(384, 6);
             // 
             // navegadorWebStudioToolStripMenuItem
             // 
@@ -1544,30 +1815,36 @@
             this.navegadorWebStudioToolStripMenuItem.Text = "Navegador Web Studio";
             this.navegadorWebStudioToolStripMenuItem.Click += new System.EventHandler(this.navegadorWebStudioToolStripMenuItem_Click);
             // 
-            // vENTASToolStripMenuItem
-            // 
-            this.vENTASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.realizarVentasToolStripMenuItem,
-            this.toolStripMenuItem4,
-            this.toolStripSeparator12,
-            this.realizarDevoluciónDeVentasToolStripMenuItem,
-            this.toolStripSeparator11,
-            this.facturasToolStripMenuItem,
-            this.toolStripSeparator10,
-            this.reportesDeVentasToolStripMenuItem1});
-            this.vENTASToolStripMenuItem.Name = "vENTASToolStripMenuItem";
-            this.vENTASToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.V)));
-            this.vENTASToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.vENTASToolStripMenuItem.Text = "VENTAS";
-            // 
             // realizarVentasToolStripMenuItem
             // 
             this.realizarVentasToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.realizarVentasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.Cash_register;
             this.realizarVentasToolStripMenuItem.Name = "realizarVentasToolStripMenuItem";
             this.realizarVentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.realizarVentasToolStripMenuItem.Size = new System.Drawing.Size(296, 22);
+            this.realizarVentasToolStripMenuItem.Size = new System.Drawing.Size(325, 22);
             this.realizarVentasToolStripMenuItem.Text = "Realizar Ventas";
+            // 
+            // toolStripMenuItem13
+            // 
+            this.toolStripMenuItem13.Enabled = false;
+            this.toolStripMenuItem13.Image = global::Proyect_Kardex.Properties.Resources.editModVentas;
+            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
+            this.toolStripMenuItem13.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.E)));
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(325, 22);
+            this.toolStripMenuItem13.Text = "Editar Venta";
+            this.toolStripMenuItem13.Click += new System.EventHandler(this.toolStripMenuItem13_Click);
+            // 
+            // toolStripMenuItem14
+            // 
+            this.toolStripMenuItem14.Enabled = false;
+            this.toolStripMenuItem14.Image = global::Proyect_Kardex.Properties.Resources.deleteVentas;
+            this.toolStripMenuItem14.Name = "toolStripMenuItem14";
+            this.toolStripMenuItem14.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.D)));
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(325, 22);
+            this.toolStripMenuItem14.Text = "Eliminar Venta";
+            this.toolStripMenuItem14.Visible = false;
             // 
             // toolStripMenuItem4
             // 
@@ -1576,13 +1853,18 @@
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.C)));
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(296, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(325, 22);
             this.toolStripMenuItem4.Text = "Calculadora";
             // 
-            // toolStripSeparator12
+            // toolStripMenuItem16
             // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(293, 6);
+            this.toolStripMenuItem16.Image = global::Proyect_Kardex.Properties.Resources.RegistroVentas;
+            this.toolStripMenuItem16.Name = "toolStripMenuItem16";
+            this.toolStripMenuItem16.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.L)));
+            this.toolStripMenuItem16.Size = new System.Drawing.Size(325, 22);
+            this.toolStripMenuItem16.Text = "Lista de Ventas Realizadas";
+            this.toolStripMenuItem16.Click += new System.EventHandler(this.toolStripMenuItem16_Click);
             // 
             // realizarDevoluciónDeVentasToolStripMenuItem
             // 
@@ -1590,13 +1872,9 @@
             this.realizarDevoluciónDeVentasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.devolucionVentas;
             this.realizarDevoluciónDeVentasToolStripMenuItem.Name = "realizarDevoluciónDeVentasToolStripMenuItem";
             this.realizarDevoluciónDeVentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.realizarDevoluciónDeVentasToolStripMenuItem.Size = new System.Drawing.Size(296, 22);
+            this.realizarDevoluciónDeVentasToolStripMenuItem.Size = new System.Drawing.Size(325, 22);
             this.realizarDevoluciónDeVentasToolStripMenuItem.Text = "Realizar Devolución de Ventas";
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(293, 6);
+            this.realizarDevoluciónDeVentasToolStripMenuItem.Click += new System.EventHandler(this.realizarDevoluciónDeVentasToolStripMenuItem_Click);
             // 
             // facturasToolStripMenuItem
             // 
@@ -1604,13 +1882,9 @@
             this.facturasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.factureinfo;
             this.facturasToolStripMenuItem.Name = "facturasToolStripMenuItem";
             this.facturasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.facturasToolStripMenuItem.Size = new System.Drawing.Size(296, 22);
-            this.facturasToolStripMenuItem.Text = "Facturas";
-            // 
-            // toolStripSeparator10
-            // 
-            this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(293, 6);
+            this.facturasToolStripMenuItem.Size = new System.Drawing.Size(325, 22);
+            this.facturasToolStripMenuItem.Text = "Registro de Facturas";
+            this.facturasToolStripMenuItem.Click += new System.EventHandler(this.facturasToolStripMenuItem_Click);
             // 
             // reportesDeVentasToolStripMenuItem1
             // 
@@ -1619,21 +1893,8 @@
             this.reportesDeVentasToolStripMenuItem1.Name = "reportesDeVentasToolStripMenuItem1";
             this.reportesDeVentasToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.V)));
-            this.reportesDeVentasToolStripMenuItem1.Size = new System.Drawing.Size(296, 22);
+            this.reportesDeVentasToolStripMenuItem1.Size = new System.Drawing.Size(325, 22);
             this.reportesDeVentasToolStripMenuItem1.Text = "Reportes en Ventas";
-            // 
-            // vENTANAToolStripMenuItem
-            // 
-            this.vENTANAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.minimizarToolStripMenuItem,
-            this.toolStripSeparator9,
-            this.pantallaCompletaToolStripMenuItem,
-            this.toolStripSeparator8,
-            this.pantallaNormalToolStripMenuItem});
-            this.vENTANAToolStripMenuItem.Name = "vENTANAToolStripMenuItem";
-            this.vENTANAToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.W)));
-            this.vENTANAToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.vENTANAToolStripMenuItem.Text = "VENTANA";
             // 
             // minimizarToolStripMenuItem
             // 
@@ -1645,11 +1906,6 @@
             this.minimizarToolStripMenuItem.Text = "Minimizar";
             this.minimizarToolStripMenuItem.Click += new System.EventHandler(this.minimizarToolStripMenuItem_Click);
             // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(259, 6);
-            // 
             // pantallaCompletaToolStripMenuItem
             // 
             this.pantallaCompletaToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.window_expand;
@@ -1659,11 +1915,6 @@
             this.pantallaCompletaToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
             this.pantallaCompletaToolStripMenuItem.Text = "Pantalla Completa";
             this.pantallaCompletaToolStripMenuItem.Click += new System.EventHandler(this.pantallaCompletaToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(259, 6);
             // 
             // pantallaNormalToolStripMenuItem
             // 
@@ -1675,56 +1926,6 @@
             this.pantallaNormalToolStripMenuItem.Text = "Pantalla Normal";
             this.pantallaNormalToolStripMenuItem.Click += new System.EventHandler(this.pantallaNormalToolStripMenuItem_Click);
             // 
-            // aYUDAToolStripMenuItem
-            // 
-            this.aYUDAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesToolStripMenuItem1,
-            this.ventasToolStripMenuItem1,
-            this.actualizaciónDeProductosToolStripMenuItem,
-            this.reportesDeVentasToolStripMenuItem,
-            this.busquedaDeProductosToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.acercaDeToolStripMenuItem});
-            this.aYUDAToolStripMenuItem.Name = "aYUDAToolStripMenuItem";
-            this.aYUDAToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.H)));
-            this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.aYUDAToolStripMenuItem.Text = "AYUDA";
-            // 
-            // clientesToolStripMenuItem1
-            // 
-            this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(251, 22);
-            this.clientesToolStripMenuItem1.Text = "Clientes";
-            // 
-            // ventasToolStripMenuItem1
-            // 
-            this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(251, 22);
-            this.ventasToolStripMenuItem1.Text = "Ventas";
-            // 
-            // actualizaciónDeProductosToolStripMenuItem
-            // 
-            this.actualizaciónDeProductosToolStripMenuItem.Name = "actualizaciónDeProductosToolStripMenuItem";
-            this.actualizaciónDeProductosToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.actualizaciónDeProductosToolStripMenuItem.Text = "Actualización de Productos";
-            // 
-            // reportesDeVentasToolStripMenuItem
-            // 
-            this.reportesDeVentasToolStripMenuItem.Name = "reportesDeVentasToolStripMenuItem";
-            this.reportesDeVentasToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.reportesDeVentasToolStripMenuItem.Text = "Reportes de Ventas";
-            // 
-            // busquedaDeProductosToolStripMenuItem
-            // 
-            this.busquedaDeProductosToolStripMenuItem.Name = "busquedaDeProductosToolStripMenuItem";
-            this.busquedaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.busquedaDeProductosToolStripMenuItem.Text = "Busqueda de Productos";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(248, 6);
-            // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.Question_512;
@@ -1732,109 +1933,6 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(251, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de REV Project Kardex";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.BackColor = System.Drawing.Color.Silver;
-            this.statusStrip1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSSemp,
-            this.toolStripStatusLabel2,
-            this.TSSname,
-            this.toolStripStatusLabel4,
-            this.TSSdate});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 563);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(756, 22);
-            this.statusStrip1.TabIndex = 28;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // TSSemp
-            // 
-            this.TSSemp.Name = "TSSemp";
-            this.TSSemp.Size = new System.Drawing.Size(175, 17);
-            this.TSSemp.Text = "Nombre de la Empresa NULL";
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(19, 17);
-            this.toolStripStatusLabel2.Text = " | ";
-            // 
-            // TSSname
-            // 
-            this.TSSname.Name = "TSSname";
-            this.TSSname.Size = new System.Drawing.Size(107, 17);
-            this.TSSname.Text = "USUARIO_CAJERO";
-            // 
-            // toolStripStatusLabel4
-            // 
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(19, 17);
-            this.toolStripStatusLabel4.Text = " | ";
-            // 
-            // TSSdate
-            // 
-            this.TSSdate.Name = "TSSdate";
-            this.TSSdate.Size = new System.Drawing.Size(85, 17);
-            this.TSSdate.Text = "31-03-2016";
-            // 
-            // productosTableAdapter
-            // 
-            this.productosTableAdapter.ClearBeforeFill = true;
-            // 
-            // printMain
-            // 
-            this.printMain.Document = this.printDocx;
-            this.printMain.UseEXDialog = true;
-            // 
-            // printDocx
-            // 
-            this.printDocx.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocx_PrintPage);
-            // 
-            // printPreview
-            // 
-            this.printPreview.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreview.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreview.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreview.Document = this.printDocx;
-            this.printPreview.Enabled = true;
-            this.printPreview.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreview.Icon")));
-            this.printPreview.Name = "printPreview";
-            this.printPreview.ShowIcon = false;
-            this.printPreview.Visible = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.SystemColors.Window;
-            this.button3.BackgroundImage = global::Proyect_Kardex.Properties.Resources.seguridad;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Window;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(679, 93);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(19, 19);
-            this.button3.TabIndex = 26;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // Logobutton
-            // 
-            this.Logobutton.BackColor = System.Drawing.Color.Transparent;
-            this.Logobutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.logo;
-            this.Logobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Logobutton.FlatAppearance.BorderSize = 0;
-            this.Logobutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Logobutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Logobutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logobutton.Location = new System.Drawing.Point(0, 85);
-            this.Logobutton.Name = "Logobutton";
-            this.Logobutton.Size = new System.Drawing.Size(176, 61);
-            this.Logobutton.TabIndex = 20;
-            this.Logobutton.UseVisualStyleBackColor = false;
             // 
             // Principal_UserCajero
             // 
@@ -2044,5 +2142,15 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator32;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator33;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator34;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem16;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator35;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem18;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator36;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem17;
     }
 }
