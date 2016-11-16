@@ -46,25 +46,29 @@ namespace Proyect_Kardex
 
         private void Graphic_Ventas_Load(object sender, EventArgs e)
         {
-            String lee = "SELECT CAST( fecha_Venta AS DATE ) as Dias, SUM( num_Prod ) as Cantidades, SUM( pago_Cliente ) as Efectivos, count ( name_Cliente ) as Nombre_Cliente FROM REV_Ventas WHERE id_User=7906442 GROUP BY CAST( Fecha_Venta AS DATE )"; //VENTAS POR USUARIO
+            String lee = "SELECT CAST( fecha_Venta AS DATE ) as Dias, SUM( num_Prod ) as Cantidades, SUM( pago_Cliente ) as Efectivos, count ( name_Cliente ) as Nombre_Cliente FROM REV_Ventas WHERE id_User='"+CodUser+"' GROUP BY CAST( Fecha_Venta AS DATE )"; //VENTAS POR USUARIO
             String lee2 = "SELECT name_Cliente as Nombre_Cliente, SUM (num_Prod) as Cantidades, SUM(pago_Cliente) as Efectivo FROM REV_Ventas GROUP BY name_Cliente";    //PAGOS POR CLIENTES
             String lee3 = "SELECT cod_Venta, SUM (importe_sell) AS Total_Venta, SUM (ImpT_dev*-1) AS Total_Devolucion FROM Detalle_Venta, Devolucion_Ventas WHERE cod_Venta = IDV_dev GROUP BY cod_Venta";  //DETALLE CON DEVOLUCIONES
 
             dataprodgrid.DataSource = CargarDatos(lee);
             chart1.DataSource = CargarDatos(lee);
-            chart1.Series["Series1"].LegendText = "Productos";
-            chart1.Series["Series1"].XValueMember = "Nombre";
-            chart1.Series["Series1"].YValueMembers = "Cantidad";
+            chart1.Series["SNum"].LegendText = "Cantidades Vendidas";
+            chart1.Series["SNum"].XValueMember = "Dias";
+            chart1.Series["SNum"].YValueMembers = "Cantidades";
 
-            chart1.Series["Series2"].LegendText = "Precios";
-            chart1.Series["Series2"].XValueMember = "Nombre";
-            chart1.Series["Series2"].YValueMembers = "Precio_Unitario";
+            chart1.Series["SName"].LegendText = "Ingresos";
+            chart1.Series["SName"].XValueMember = "Dias";
+            chart1.Series["SName"].YValueMembers = "Efectivos";
 
-            chartorta.DataSource = CargarDatos(lee);
-            chartorta.Series["Series1"].XValueMember = "Nombre";
-            chartorta.Series["Series1"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            chartorta.Series["Series1"].YValueMembers = "Precio_Unitario";
-            chartorta.Series["Series1"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            chart1.Series["SCliente"].LegendText = "Clientes";
+            chart1.Series["SCliente"].XValueMember = "Dias";
+            chart1.Series["SCliente"].YValueMembers = "Nombre_Cliente";
+
+            //chartorta.DataSource = CargarDatos(lee);
+            //chartorta.Series["Series1"].XValueMember = "Nombre";
+            //chartorta.Series["Series1"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
+            //chartorta.Series["Series1"].YValueMembers = "Precio_Unitario";
+            //chartorta.Series["Series1"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
         }
     }
 }
