@@ -13,7 +13,7 @@ namespace Proyect_Kardex
 {
     public partial class Principal_UserCajero : Form
     {
-        public int Cod = 0;
+        public int Cod = 7906442;
         public String Nom = "";
         public String NameUser = ""; 
 
@@ -1155,6 +1155,20 @@ namespace Proyect_Kardex
         {
             Report_Factura de = new Report_Factura();
             de.ShowDialog();
+        }
+
+        private void reportesDeVentasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Graphic_Ventas vd = new Graphic_Ventas();
+            vd.CodUser = Cod;
+            vd.ShowDialog();
+        }
+
+        private void Reportbutton_Click(object sender, EventArgs e)
+        {
+            Graphic_Ventas vd = new Graphic_Ventas();
+            vd.CodUser = Cod;
+            vd.ShowDialog();
         }
 
 

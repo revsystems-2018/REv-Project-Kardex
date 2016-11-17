@@ -168,12 +168,11 @@
             this.chartDevo.Legends.Add(legend3);
             this.chartDevo.Location = new System.Drawing.Point(660, 329);
             this.chartDevo.Name = "chartDevo";
-            this.chartDevo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            this.chartDevo.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             this.chartDevo.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.DeepSkyBlue,
         System.Drawing.Color.DarkRed};
             series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar100;
             series5.Color = System.Drawing.Color.DodgerBlue;
             series5.Legend = "Legend1";
             series5.LegendToolTip = "Ingresos";
@@ -181,8 +180,7 @@
             series5.ToolTip = "Ganancia";
             series5.YValuesPerPoint = 4;
             series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedBar100;
-            series6.Color = System.Drawing.Color.Red;
+            series6.Color = System.Drawing.Color.Crimson;
             series6.Legend = "Legend1";
             series6.LegendToolTip = "Devoluciones";
             series6.Name = "Series2";
