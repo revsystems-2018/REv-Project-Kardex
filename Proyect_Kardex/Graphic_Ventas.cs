@@ -64,11 +64,20 @@ namespace Proyect_Kardex
             chart1.Series["SCliente"].XValueMember = "Dias";
             chart1.Series["SCliente"].YValueMembers = "Nombre_Cliente";
 
-            //chartorta.DataSource = CargarDatos(lee);
-            //chartorta.Series["Series1"].XValueMember = "Nombre";
-            //chartorta.Series["Series1"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            //chartorta.Series["Series1"].YValueMembers = "Precio_Unitario";
-            //chartorta.Series["Series1"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            chartorta.DataSource = CargarDatos(lee2);
+            chartorta.Series["Series1"].XValueMember = "Nombre_Cliente";
+            chartorta.Series["Series1"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
+            chartorta.Series["Series1"].YValueMembers = "Efectivo";
+            chartorta.Series["Series1"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+
+            chartDevo.DataSource = CargarDatos(lee3);
+            chartDevo.Series["Series1"].LegendText = "(+)";
+            chartDevo.Series["Series1"].XValueMember = "cod_Venta";
+            chartDevo.Series["Series1"].YValueMembers = "Total_Venta";
+
+            chartDevo.Series["Series2"].LegendText = "(-)";
+            chartDevo.Series["Series2"].XValueMember = "cod_Venta";
+            chartDevo.Series["Series2"].YValueMembers = "Total_Devolucion";
         }
     }
 }
