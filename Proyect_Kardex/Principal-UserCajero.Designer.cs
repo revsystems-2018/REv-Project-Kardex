@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal_UserCajero));
             this.panel1 = new System.Windows.Forms.Panel();
             this.printview = new System.Windows.Forms.Button();
@@ -260,6 +260,7 @@
             this.Updatebutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Updatebutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.update;
             this.Updatebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Updatebutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Updatebutton.FlatAppearance.BorderSize = 0;
             this.Updatebutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Updatebutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -276,6 +277,7 @@
             this.Verbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Verbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.VerProduct;
             this.Verbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Verbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Verbutton.FlatAppearance.BorderSize = 0;
             this.Verbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Verbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -310,6 +312,7 @@
             this.Devolbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Devolbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.devolucionVentas;
             this.Devolbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Devolbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Devolbutton.FlatAppearance.BorderSize = 0;
             this.Devolbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Devolbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -326,6 +329,7 @@
             this.Reportbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Reportbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.shopping_21_512;
             this.Reportbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Reportbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reportbutton.FlatAppearance.BorderSize = 0;
             this.Reportbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Reportbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -342,6 +346,7 @@
             this.Calcubutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Calcubutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.SEO_Calculator_512;
             this.Calcubutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Calcubutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Calcubutton.FlatAppearance.BorderSize = 0;
             this.Calcubutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Calcubutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -358,6 +363,7 @@
             this.Ventasbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Ventasbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Cash_register;
             this.Ventasbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Ventasbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Ventasbutton.FlatAppearance.BorderSize = 0;
             this.Ventasbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Ventasbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -374,6 +380,7 @@
             this.Printbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Printbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.print;
             this.Printbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Printbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Printbutton.FlatAppearance.BorderSize = 0;
             this.Printbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Printbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -390,6 +397,7 @@
             this.Salirbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Salirbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
             this.Salirbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Salirbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Salirbutton.FlatAppearance.BorderSize = 0;
             this.Salirbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Salirbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -406,6 +414,7 @@
             this.Buscarbutton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Buscarbutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.search_good_512;
             this.Buscarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Buscarbutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Buscarbutton.FlatAppearance.BorderSize = 0;
             this.Buscarbutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Buscarbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -422,6 +431,7 @@
             this.ClientesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ClientesButton.BackgroundImage = global::Proyect_Kardex.Properties.Resources._1455514112_User;
             this.ClientesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientesButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ClientesButton.FlatAppearance.BorderSize = 0;
             this.ClientesButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.ClientesButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -443,14 +453,14 @@
             this.listproduct.AutoGenerateColumns = false;
             this.listproduct.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.listproduct.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.listproduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.listproduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.listproduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listproduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.codBarPDataGridViewTextBoxColumn,
@@ -474,14 +484,14 @@
             this.medCodDataGridViewTextBoxColumn,
             this.subCodDataGridViewTextBoxColumn});
             this.listproduct.DataSource = this.productosBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.listproduct.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.listproduct.DefaultCellStyle = dataGridViewCellStyle2;
             this.listproduct.Location = new System.Drawing.Point(0, 152);
             this.listproduct.Name = "listproduct";
             this.listproduct.ReadOnly = true;
@@ -1931,6 +1941,7 @@
             this.Logobutton.BackColor = System.Drawing.Color.Transparent;
             this.Logobutton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.logo;
             this.Logobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Logobutton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Logobutton.FlatAppearance.BorderSize = 0;
             this.Logobutton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Logobutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;

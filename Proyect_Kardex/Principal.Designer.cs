@@ -106,21 +106,25 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbdir = new System.Windows.Forms.Label();
+            this.lbtel = new System.Windows.Forms.Label();
+            this.lbfaxs = new System.Windows.Forms.Label();
+            this.lbcorreo = new System.Windows.Forms.Label();
             this.smshelp = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PBanun2 = new System.Windows.Forms.PictureBox();
+            this.PBanun1 = new System.Windows.Forms.PictureBox();
+            this.logoEmp = new System.Windows.Forms.PictureBox();
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbcel = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lbweb = new System.Windows.Forms.LinkLabel();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBanun2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBanun1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoEmp)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -805,10 +809,10 @@
             // 
             this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(518, 94);
+            this.webBrowser1.Location = new System.Drawing.Point(518, 79);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(453, 515);
+            this.webBrowser1.Size = new System.Drawing.Size(453, 573);
             this.webBrowser1.TabIndex = 3;
             this.webBrowser1.Url = new System.Uri("https://www.google.com/maps/place/IC+Norte/@-17.3722473,-66.1531961,17z/data=!3m1" +
         "!4b1!4m2!3m1!1s0x93e374199a304dbb:0x450587ff8b3d9846", System.UriKind.Absolute);
@@ -817,7 +821,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(268, 94);
+            this.label1.Location = new System.Drawing.Point(277, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 18);
             this.label1.TabIndex = 7;
@@ -827,7 +831,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(290, 131);
+            this.label2.Location = new System.Drawing.Point(268, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 14);
             this.label2.TabIndex = 8;
@@ -838,18 +842,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(290, 198);
+            this.label3.Location = new System.Drawing.Point(268, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 14);
+            this.label3.Size = new System.Drawing.Size(77, 14);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Teléfono:";
+            this.label3.Text = "Teléfono: ";
             this.label3.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(292, 219);
+            this.label4.Location = new System.Drawing.Point(268, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 14);
             this.label4.TabIndex = 10;
@@ -860,7 +864,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(292, 239);
+            this.label5.Location = new System.Drawing.Point(268, 237);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 14);
             this.label5.TabIndex = 11;
@@ -871,104 +875,148 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(292, 261);
+            this.label6.Location = new System.Drawing.Point(268, 258);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 14);
             this.label6.TabIndex = 12;
             this.label6.Text = "Web:";
             this.label6.Visible = false;
             // 
-            // label7
+            // lbdir
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(298, 155);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(171, 14);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Av. America esq. Av. Pando ";
-            this.label7.Visible = false;
+            this.lbdir.AutoSize = true;
+            this.lbdir.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdir.Location = new System.Drawing.Point(277, 152);
+            this.lbdir.Name = "lbdir";
+            this.lbdir.Size = new System.Drawing.Size(171, 14);
+            this.lbdir.TabIndex = 13;
+            this.lbdir.Text = "Av. America esq. Av. Pando ";
+            this.lbdir.Visible = false;
             // 
-            // label8
+            // lbtel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(366, 197);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 12);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "(4) 4240575";
-            this.label8.Visible = false;
+            this.lbtel.AutoSize = true;
+            this.lbtel.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtel.Location = new System.Drawing.Point(351, 174);
+            this.lbtel.Name = "lbtel";
+            this.lbtel.Size = new System.Drawing.Size(72, 12);
+            this.lbtel.TabIndex = 18;
+            this.lbtel.Text = "(4) 4240575";
+            this.lbtel.Visible = false;
             // 
-            // label12
+            // lbfaxs
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(333, 219);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 12);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "(4) 4244969 ";
-            this.label12.Visible = false;
+            this.lbfaxs.AutoSize = true;
+            this.lbfaxs.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbfaxs.Location = new System.Drawing.Point(309, 216);
+            this.lbfaxs.Name = "lbfaxs";
+            this.lbfaxs.Size = new System.Drawing.Size(75, 12);
+            this.lbfaxs.TabIndex = 19;
+            this.lbfaxs.Text = "(4) 4244969 ";
+            this.lbfaxs.Visible = false;
             // 
-            // label9
+            // lbcorreo
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(354, 239);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(125, 12);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "contacto@icnorte.com";
-            this.label9.Visible = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(333, 261);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(139, 12);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "http://www.icnorte.com/";
-            this.label10.Visible = false;
+            this.lbcorreo.AutoSize = true;
+            this.lbcorreo.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcorreo.Location = new System.Drawing.Point(330, 237);
+            this.lbcorreo.Name = "lbcorreo";
+            this.lbcorreo.Size = new System.Drawing.Size(125, 12);
+            this.lbcorreo.TabIndex = 20;
+            this.lbcorreo.Text = "contacto@icnorte.com";
+            this.lbcorreo.Visible = false;
             // 
             // smshelp
             // 
             this.smshelp.IsBalloon = true;
             // 
-            // pictureBox3
+            // PBanun2
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(271, 296);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(241, 313);
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.PBanun2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PBanun2.BackColor = System.Drawing.SystemColors.Control;
+            this.PBanun2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PBanun2.Location = new System.Drawing.Point(271, 339);
+            this.PBanun2.Name = "PBanun2";
+            this.PBanun2.Size = new System.Drawing.Size(241, 313);
+            this.PBanun2.TabIndex = 6;
+            this.PBanun2.TabStop = false;
             // 
-            // pictureBox2
+            // PBanun1
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 296);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(239, 313);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.PBanun1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PBanun1.BackColor = System.Drawing.SystemColors.Control;
+            this.PBanun1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PBanun1.Location = new System.Drawing.Point(11, 339);
+            this.PBanun1.Name = "PBanun1";
+            this.PBanun1.Size = new System.Drawing.Size(239, 313);
+            this.PBanun1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PBanun1.TabIndex = 5;
+            this.PBanun1.TabStop = false;
             // 
-            // pictureBox1
+            // logoEmp
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 131);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(251, 150);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.logoEmp.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.logoEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoEmp.Location = new System.Drawing.Point(11, 131);
+            this.logoEmp.Name = "logoEmp";
+            this.logoEmp.Size = new System.Drawing.Size(251, 150);
+            this.logoEmp.TabIndex = 4;
+            this.logoEmp.TabStop = false;
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Exotc350 Bd BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(14, 96);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(237, 22);
+            this.lbName.TabIndex = 22;
+            this.lbName.Text = "Nombre de la Empresa NULL";
+            // 
+            // lbcel
+            // 
+            this.lbcel.AutoSize = true;
+            this.lbcel.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcel.Location = new System.Drawing.Point(351, 195);
+            this.lbcel.Name = "lbcel";
+            this.lbcel.Size = new System.Drawing.Size(72, 12);
+            this.lbcel.TabIndex = 24;
+            this.lbcel.Text = "(4) 4240575";
+            this.lbcel.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(268, 194);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 14);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Celular: ";
+            this.label13.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 323);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 12);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Anuncios ";
+            this.label14.Visible = false;
+            // 
+            // lbweb
+            // 
+            this.lbweb.AutoSize = true;
+            this.lbweb.Location = new System.Drawing.Point(329, 258);
+            this.lbweb.Name = "lbweb";
+            this.lbweb.Size = new System.Drawing.Size(125, 13);
+            this.lbweb.TabIndex = 26;
+            this.lbweb.TabStop = true;
+            this.lbweb.Text = "http://www.icnorte.com/";
+            this.lbweb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbweb_LinkClicked);
             // 
             // Principal
             // 
@@ -976,20 +1024,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(971, 677);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lbweb);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lbcel);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbName);
+            this.Controls.Add(this.lbcorreo);
+            this.Controls.Add(this.lbfaxs);
+            this.Controls.Add(this.lbtel);
+            this.Controls.Add(this.lbdir);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PBanun2);
+            this.Controls.Add(this.PBanun1);
+            this.Controls.Add(this.logoEmp);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
@@ -1005,9 +1057,9 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBanun2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBanun1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoEmp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1036,20 +1088,12 @@
         private System.Windows.Forms.ToolStripMenuItem nuevaEmpresaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarEmpresaToolStripMenuItem;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ToolStripMenuItem usuarioCajeroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioProveedorToolStripMenuItem;
@@ -1100,5 +1144,17 @@
         public System.Windows.Forms.ToolStripStatusLabel TSSemp;
         public System.Windows.Forms.ToolStripStatusLabel TSSname;
         public System.Windows.Forms.ToolStripStatusLabel TSSdate;
+        public System.Windows.Forms.PictureBox logoEmp;
+        public System.Windows.Forms.PictureBox PBanun1;
+        public System.Windows.Forms.PictureBox PBanun2;
+        public System.Windows.Forms.Label lbdir;
+        public System.Windows.Forms.Label lbtel;
+        public System.Windows.Forms.Label lbfaxs;
+        public System.Windows.Forms.Label lbcorreo;
+        public System.Windows.Forms.Label lbName;
+        public System.Windows.Forms.Label lbcel;
+        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label14;
+        private System.Windows.Forms.LinkLabel lbweb;
     }
 }

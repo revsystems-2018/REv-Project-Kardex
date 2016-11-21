@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Proyect_Kardex
 {
@@ -205,9 +206,62 @@ namespace Proyect_Kardex
             re.ShowDialog();
         }
 
+        public void CargarEmpresa()
+        {
+            Conexion a = new Conexion();
+            string query = "SELECT * FROM Empresa; ";
+
+            SqlCommand sqlQ = new SqlCommand(query, a.GetCONN());
+            a.OpenCnn();
+            SqlDataReader read2;
+            try
+            {
+                read2 = sqlQ.ExecuteReader();
+                while (read2.Read())
+                {
+                    TSSemp.Text = read2.GetString(1);
+                    lbName.Text = read2.GetString(1);
+                    lbdir.Text = read2.GetString(2);
+                    lbtel.Text = read2.GetInt32(3).ToString();
+                    lbcel.Text = read2.GetInt32(4).ToString();
+                    lbfaxs.Text = read2.GetInt32(5).ToString() +" "+ read2.GetInt32(6).ToString();
+                    lbcorreo.Text = read2.GetString(7);
+                    lbweb.Text = read2.GetString(8);
+
+                    // El campo productImage primero se almacena en un buffer
+                    byte[] imageBuffer = (byte[])(read2[9]);
+                    byte[] img2 = (byte[])(read2[10]);
+                    byte[] img3 = (byte[])(read2[11]);
+ 
+                    // Se crea un MemoryStream a partir de ese buffer                                                            
+                    System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBuffer);
+                    System.IO.MemoryStream ms2 = new System.IO.MemoryStream(img2);
+                    System.IO.MemoryStream ms3 = new System.IO.MemoryStream(img3);
+
+                    logoEmp.BackgroundImage = Image.FromStream(ms);
+                    PBanun1.BackgroundImage = Image.FromStream(ms2);
+                    PBanun2.BackgroundImage = Image.FromStream(ms3);
+                }
+                a.CerrarCnn();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                a.CerrarCnn();
+            }
+        }
+
         private void Principal_Load(object sender, EventArgs e)
         {
             TSSname.Text = Name;
+        }
+
+        private void lbweb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            REV_WebStudio we = new REV_WebStudio();
+            we.texturlweb.Text = lbweb.Text;
+            we.webBrow.Navigate(lbweb.Text);
+            we.ShowDialog();
         }
     }
 }

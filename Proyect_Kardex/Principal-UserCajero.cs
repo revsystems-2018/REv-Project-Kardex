@@ -35,10 +35,14 @@ namespace Proyect_Kardex
             UsertoolTip1.SetToolTip(ClientesButton, "Clientes de la Empresa");
             UsertoolTip1.SetToolTip(Ventasbutton, "Ventas");
             UsertoolTip1.SetToolTip(Calcubutton, "Calculadora");
-            UsertoolTip1.SetToolTip(Printbutton, "Actualizar Registro de Productos");
+            UsertoolTip1.SetToolTip(Verbutton, "Mostrar Producto");
+            UsertoolTip1.SetToolTip(Printbutton, "Imprimir Registro de Productos");
+            UsertoolTip1.SetToolTip(printview, "PRE-Vista");
+            UsertoolTip1.SetToolTip(Updatebutton, "Actualizar");
             UsertoolTip1.SetToolTip(Reportbutton, "Reporte de Ventas Realizadas");
             UsertoolTip1.SetToolTip(Devolbutton, "Devoluciones");
             UsertoolTip1.SetToolTip(Buscarbutton, "Buscar Producto");
+            UsertoolTip1.SetToolTip(save, "Exportar a Excel");
             UsertoolTip1.SetToolTip(Salirbutton, "Salir");
             UsertoolTip1.SetToolTip(Logobutton, "Logotipo de la Empresa");
             UsertoolTip1.SetToolTip(comboCate, "Asignar Categoria");
