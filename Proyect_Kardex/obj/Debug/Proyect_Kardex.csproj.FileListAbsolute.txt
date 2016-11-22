@@ -247,3 +247,8 @@ C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyec
 C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyect_Kardex\obj\Debug\Proyect_Kardex.csproj.GenerateResource.Cache
 C:\Users\Ricardo Veizaga\Desktop\REv-Project-Kardex\Proyect_Kardex\obj\Debug\Proyect_Kardex.Graphic_Ventas.resources
 C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyect_Kardex\obj\Debug\Proyect_Kardex.Graphic_Ventas.resources
+C:\Users\Ricardo Veizaga\Desktop\REv-Project-Kardex\Proyect_Kardex\bin\Debug\GMap.NET.Core.dll
+C:\Users\Ricardo Veizaga\Desktop\REv-Project-Kardex\Proyect_Kardex\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Ricardo Veizaga\Desktop\REv-Project-Kardex\Proyect_Kardex\bin\Debug\GMap.NET.Core.xml
+C:\Users\Ricardo Veizaga\Desktop\REv-Project-Kardex\Proyect_Kardex\bin\Debug\GMap.NET.WindowsForms.xml
+C:\Users\Ricardo Veizaga\Desktop\REv-Project-Kardex\Proyect_Kardex\obj\Debug\Proyect_Kardex.GMapsLocal.resources

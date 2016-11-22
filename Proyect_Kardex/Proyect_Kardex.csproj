@@ -797,6 +797,8 @@
     <None Include="Resources\editModVentas.png" />
     <None Include="Resources\deleteVentas.png" />
     <None Include="Resources\RegistroVentas.png" />
+    <None Include="Resources\GetRuta.png" />
+    <None Include="Resources\google_maps.png" />
     <Content Include="REV_Project_Kardex_Logo.ico" />
     <None Include="Resources\weblogo.png" />
     <None Include="Resources\viewfoto.png" />

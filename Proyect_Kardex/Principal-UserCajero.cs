@@ -1175,6 +1175,12 @@ namespace Proyect_Kardex
             vd.ShowDialog();
         }
 
+        private void toolStripMenuItem19_Click(object sender, EventArgs e)
+        {
+            GMapsLocal goo = new GMapsLocal();
+            goo.ShowDialog();
+        }
+
 
     }
 }

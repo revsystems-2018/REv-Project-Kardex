@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GMapsLocal));
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.lbtel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtdesc = new System.Windows.Forms.TextBox();
+            this.txtlat = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtlng = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.printview = new System.Windows.Forms.Button();
+            this.sendBtn = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // gMapControl1
@@ -76,23 +78,22 @@
             this.lbtel.Size = new System.Drawing.Size(69, 12);
             this.lbtel.TabIndex = 19;
             this.lbtel.Text = "Descripción";
-            this.lbtel.Visible = false;
             // 
-            // textBox1
+            // txtdesc
             // 
-            this.textBox1.Location = new System.Drawing.Point(87, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 20;
+            this.txtdesc.Location = new System.Drawing.Point(87, 5);
+            this.txtdesc.Name = "txtdesc";
+            this.txtdesc.Size = new System.Drawing.Size(158, 20);
+            this.txtdesc.TabIndex = 20;
             // 
-            // textBox2
+            // txtlat
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtlat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(299, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 22;
+            this.txtlat.Location = new System.Drawing.Point(299, 5);
+            this.txtlat.Name = "txtlat";
+            this.txtlat.Size = new System.Drawing.Size(100, 20);
+            this.txtlat.TabIndex = 22;
             // 
             // label1
             // 
@@ -105,15 +106,14 @@
             this.label1.Size = new System.Drawing.Size(42, 12);
             this.label1.TabIndex = 21;
             this.label1.Text = "Latitud";
-            this.label1.Visible = false;
             // 
-            // textBox3
+            // txtlng
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(464, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 24;
+            this.txtlng.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtlng.Location = new System.Drawing.Point(464, 5);
+            this.txtlng.Name = "txtlng";
+            this.txtlng.Size = new System.Drawing.Size(100, 20);
+            this.txtlng.TabIndex = 24;
             // 
             // label2
             // 
@@ -125,24 +125,23 @@
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 23;
             this.label2.Text = "Longitud";
-            this.label2.Visible = false;
             // 
-            // printview
+            // sendBtn
             // 
-            this.printview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.printview.BackColor = System.Drawing.Color.Transparent;
-            this.printview.BackgroundImage = global::Proyect_Kardex.Properties.Resources.dosnotify;
-            this.printview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.printview.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.printview.FlatAppearance.BorderSize = 0;
-            this.printview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.printview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.printview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printview.Location = new System.Drawing.Point(591, 5);
-            this.printview.Name = "printview";
-            this.printview.Size = new System.Drawing.Size(20, 20);
-            this.printview.TabIndex = 303;
-            this.printview.UseVisualStyleBackColor = false;
+            this.sendBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sendBtn.BackColor = System.Drawing.Color.Transparent;
+            this.sendBtn.BackgroundImage = global::Proyect_Kardex.Properties.Resources.GetRuta;
+            this.sendBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sendBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sendBtn.FlatAppearance.BorderSize = 0;
+            this.sendBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.sendBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sendBtn.Location = new System.Drawing.Point(591, 5);
+            this.sendBtn.Name = "sendBtn";
+            this.sendBtn.Size = new System.Drawing.Size(20, 20);
+            this.sendBtn.TabIndex = 303;
+            this.sendBtn.UseVisualStyleBackColor = false;
             // 
             // GMapsLocal
             // 
@@ -150,12 +149,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(623, 460);
-            this.Controls.Add(this.printview);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.sendBtn);
+            this.Controls.Add(this.txtlng);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtlat);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtdesc);
             this.Controls.Add(this.lbtel);
             this.Controls.Add(this.gMapControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -173,11 +172,12 @@
 
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         public System.Windows.Forms.Label lbtel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtdesc;
+        private System.Windows.Forms.TextBox txtlat;
         public System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtlng;
         public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Button printview;
+        public System.Windows.Forms.Button sendBtn;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
