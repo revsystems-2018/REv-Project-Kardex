@@ -35,7 +35,7 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.TSSname = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TSSdate = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TSSNameUsr = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoM1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevaEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,19 +87,11 @@
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.provBoton = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.Userboton = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -119,6 +111,18 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lbweb = new System.Windows.Forms.LinkLabel();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TSSdate = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -129,13 +133,15 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.BackColor = System.Drawing.Color.Silver;
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.statusStrip1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSSemp,
             this.toolStripStatusLabel2,
             this.TSSname,
             this.toolStripStatusLabel4,
+            this.TSSNameUsr,
+            this.toolStripStatusLabel1,
             this.TSSdate});
             this.statusStrip1.Location = new System.Drawing.Point(0, 655);
             this.statusStrip1.Name = "statusStrip1";
@@ -145,33 +151,38 @@
             // 
             // TSSemp
             // 
+            this.TSSemp.ForeColor = System.Drawing.SystemColors.Window;
             this.TSSemp.Name = "TSSemp";
             this.TSSemp.Size = new System.Drawing.Size(161, 17);
             this.TSSemp.Text = "Nombre de Empresa NULL";
             // 
             // toolStripStatusLabel2
             // 
+            this.toolStripStatusLabel2.ForeColor = System.Drawing.SystemColors.Window;
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(19, 17);
             this.toolStripStatusLabel2.Text = " | ";
             // 
             // TSSname
             // 
+            this.TSSname.ForeColor = System.Drawing.SystemColors.Window;
             this.TSSname.Name = "TSSname";
             this.TSSname.Size = new System.Drawing.Size(105, 17);
             this.TSSname.Text = "ADMINISTRADOR";
             // 
             // toolStripStatusLabel4
             // 
+            this.toolStripStatusLabel4.ForeColor = System.Drawing.SystemColors.Window;
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(19, 17);
             this.toolStripStatusLabel4.Text = " | ";
             // 
-            // TSSdate
+            // TSSNameUsr
             // 
-            this.TSSdate.Name = "TSSdate";
-            this.TSSdate.Size = new System.Drawing.Size(85, 17);
-            this.TSSdate.Text = "30-12-2015";
+            this.TSSNameUsr.ForeColor = System.Drawing.SystemColors.Window;
+            this.TSSNameUsr.Name = "TSSNameUsr";
+            this.TSSNameUsr.Size = new System.Drawing.Size(101, 17);
+            this.TSSNameUsr.Text = "Ricardo Veizaga";
             // 
             // menuStrip1
             // 
@@ -610,15 +621,17 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Controls.Add(this.provBoton);
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.Userboton);
+            this.panel1.Controls.Add(this.button14);
             this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.provBoton);
+            this.panel1.Controls.Add(this.Userboton);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -636,25 +649,12 @@
             this.provBoton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.provBoton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.provBoton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.provBoton.Location = new System.Drawing.Point(128, 3);
+            this.provBoton.Location = new System.Drawing.Point(134, 4);
             this.provBoton.Name = "provBoton";
             this.provBoton.Size = new System.Drawing.Size(45, 45);
             this.provBoton.TabIndex = 1;
             this.provBoton.UseVisualStyleBackColor = true;
             this.provBoton.Click += new System.EventHandler(this.provBoton_Click);
-            // 
-            // button13
-            // 
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(874, 3);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(45, 45);
-            this.button13.TabIndex = 3;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // Userboton
             // 
@@ -665,86 +665,12 @@
             this.Userboton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.Userboton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.Userboton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Userboton.Location = new System.Drawing.Point(70, 3);
+            this.Userboton.Location = new System.Drawing.Point(73, 4);
             this.Userboton.Name = "Userboton";
             this.Userboton.Size = new System.Drawing.Size(45, 45);
             this.Userboton.TabIndex = 0;
             this.Userboton.UseVisualStyleBackColor = true;
             this.Userboton.Click += new System.EventHandler(this.Userboton_Click);
-            // 
-            // button12
-            // 
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(803, 4);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(45, 45);
-            this.button12.TabIndex = 3;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(714, 4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(45, 45);
-            this.button11.TabIndex = 3;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(643, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 45);
-            this.button10.TabIndex = 3;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(572, 4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(45, 45);
-            this.button9.TabIndex = 3;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(501, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 45);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "b";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(408, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(45, 45);
-            this.button7.TabIndex = 3;
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -754,7 +680,7 @@
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(13, 3);
+            this.button6.Location = new System.Drawing.Point(12, 4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(45, 45);
             this.button6.TabIndex = 3;
@@ -769,7 +695,7 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(329, 3);
+            this.button5.Location = new System.Drawing.Point(332, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(45, 45);
             this.button5.TabIndex = 3;
@@ -784,7 +710,7 @@
             this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(268, 3);
+            this.button4.Location = new System.Drawing.Point(271, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(45, 45);
             this.button4.TabIndex = 3;
@@ -798,24 +724,12 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(206, 3);
+            this.button3.Location = new System.Drawing.Point(210, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 45);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(518, 79);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(453, 573);
-            this.webBrowser1.TabIndex = 3;
-            this.webBrowser1.Url = new System.Uri("https://www.google.com/maps/place/IC+Norte/@-17.3722473,-66.1531961,17z/data=!3m1" +
-        "!4b1!4m2!3m1!1s0x93e374199a304dbb:0x450587ff8b3d9846", System.UriKind.Absolute);
             // 
             // label1
             // 
@@ -836,7 +750,6 @@
             this.label2.Size = new System.Drawing.Size(77, 14);
             this.label2.TabIndex = 8;
             this.label2.Text = "Dirección:";
-            this.label2.Visible = false;
             // 
             // label3
             // 
@@ -847,7 +760,6 @@
             this.label3.Size = new System.Drawing.Size(77, 14);
             this.label3.TabIndex = 9;
             this.label3.Text = "Teléfono: ";
-            this.label3.Visible = false;
             // 
             // label4
             // 
@@ -858,7 +770,6 @@
             this.label4.Size = new System.Drawing.Size(35, 14);
             this.label4.TabIndex = 10;
             this.label4.Text = "Fax:";
-            this.label4.Visible = false;
             // 
             // label5
             // 
@@ -869,7 +780,6 @@
             this.label5.Size = new System.Drawing.Size(56, 14);
             this.label5.TabIndex = 11;
             this.label5.Text = "E-mail:";
-            this.label5.Visible = false;
             // 
             // label6
             // 
@@ -880,7 +790,6 @@
             this.label6.Size = new System.Drawing.Size(35, 14);
             this.label6.TabIndex = 12;
             this.label6.Text = "Web:";
-            this.label6.Visible = false;
             // 
             // lbdir
             // 
@@ -891,7 +800,6 @@
             this.lbdir.Size = new System.Drawing.Size(171, 14);
             this.lbdir.TabIndex = 13;
             this.lbdir.Text = "Av. America esq. Av. Pando ";
-            this.lbdir.Visible = false;
             // 
             // lbtel
             // 
@@ -902,7 +810,6 @@
             this.lbtel.Size = new System.Drawing.Size(72, 12);
             this.lbtel.TabIndex = 18;
             this.lbtel.Text = "(4) 4240575";
-            this.lbtel.Visible = false;
             // 
             // lbfaxs
             // 
@@ -913,7 +820,6 @@
             this.lbfaxs.Size = new System.Drawing.Size(75, 12);
             this.lbfaxs.TabIndex = 19;
             this.lbfaxs.Text = "(4) 4244969 ";
-            this.lbfaxs.Visible = false;
             // 
             // lbcorreo
             // 
@@ -924,7 +830,6 @@
             this.lbcorreo.Size = new System.Drawing.Size(125, 12);
             this.lbcorreo.TabIndex = 20;
             this.lbcorreo.Text = "contacto@icnorte.com";
-            this.lbcorreo.Visible = false;
             // 
             // smshelp
             // 
@@ -933,23 +838,24 @@
             // PBanun2
             // 
             this.PBanun2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PBanun2.BackColor = System.Drawing.SystemColors.Control;
+            this.PBanun2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PBanun2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PBanun2.Location = new System.Drawing.Point(271, 339);
             this.PBanun2.Name = "PBanun2";
             this.PBanun2.Size = new System.Drawing.Size(241, 313);
+            this.PBanun2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBanun2.TabIndex = 6;
             this.PBanun2.TabStop = false;
             // 
             // PBanun1
             // 
             this.PBanun1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PBanun1.BackColor = System.Drawing.SystemColors.Control;
+            this.PBanun1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.PBanun1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PBanun1.Location = new System.Drawing.Point(11, 339);
             this.PBanun1.Name = "PBanun1";
             this.PBanun1.Size = new System.Drawing.Size(239, 313);
-            this.PBanun1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PBanun1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PBanun1.TabIndex = 5;
             this.PBanun1.TabStop = false;
             // 
@@ -959,7 +865,8 @@
             this.logoEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logoEmp.Location = new System.Drawing.Point(11, 131);
             this.logoEmp.Name = "logoEmp";
-            this.logoEmp.Size = new System.Drawing.Size(251, 150);
+            this.logoEmp.Size = new System.Drawing.Size(251, 141);
+            this.logoEmp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoEmp.TabIndex = 4;
             this.logoEmp.TabStop = false;
             // 
@@ -982,7 +889,6 @@
             this.lbcel.Size = new System.Drawing.Size(72, 12);
             this.lbcel.TabIndex = 24;
             this.lbcel.Text = "(4) 4240575";
-            this.lbcel.Visible = false;
             // 
             // label13
             // 
@@ -993,7 +899,6 @@
             this.label13.Size = new System.Drawing.Size(70, 14);
             this.label13.TabIndex = 23;
             this.label13.Text = "Celular: ";
-            this.label13.Visible = false;
             // 
             // label14
             // 
@@ -1005,7 +910,6 @@
             this.label14.Size = new System.Drawing.Size(59, 12);
             this.label14.TabIndex = 25;
             this.label14.Text = "Anuncios ";
-            this.label14.Visible = false;
             // 
             // lbweb
             // 
@@ -1018,12 +922,181 @@
             this.lbweb.Text = "http://www.icnorte.com/";
             this.lbweb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbweb_LinkClicked);
             // 
+            // gMapControl1
+            // 
+            this.gMapControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gMapControl1.Bearing = 0F;
+            this.gMapControl1.CanDragMap = true;
+            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gMapControl1.GrayScaleMode = false;
+            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gMapControl1.LevelsKeepInMemmory = 5;
+            this.gMapControl1.Location = new System.Drawing.Point(518, 79);
+            this.gMapControl1.MarkersEnabled = true;
+            this.gMapControl1.MaxZoom = 2;
+            this.gMapControl1.MinZoom = 2;
+            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gMapControl1.Name = "gMapControl1";
+            this.gMapControl1.NegativeMode = false;
+            this.gMapControl1.PolygonsEnabled = true;
+            this.gMapControl1.RetryLoadTile = 0;
+            this.gMapControl1.RoutesEnabled = true;
+            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gMapControl1.ShowTileGridLines = false;
+            this.gMapControl1.Size = new System.Drawing.Size(453, 573);
+            this.gMapControl1.TabIndex = 27;
+            this.gMapControl1.Zoom = 0D;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.Window;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(19, 17);
+            this.toolStripStatusLabel1.Text = " | ";
+            // 
+            // TSSdate
+            // 
+            this.TSSdate.ForeColor = System.Drawing.SystemColors.Window;
+            this.TSSdate.Name = "TSSdate";
+            this.TSSdate.Size = new System.Drawing.Size(85, 17);
+            this.TSSdate.Text = "30-12-2015";
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(404, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 45);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(465, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 45);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(526, 4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(45, 45);
+            this.button7.TabIndex = 6;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(626, 4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(45, 45);
+            this.button8.TabIndex = 8;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(735, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(45, 45);
+            this.button10.TabIndex = 10;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(684, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(45, 45);
+            this.button11.TabIndex = 9;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(840, 4);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(45, 45);
+            this.button12.TabIndex = 12;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(789, 4);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(45, 45);
+            this.button13.TabIndex = 11;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(914, 4);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(45, 45);
+            this.button14.TabIndex = 13;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(971, 677);
+            this.Controls.Add(this.gMapControl1);
             this.Controls.Add(this.lbweb);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.lbcel);
@@ -1042,7 +1115,6 @@
             this.Controls.Add(this.PBanun2);
             this.Controls.Add(this.PBanun1);
             this.Controls.Add(this.logoEmp);
-            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -1051,6 +1123,7 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "REV Project Kardex";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
             this.Load += new System.EventHandler(this.Principal_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -1072,13 +1145,6 @@
         private System.Windows.Forms.ToolStripMenuItem archivoM1;
         private System.Windows.Forms.ToolStripMenuItem eMPRESAToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
@@ -1087,7 +1153,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripMenuItem nuevaEmpresaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarEmpresaToolStripMenuItem;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -1143,7 +1208,7 @@
         public System.Windows.Forms.ToolTip smshelp;
         public System.Windows.Forms.ToolStripStatusLabel TSSemp;
         public System.Windows.Forms.ToolStripStatusLabel TSSname;
-        public System.Windows.Forms.ToolStripStatusLabel TSSdate;
+        public System.Windows.Forms.ToolStripStatusLabel TSSNameUsr;
         public System.Windows.Forms.PictureBox logoEmp;
         public System.Windows.Forms.PictureBox PBanun1;
         public System.Windows.Forms.PictureBox PBanun2;
@@ -1156,5 +1221,17 @@
         private System.Windows.Forms.Label label13;
         public System.Windows.Forms.Label label14;
         private System.Windows.Forms.LinkLabel lbweb;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        public System.Windows.Forms.ToolStripStatusLabel TSSdate;
+        public GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

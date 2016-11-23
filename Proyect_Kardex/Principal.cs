@@ -8,16 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using GMap.NET;
+using GMap.NET.MapProviders;
+using GMap.NET.WindowsForms;
+using GMap.NET.WindowsForms.Markers;
 
 namespace Proyect_Kardex
 {
     public partial class Principal : Form
     {
         ValidacionText mn = new ValidacionText();
+        GMarkerGoogle marker;
+        GMapOverlay markeroverlay;
 
         public int Cod = 0;
         public String Nom = "";
-        public String NameUser = ""; 
+        public String NameUser = "";
+        public String DirEmp = "";
+
+        DateTime dateday = DateTime.Today;
 
         public Principal()
         {
@@ -221,7 +230,7 @@ namespace Proyect_Kardex
                 {
                     TSSemp.Text = read2.GetString(1);
                     lbName.Text = read2.GetString(1);
-                    lbdir.Text = read2.GetString(2);
+                    DirEmp = read2.GetString(2);
                     lbtel.Text = read2.GetInt32(3).ToString();
                     lbcel.Text = read2.GetInt32(4).ToString();
                     lbfaxs.Text = read2.GetInt32(5).ToString() +" "+ read2.GetInt32(6).ToString();
@@ -247,13 +256,74 @@ namespace Proyect_Kardex
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                a.CerrarCnn();
             }
         }
 
+        public String GetNameUser(int osc) 
+        {
+            String res = "";
+            Conexion a = new Conexion();
+            string query = "SELECT * FROM Usuario; ";
+
+            SqlCommand sqlQ = new SqlCommand(query, a.GetCONN());
+            a.OpenCnn();
+            SqlDataReader read2;
+            try
+            {
+                read2 = sqlQ.ExecuteReader();
+                while (read2.Read())
+                {
+                    res = read2.GetString(1) + " " + read2.GetString(2);
+                    res = res.ToUpper();
+                }
+            }
+            catch (Exception) { }
+            a.CerrarCnn();
+            return res;
+        }
+
+
+        public String SacarCadena(String cid) 
+        {
+            String res = "";
+            int posi = cid.IndexOf(";");
+            res = cid.Substring(0, posi);
+            return res;
+        }
+
+
         private void Principal_Load(object sender, EventArgs e)
         {
-            TSSname.Text = Name;
+            CargarEmpresa();
+            String lt = "";
+            String lg = "";
+
+            //Datos para cargar el mapa
+            String one = SacarCadena(DirEmp);
+            lbdir.Text = one;
+            DirEmp = DirEmp.Replace(DirEmp.Substring(0, (DirEmp.IndexOf(";")+1)), "");
+            lt = SacarCadena(DirEmp);
+            DirEmp = DirEmp.Replace(DirEmp.Substring(0, (DirEmp.IndexOf(";") + 1)), "");
+            lg = DirEmp;
+            //gMaps
+            gMapControl1.DragButton = System.Windows.Forms.MouseButtons.Left;
+            gMapControl1.CanDragMap = true;
+            gMapControl1.MapProvider = GMapProviders.GoogleMap;
+            gMapControl1.Position = new PointLatLng(Convert.ToDouble(lt), Convert.ToDouble(lg));
+            gMapControl1.MinZoom = 0;
+            gMapControl1.MaxZoom = 24;
+            gMapControl1.Zoom = 9;
+            gMapControl1.AutoScroll = true;
+            //add marcador
+            markeroverlay = new GMapOverlay("Marcador");
+            marker = new GMarkerGoogle(new PointLatLng(Convert.ToDouble(lt), Convert.ToDouble(lg)), GMarkerGoogleType.red);
+            markeroverlay.Markers.Add(marker); 
+            //add overlay en el mapa
+            gMapControl1.Overlays.Add(markeroverlay);
+
+            //Datos del statusBar
+            TSSNameUsr.Text = GetNameUser(Cod);
+            TSSdate.Text = dateday.ToString("d");
         }
 
         private void lbweb_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -262,6 +332,11 @@ namespace Proyect_Kardex
             we.texturlweb.Text = lbweb.Text;
             we.webBrow.Navigate(lbweb.Text);
             we.ShowDialog();
+        }
+
+        private void Principal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit(e);
         }
     }
 }

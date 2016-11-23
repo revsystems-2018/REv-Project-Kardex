@@ -68,6 +68,7 @@
             this.gMapControl1.Size = new System.Drawing.Size(622, 432);
             this.gMapControl1.TabIndex = 0;
             this.gMapControl1.Zoom = 0D;
+            this.gMapControl1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseDoubleClick);
             // 
             // lbtel
             // 
@@ -81,19 +82,26 @@
             // 
             // txtdesc
             // 
+            this.txtdesc.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdesc.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtdesc.Location = new System.Drawing.Point(87, 5);
             this.txtdesc.Name = "txtdesc";
             this.txtdesc.Size = new System.Drawing.Size(158, 20);
             this.txtdesc.TabIndex = 20;
+            this.txtdesc.Text = "Escribir Ubicacion";
+            this.txtdesc.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtdesc_MouseClick);
+            this.txtdesc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdesc_KeyPress);
             // 
             // txtlat
             // 
             this.txtlat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtlat.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlat.Location = new System.Drawing.Point(299, 5);
             this.txtlat.Name = "txtlat";
             this.txtlat.Size = new System.Drawing.Size(100, 20);
             this.txtlat.TabIndex = 22;
+            this.txtlat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtlat_KeyPress);
             // 
             // label1
             // 
@@ -110,10 +118,12 @@
             // txtlng
             // 
             this.txtlng.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtlng.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtlng.Location = new System.Drawing.Point(464, 5);
             this.txtlng.Name = "txtlng";
             this.txtlng.Size = new System.Drawing.Size(100, 20);
             this.txtlng.TabIndex = 24;
+            this.txtlng.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtlng_KeyPress);
             // 
             // label2
             // 
@@ -142,6 +152,7 @@
             this.sendBtn.Size = new System.Drawing.Size(20, 20);
             this.sendBtn.TabIndex = 303;
             this.sendBtn.UseVisualStyleBackColor = false;
+            this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
             // 
             // GMapsLocal
             // 

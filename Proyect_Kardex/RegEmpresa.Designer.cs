@@ -87,6 +87,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.btnGenQr = new System.Windows.Forms.Button();
             this.img3 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -262,7 +263,7 @@
             this.Dirtext.Name = "Dirtext";
             this.Dirtext.Size = new System.Drawing.Size(190, 20);
             this.Dirtext.TabIndex = 7;
-            this.Dirtext.Text = "Ubicación de la Empresa";
+            this.Dirtext.Text = "Cordenadas de Ubicación";
             this.Dirtext.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dirempClick);
             this.Dirtext.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Dirtext_KeyPress);
             // 
@@ -406,6 +407,7 @@
             this.weboton.BackColor = System.Drawing.SystemColors.Menu;
             this.weboton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.weblogo;
             this.weboton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.weboton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.weboton.FlatAppearance.BorderSize = 0;
             this.weboton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.weboton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
@@ -531,6 +533,7 @@
             // 
             this.open3.BackgroundImage = global::Proyect_Kardex.Properties.Resources.list_1;
             this.open3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.open3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.open3.FlatAppearance.BorderSize = 0;
             this.open3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.open3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
@@ -546,6 +549,7 @@
             // 
             this.open2.BackgroundImage = global::Proyect_Kardex.Properties.Resources.list_1;
             this.open2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.open2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.open2.FlatAppearance.BorderSize = 0;
             this.open2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.open2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
@@ -594,6 +598,7 @@
             // 
             this.open1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.list_1;
             this.open1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.open1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.open1.FlatAppearance.BorderSize = 0;
             this.open1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.open1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
@@ -609,6 +614,7 @@
             // 
             this.salirboton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.off;
             this.salirboton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.salirboton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.salirboton.FlatAppearance.BorderSize = 0;
             this.salirboton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.salirboton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -624,6 +630,7 @@
             // 
             this.saveboton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.save;
             this.saveboton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.saveboton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveboton.FlatAppearance.BorderSize = 0;
             this.saveboton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.saveboton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -639,6 +646,7 @@
             // 
             this.verboton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.ver;
             this.verboton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.verboton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.verboton.FlatAppearance.BorderSize = 0;
             this.verboton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.verboton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -665,7 +673,7 @@
             // 
             this.img1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.img1.Location = new System.Drawing.Point(57, 436);
+            this.img1.Location = new System.Drawing.Point(12, 426);
             this.img1.Name = "img1";
             this.img1.Size = new System.Drawing.Size(83, 106);
             this.img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -676,7 +684,7 @@
             // 
             this.img2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.img2.Location = new System.Drawing.Point(160, 436);
+            this.img2.Location = new System.Drawing.Point(108, 426);
             this.img2.Name = "img2";
             this.img2.Size = new System.Drawing.Size(83, 106);
             this.img2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -687,6 +695,7 @@
             // 
             this.btnOpenQr.BackgroundImage = global::Proyect_Kardex.Properties.Resources.list_1;
             this.btnOpenQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOpenQr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOpenQr.FlatAppearance.BorderSize = 0;
             this.btnOpenQr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnOpenQr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
@@ -733,6 +742,7 @@
             // 
             this.btnGenQr.BackgroundImage = global::Proyect_Kardex.Properties.Resources.qr_code;
             this.btnGenQr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGenQr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGenQr.FlatAppearance.BorderSize = 0;
             this.btnGenQr.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnGenQr.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
@@ -748,19 +758,37 @@
             // 
             this.img3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.img3.Location = new System.Drawing.Point(249, 436);
+            this.img3.Location = new System.Drawing.Point(207, 426);
             this.img3.Name = "img3";
             this.img3.Size = new System.Drawing.Size(83, 106);
             this.img3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img3.TabIndex = 38;
             this.img3.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.google_maps;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(256, 240);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(19, 18);
+            this.button1.TabIndex = 18;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // RegEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(567, 403);
+            this.ClientSize = new System.Drawing.Size(567, 404);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.img3);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.btnGenQr);
@@ -880,5 +908,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnGenQr;
         public System.Windows.Forms.PictureBox img3;
+        public System.Windows.Forms.Button button1;
     }
 }

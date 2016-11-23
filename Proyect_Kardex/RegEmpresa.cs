@@ -787,6 +787,7 @@ namespace Proyect_Kardex
 
         private void Dirtext_KeyPress(object sender, KeyPressEventArgs e)
         {
+            m.Nada(e);
             Dirtext.ForeColor = SystemColors.WindowText;
             Dirtext.Font = new Font(Dirtext.Font, FontStyle.Regular);
             //m.soloLetras(e);
@@ -989,6 +990,13 @@ namespace Proyect_Kardex
         {
             txtcodeqr.ForeColor = SystemColors.WindowText;
             txtcodeqr.Font = new Font(txtcodeqr.Font, FontStyle.Regular);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            GMapsLocal goo = new GMapsLocal();
+            goo.ShowDialog();
+            Dirtext.Text = goo.codGMap;
         }
 
     }

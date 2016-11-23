@@ -16,10 +16,12 @@ namespace Proyect_Kardex
 {
     public partial class GMapsLocal : Form
     {
+        ValidacionText mn = new ValidacionText();
         GMarkerGoogle marker;
         GMapOverlay markeroverlay;
 
         int filaseleccionada = 0;
+        public String codGMap = "";
         public double LatInicial = -17.301837;
         public double LngInicial = -66.410481;
 
@@ -46,7 +48,7 @@ namespace Proyect_Kardex
 
             //marcador
             markeroverlay = new GMapOverlay("Marcador");
-            marker = new GMarkerGoogle(new PointLatLng(LatInicial, LngInicial), GMarkerGoogleType.green);
+            marker = new GMarkerGoogle(new PointLatLng(LatInicial, LngInicial), GMarkerGoogleType.red);
             markeroverlay.Markers.Add(marker); // add marcador
 
             //add un tooltip a los marcadores
@@ -55,6 +57,66 @@ namespace Proyect_Kardex
 
             //add overlay en el mapa
             gMapControl1.Overlays.Add(markeroverlay);
+        }
+
+        private void gMapControl1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            //obtener los datos en los ejes X y Y.
+            double lat = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lat;
+            double lng = gMapControl1.FromLocalToLatLng(e.X, e.Y).Lng;
+
+            //posicionar lat y lng
+            txtdesc.Text = "Mi Ubicacion";
+            txtlat.Text = lat.ToString();
+            txtlng.Text = lng.ToString();
+
+            //crear marcador en el mapa
+            marker.Position = new PointLatLng(lat, lng);
+
+            //add mensage del lugar
+            marker.ToolTipText = String.Format("Ubicacion: \n Latitud: {0} \n Longitud: {1}", lat, lng);
+        }
+
+        private void txtdesc_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                if (txtdesc.Text != "" && txtdesc.Font.Italic == true)
+                {
+                    txtdesc.Text = "";
+                    txtdesc.ForeColor = SystemColors.WindowText;
+                    txtdesc.Font = new Font(txtdesc.Font, FontStyle.Regular);
+                    //textBox1.Font.Italic = false;
+
+                }
+                else
+                {
+                    txtdesc.ForeColor = SystemColors.WindowText;
+                    txtdesc.Font = new Font(txtdesc.Font, FontStyle.Regular);
+                }
+            }
+        }
+
+        private void txtdesc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txtdesc.ForeColor = SystemColors.WindowText;
+            txtdesc.Font = new Font(txtdesc.Font, FontStyle.Regular);
+        }
+
+        private void txtlat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            mn.Nada(e);
+        }
+
+        private void txtlng_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            mn.Nada(e);
+        }
+
+        private void sendBtn_Click(object sender, EventArgs e)
+        {
+            codGMap = txtdesc.Text + ";" + txtlat.Text + ";" + txtlng.Text;
+            this.Close();
         }
     }
 }
