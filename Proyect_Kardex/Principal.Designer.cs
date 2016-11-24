@@ -36,8 +36,63 @@
             this.TSSname = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.TSSNameUsr = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TSSdate = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoM1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.eMPRESAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.aLMACENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cOMPRASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uTILIDADESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbdir = new System.Windows.Forms.Label();
+            this.lbtel = new System.Windows.Forms.Label();
+            this.lbfaxs = new System.Windows.Forms.Label();
+            this.lbcorreo = new System.Windows.Forms.Label();
+            this.smshelp = new System.Windows.Forms.ToolTip(this.components);
+            this.lbName = new System.Windows.Forms.Label();
+            this.lbcel = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lbweb = new System.Windows.Forms.LinkLabel();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.PBanun2 = new System.Windows.Forms.PictureBox();
+            this.PBanun1 = new System.Windows.Forms.PictureBox();
+            this.logoEmp = new System.Windows.Forms.PictureBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.provBoton = new System.Windows.Forms.Button();
+            this.Userboton = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.nuevaEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioCajeroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -56,73 +111,18 @@
             this.eliminarUsuarioClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.eliminarUsuarioProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudesDeCuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarciUser = new System.Windows.Forms.ToolStripTextBox();
             this.insertarCUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.editarCuentaDeAdministradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eMPRESAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.verEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aLMACENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cOMPRASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uTILIDADESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.provBoton = new System.Windows.Forms.Button();
-            this.Userboton = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbdir = new System.Windows.Forms.Label();
-            this.lbtel = new System.Windows.Forms.Label();
-            this.lbfaxs = new System.Windows.Forms.Label();
-            this.lbcorreo = new System.Windows.Forms.Label();
-            this.smshelp = new System.Windows.Forms.ToolTip(this.components);
-            this.PBanun2 = new System.Windows.Forms.PictureBox();
-            this.PBanun1 = new System.Windows.Forms.PictureBox();
-            this.logoEmp = new System.Windows.Forms.PictureBox();
-            this.lbName = new System.Windows.Forms.Label();
-            this.lbcel = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lbweb = new System.Windows.Forms.LinkLabel();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.TSSdate = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -184,6 +184,20 @@
             this.TSSNameUsr.Size = new System.Drawing.Size(101, 17);
             this.TSSNameUsr.Text = "Ricardo Veizaga";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.Window;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(19, 17);
+            this.toolStripStatusLabel1.Text = " | ";
+            // 
+            // TSSdate
+            // 
+            this.TSSdate.ForeColor = System.Drawing.SystemColors.Window;
+            this.TSSdate.Name = "TSSdate";
+            this.TSSdate.Size = new System.Drawing.Size(85, 17);
+            this.TSSdate.Text = "30-12-2015";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -227,6 +241,574 @@
             this.archivoM1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.archivoM1.Size = new System.Drawing.Size(77, 20);
             this.archivoM1.Text = " ARCHIVO";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(408, 6);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(408, 6);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(411, 22);
+            this.toolStripMenuItem1.Text = "Reporte de Clientes";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(411, 22);
+            this.toolStripMenuItem2.Text = "Reporte de Usuarios Cajeros";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(411, 22);
+            this.toolStripMenuItem3.Text = "Reporte de Proveedores";
+            // 
+            // toolStripSeparator13
+            // 
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
+            this.toolStripSeparator13.Size = new System.Drawing.Size(408, 6);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(408, 6);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(408, 6);
+            // 
+            // eMPRESAToolStripMenuItem
+            // 
+            this.eMPRESAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarEmpresaToolStripMenuItem,
+            this.toolStripSeparator8,
+            this.editarToolStripMenuItem,
+            this.toolStripSeparator7,
+            this.verEmpresaToolStripMenuItem});
+            this.eMPRESAToolStripMenuItem.Name = "eMPRESAToolStripMenuItem";
+            this.eMPRESAToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
+            this.eMPRESAToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.eMPRESAToolStripMenuItem.Text = " EMPRESA";
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(335, 6);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(335, 6);
+            // 
+            // aLMACENToolStripMenuItem
+            // 
+            this.aLMACENToolStripMenuItem.Name = "aLMACENToolStripMenuItem";
+            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.aLMACENToolStripMenuItem.Text = "ALMACEN";
+            // 
+            // vENTASToolStripMenuItem
+            // 
+            this.vENTASToolStripMenuItem.Name = "vENTASToolStripMenuItem";
+            this.vENTASToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.vENTASToolStripMenuItem.Text = "VENTAS";
+            // 
+            // cOMPRASToolStripMenuItem
+            // 
+            this.cOMPRASToolStripMenuItem.Name = "cOMPRASToolStripMenuItem";
+            this.cOMPRASToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.cOMPRASToolStripMenuItem.Text = "COMPRAS";
+            // 
+            // uTILIDADESToolStripMenuItem
+            // 
+            this.uTILIDADESToolStripMenuItem.Name = "uTILIDADESToolStripMenuItem";
+            this.uTILIDADESToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.uTILIDADESToolStripMenuItem.Text = "UTILIDADES";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(77, 20);
+            this.toolStripMenuItem7.Text = "VENTANA";
+            // 
+            // aYUDAToolStripMenuItem
+            // 
+            this.aYUDAToolStripMenuItem.Name = "aYUDAToolStripMenuItem";
+            this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.aYUDAToolStripMenuItem.Text = "AYUDA";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel1.Controls.Add(this.button14);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.provBoton);
+            this.panel1.Controls.Add(this.Userboton);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(971, 52);
+            this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(277, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 18);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Contacto";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(268, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 14);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Dirección:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(268, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 14);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Teléfono: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(268, 215);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 14);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Fax:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(268, 237);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 14);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "E-mail:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(268, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 14);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Web:";
+            // 
+            // lbdir
+            // 
+            this.lbdir.AutoSize = true;
+            this.lbdir.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdir.Location = new System.Drawing.Point(277, 152);
+            this.lbdir.Name = "lbdir";
+            this.lbdir.Size = new System.Drawing.Size(171, 14);
+            this.lbdir.TabIndex = 13;
+            this.lbdir.Text = "Av. America esq. Av. Pando ";
+            // 
+            // lbtel
+            // 
+            this.lbtel.AutoSize = true;
+            this.lbtel.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtel.Location = new System.Drawing.Point(351, 174);
+            this.lbtel.Name = "lbtel";
+            this.lbtel.Size = new System.Drawing.Size(72, 12);
+            this.lbtel.TabIndex = 18;
+            this.lbtel.Text = "(4) 4240575";
+            // 
+            // lbfaxs
+            // 
+            this.lbfaxs.AutoSize = true;
+            this.lbfaxs.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbfaxs.Location = new System.Drawing.Point(309, 216);
+            this.lbfaxs.Name = "lbfaxs";
+            this.lbfaxs.Size = new System.Drawing.Size(75, 12);
+            this.lbfaxs.TabIndex = 19;
+            this.lbfaxs.Text = "(4) 4244969 ";
+            // 
+            // lbcorreo
+            // 
+            this.lbcorreo.AutoSize = true;
+            this.lbcorreo.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcorreo.Location = new System.Drawing.Point(330, 237);
+            this.lbcorreo.Name = "lbcorreo";
+            this.lbcorreo.Size = new System.Drawing.Size(125, 12);
+            this.lbcorreo.TabIndex = 20;
+            this.lbcorreo.Text = "contacto@icnorte.com";
+            // 
+            // smshelp
+            // 
+            this.smshelp.IsBalloon = true;
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Font = new System.Drawing.Font("Exotc350 Bd BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(14, 96);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(237, 22);
+            this.lbName.TabIndex = 22;
+            this.lbName.Text = "Nombre de la Empresa NULL";
+            // 
+            // lbcel
+            // 
+            this.lbcel.AutoSize = true;
+            this.lbcel.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcel.Location = new System.Drawing.Point(351, 195);
+            this.lbcel.Name = "lbcel";
+            this.lbcel.Size = new System.Drawing.Size(72, 12);
+            this.lbcel.TabIndex = 24;
+            this.lbcel.Text = "(4) 4240575";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(268, 194);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(70, 14);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Celular: ";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(12, 323);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 12);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "Anuncios ";
+            // 
+            // lbweb
+            // 
+            this.lbweb.AutoSize = true;
+            this.lbweb.Location = new System.Drawing.Point(329, 258);
+            this.lbweb.Name = "lbweb";
+            this.lbweb.Size = new System.Drawing.Size(125, 13);
+            this.lbweb.TabIndex = 26;
+            this.lbweb.TabStop = true;
+            this.lbweb.Text = "http://www.icnorte.com/";
+            this.lbweb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbweb_LinkClicked);
+            // 
+            // gMapControl1
+            // 
+            this.gMapControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gMapControl1.Bearing = 0F;
+            this.gMapControl1.CanDragMap = true;
+            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
+            this.gMapControl1.GrayScaleMode = false;
+            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.gMapControl1.LevelsKeepInMemmory = 5;
+            this.gMapControl1.Location = new System.Drawing.Point(518, 79);
+            this.gMapControl1.MarkersEnabled = true;
+            this.gMapControl1.MaxZoom = 2;
+            this.gMapControl1.MinZoom = 2;
+            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.gMapControl1.Name = "gMapControl1";
+            this.gMapControl1.NegativeMode = false;
+            this.gMapControl1.PolygonsEnabled = true;
+            this.gMapControl1.RetryLoadTile = 0;
+            this.gMapControl1.RoutesEnabled = true;
+            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.gMapControl1.ShowTileGridLines = false;
+            this.gMapControl1.Size = new System.Drawing.Size(453, 573);
+            this.gMapControl1.TabIndex = 27;
+            this.gMapControl1.Zoom = 0D;
+            // 
+            // PBanun2
+            // 
+            this.PBanun2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PBanun2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PBanun2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PBanun2.Location = new System.Drawing.Point(271, 339);
+            this.PBanun2.Name = "PBanun2";
+            this.PBanun2.Size = new System.Drawing.Size(241, 313);
+            this.PBanun2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBanun2.TabIndex = 6;
+            this.PBanun2.TabStop = false;
+            // 
+            // PBanun1
+            // 
+            this.PBanun1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PBanun1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.PBanun1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PBanun1.Location = new System.Drawing.Point(11, 339);
+            this.PBanun1.Name = "PBanun1";
+            this.PBanun1.Size = new System.Drawing.Size(239, 313);
+            this.PBanun1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBanun1.TabIndex = 5;
+            this.PBanun1.TabStop = false;
+            // 
+            // logoEmp
+            // 
+            this.logoEmp.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.logoEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoEmp.Location = new System.Drawing.Point(11, 131);
+            this.logoEmp.Name = "logoEmp";
+            this.logoEmp.Size = new System.Drawing.Size(251, 141);
+            this.logoEmp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoEmp.TabIndex = 4;
+            this.logoEmp.TabStop = false;
+            // 
+            // button14
+            // 
+            this.button14.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(914, 4);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(45, 45);
+            this.button14.TabIndex = 13;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(840, 4);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(45, 45);
+            this.button12.TabIndex = 12;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::Proyect_Kardex.Properties.Resources.shopping_04_512;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(789, 4);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(45, 45);
+            this.button13.TabIndex = 11;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = global::Proyect_Kardex.Properties.Resources.shopping_21_512;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(735, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(45, 45);
+            this.button10.TabIndex = 10;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImage = global::Proyect_Kardex.Properties.Resources.barcodcol;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(684, 3);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(45, 45);
+            this.button11.TabIndex = 9;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::Proyect_Kardex.Properties.Resources.search_good_512;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(626, 4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(45, 45);
+            this.button8.TabIndex = 8;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::Proyect_Kardex.Properties.Resources.ComprasEgresos;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(526, 4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(45, 45);
+            this.button7.TabIndex = 6;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::Proyect_Kardex.Properties.Resources.VentasIngresos;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(465, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 45);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.packing;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(404, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 45);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // provBoton
+            // 
+            this.provBoton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.ProveData;
+            this.provBoton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.provBoton.FlatAppearance.BorderSize = 0;
+            this.provBoton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.provBoton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.provBoton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.provBoton.Location = new System.Drawing.Point(134, 4);
+            this.provBoton.Name = "provBoton";
+            this.provBoton.Size = new System.Drawing.Size(45, 45);
+            this.provBoton.TabIndex = 1;
+            this.provBoton.UseVisualStyleBackColor = true;
+            this.provBoton.Click += new System.EventHandler(this.provBoton_Click);
+            // 
+            // Userboton
+            // 
+            this.Userboton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.userData;
+            this.Userboton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Userboton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Userboton.FlatAppearance.BorderSize = 0;
+            this.Userboton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.Userboton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.Userboton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Userboton.Location = new System.Drawing.Point(73, 4);
+            this.Userboton.Name = "Userboton";
+            this.Userboton.Size = new System.Drawing.Size(45, 45);
+            this.Userboton.TabIndex = 0;
+            this.Userboton.UseVisualStyleBackColor = true;
+            this.Userboton.Click += new System.EventHandler(this.Userboton_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::Proyect_Kardex.Properties.Resources._1455514112_User;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(12, 4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(45, 45);
+            this.button6.TabIndex = 3;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(332, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(45, 45);
+            this.button5.TabIndex = 3;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Cash_register;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(271, 4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(45, 45);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Package_add;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(210, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 45);
+            this.button3.TabIndex = 2;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // nuevaEmpresaToolStripMenuItem
             // 
@@ -384,11 +966,6 @@
             this.eliminarUsuarioProveedorToolStripMenuItem.Text = "Eliminar Usuario Proveedor";
             this.eliminarUsuarioProveedorToolStripMenuItem.Click += new System.EventHandler(this.eliminarUsuarioProveedorToolStripMenuItem_Click);
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(408, 6);
-            // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -410,40 +987,6 @@
             this.solicitudesDeCuentasToolStripMenuItem.Size = new System.Drawing.Size(411, 22);
             this.solicitudesDeCuentasToolStripMenuItem.Text = "Solicitudes de Cuentas de Usuario";
             this.solicitudesDeCuentasToolStripMenuItem.Click += new System.EventHandler(this.solicitudesDeCuentasToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(408, 6);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(411, 22);
-            this.toolStripMenuItem1.Text = "Reporte de Clientes";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(411, 22);
-            this.toolStripMenuItem2.Text = "Reporte de Usuarios Cajeros";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(411, 22);
-            this.toolStripMenuItem3.Text = "Reporte de Proveedores";
-            // 
-            // toolStripSeparator13
-            // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(408, 6);
             // 
             // toolStripMenuItem6
             // 
@@ -475,11 +1018,6 @@
             this.insertarCUToolStripMenuItem.Size = new System.Drawing.Size(349, 22);
             this.insertarCUToolStripMenuItem.Text = "Buscar por Carnet de Identidad";
             this.insertarCUToolStripMenuItem.Click += new System.EventHandler(this.insertarCUToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(408, 6);
             // 
             // editarCuentaDeAdministradorToolStripMenuItem
             // 
@@ -513,11 +1051,6 @@
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(408, 6);
-            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -527,19 +1060,6 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(411, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // eMPRESAToolStripMenuItem
-            // 
-            this.eMPRESAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarEmpresaToolStripMenuItem,
-            this.toolStripSeparator8,
-            this.editarToolStripMenuItem,
-            this.toolStripSeparator7,
-            this.verEmpresaToolStripMenuItem});
-            this.eMPRESAToolStripMenuItem.Name = "eMPRESAToolStripMenuItem";
-            this.eMPRESAToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
-            this.eMPRESAToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.eMPRESAToolStripMenuItem.Text = " EMPRESA";
             // 
             // agregarEmpresaToolStripMenuItem
             // 
@@ -551,11 +1071,6 @@
             this.agregarEmpresaToolStripMenuItem.Text = "Agregar Empresa Nueva";
             this.agregarEmpresaToolStripMenuItem.Click += new System.EventHandler(this.agregarEmpresaToolStripMenuItem_Click);
             // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(335, 6);
-            // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.config;
@@ -566,11 +1081,6 @@
             this.editarToolStripMenuItem.Text = "Configuracion de la Empresa";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(335, 6);
-            // 
             // verEmpresaToolStripMenuItem
             // 
             this.verEmpresaToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.next21;
@@ -579,516 +1089,6 @@
             this.verEmpresaToolStripMenuItem.Size = new System.Drawing.Size(338, 22);
             this.verEmpresaToolStripMenuItem.Text = "Ver Empresa ";
             this.verEmpresaToolStripMenuItem.Click += new System.EventHandler(this.verEmpresaToolStripMenuItem_Click);
-            // 
-            // aLMACENToolStripMenuItem
-            // 
-            this.aLMACENToolStripMenuItem.Name = "aLMACENToolStripMenuItem";
-            this.aLMACENToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.aLMACENToolStripMenuItem.Text = "ALMACEN";
-            // 
-            // vENTASToolStripMenuItem
-            // 
-            this.vENTASToolStripMenuItem.Name = "vENTASToolStripMenuItem";
-            this.vENTASToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.vENTASToolStripMenuItem.Text = "VENTAS";
-            // 
-            // cOMPRASToolStripMenuItem
-            // 
-            this.cOMPRASToolStripMenuItem.Name = "cOMPRASToolStripMenuItem";
-            this.cOMPRASToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.cOMPRASToolStripMenuItem.Text = "COMPRAS";
-            // 
-            // uTILIDADESToolStripMenuItem
-            // 
-            this.uTILIDADESToolStripMenuItem.Name = "uTILIDADESToolStripMenuItem";
-            this.uTILIDADESToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.uTILIDADESToolStripMenuItem.Text = "UTILIDADES";
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(77, 20);
-            this.toolStripMenuItem7.Text = "VENTANA";
-            // 
-            // aYUDAToolStripMenuItem
-            // 
-            this.aYUDAToolStripMenuItem.Name = "aYUDAToolStripMenuItem";
-            this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.aYUDAToolStripMenuItem.Text = "AYUDA";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Controls.Add(this.button14);
-            this.panel1.Controls.Add(this.button12);
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.provBoton);
-            this.panel1.Controls.Add(this.Userboton);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Location = new System.Drawing.Point(0, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(971, 52);
-            this.panel1.TabIndex = 2;
-            // 
-            // provBoton
-            // 
-            this.provBoton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.ProveData;
-            this.provBoton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.provBoton.FlatAppearance.BorderSize = 0;
-            this.provBoton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.provBoton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.provBoton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.provBoton.Location = new System.Drawing.Point(134, 4);
-            this.provBoton.Name = "provBoton";
-            this.provBoton.Size = new System.Drawing.Size(45, 45);
-            this.provBoton.TabIndex = 1;
-            this.provBoton.UseVisualStyleBackColor = true;
-            this.provBoton.Click += new System.EventHandler(this.provBoton_Click);
-            // 
-            // Userboton
-            // 
-            this.Userboton.BackgroundImage = global::Proyect_Kardex.Properties.Resources.userData;
-            this.Userboton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Userboton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Userboton.FlatAppearance.BorderSize = 0;
-            this.Userboton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.Userboton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.Userboton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Userboton.Location = new System.Drawing.Point(73, 4);
-            this.Userboton.Name = "Userboton";
-            this.Userboton.Size = new System.Drawing.Size(45, 45);
-            this.Userboton.TabIndex = 0;
-            this.Userboton.UseVisualStyleBackColor = true;
-            this.Userboton.Click += new System.EventHandler(this.Userboton_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::Proyect_Kardex.Properties.Resources._1455514112_User;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(12, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(45, 45);
-            this.button6.TabIndex = 3;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(332, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(45, 45);
-            this.button5.TabIndex = 3;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::Proyect_Kardex.Properties.Resources.Cash_register;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(271, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(45, 45);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::Proyect_Kardex.Properties.Resources.product;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(210, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(45, 45);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(277, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 18);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Contacto";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(268, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 14);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Dirección:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(268, 173);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 14);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Teléfono: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(268, 215);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 14);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Fax:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(268, 237);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 14);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "E-mail:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(268, 258);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 14);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Web:";
-            // 
-            // lbdir
-            // 
-            this.lbdir.AutoSize = true;
-            this.lbdir.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdir.Location = new System.Drawing.Point(277, 152);
-            this.lbdir.Name = "lbdir";
-            this.lbdir.Size = new System.Drawing.Size(171, 14);
-            this.lbdir.TabIndex = 13;
-            this.lbdir.Text = "Av. America esq. Av. Pando ";
-            // 
-            // lbtel
-            // 
-            this.lbtel.AutoSize = true;
-            this.lbtel.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbtel.Location = new System.Drawing.Point(351, 174);
-            this.lbtel.Name = "lbtel";
-            this.lbtel.Size = new System.Drawing.Size(72, 12);
-            this.lbtel.TabIndex = 18;
-            this.lbtel.Text = "(4) 4240575";
-            // 
-            // lbfaxs
-            // 
-            this.lbfaxs.AutoSize = true;
-            this.lbfaxs.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbfaxs.Location = new System.Drawing.Point(309, 216);
-            this.lbfaxs.Name = "lbfaxs";
-            this.lbfaxs.Size = new System.Drawing.Size(75, 12);
-            this.lbfaxs.TabIndex = 19;
-            this.lbfaxs.Text = "(4) 4244969 ";
-            // 
-            // lbcorreo
-            // 
-            this.lbcorreo.AutoSize = true;
-            this.lbcorreo.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcorreo.Location = new System.Drawing.Point(330, 237);
-            this.lbcorreo.Name = "lbcorreo";
-            this.lbcorreo.Size = new System.Drawing.Size(125, 12);
-            this.lbcorreo.TabIndex = 20;
-            this.lbcorreo.Text = "contacto@icnorte.com";
-            // 
-            // smshelp
-            // 
-            this.smshelp.IsBalloon = true;
-            // 
-            // PBanun2
-            // 
-            this.PBanun2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PBanun2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PBanun2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PBanun2.Location = new System.Drawing.Point(271, 339);
-            this.PBanun2.Name = "PBanun2";
-            this.PBanun2.Size = new System.Drawing.Size(241, 313);
-            this.PBanun2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PBanun2.TabIndex = 6;
-            this.PBanun2.TabStop = false;
-            // 
-            // PBanun1
-            // 
-            this.PBanun1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PBanun1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.PBanun1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PBanun1.Location = new System.Drawing.Point(11, 339);
-            this.PBanun1.Name = "PBanun1";
-            this.PBanun1.Size = new System.Drawing.Size(239, 313);
-            this.PBanun1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PBanun1.TabIndex = 5;
-            this.PBanun1.TabStop = false;
-            // 
-            // logoEmp
-            // 
-            this.logoEmp.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.logoEmp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoEmp.Location = new System.Drawing.Point(11, 131);
-            this.logoEmp.Name = "logoEmp";
-            this.logoEmp.Size = new System.Drawing.Size(251, 141);
-            this.logoEmp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoEmp.TabIndex = 4;
-            this.logoEmp.TabStop = false;
-            // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Exotc350 Bd BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(14, 96);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(237, 22);
-            this.lbName.TabIndex = 22;
-            this.lbName.Text = "Nombre de la Empresa NULL";
-            // 
-            // lbcel
-            // 
-            this.lbcel.AutoSize = true;
-            this.lbcel.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcel.Location = new System.Drawing.Point(351, 195);
-            this.lbcel.Name = "lbcel";
-            this.lbcel.Size = new System.Drawing.Size(72, 12);
-            this.lbcel.TabIndex = 24;
-            this.lbcel.Text = "(4) 4240575";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Lucida Sans Typewriter", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(268, 194);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(70, 14);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Celular: ";
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 323);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(59, 12);
-            this.label14.TabIndex = 25;
-            this.label14.Text = "Anuncios ";
-            // 
-            // lbweb
-            // 
-            this.lbweb.AutoSize = true;
-            this.lbweb.Location = new System.Drawing.Point(329, 258);
-            this.lbweb.Name = "lbweb";
-            this.lbweb.Size = new System.Drawing.Size(125, 13);
-            this.lbweb.TabIndex = 26;
-            this.lbweb.TabStop = true;
-            this.lbweb.Text = "http://www.icnorte.com/";
-            this.lbweb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbweb_LinkClicked);
-            // 
-            // gMapControl1
-            // 
-            this.gMapControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(518, 79);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 2;
-            this.gMapControl1.MinZoom = 2;
-            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(453, 573);
-            this.gMapControl1.TabIndex = 27;
-            this.gMapControl1.Zoom = 0D;
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.Window;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(19, 17);
-            this.toolStripStatusLabel1.Text = " | ";
-            // 
-            // TSSdate
-            // 
-            this.TSSdate.ForeColor = System.Drawing.SystemColors.Window;
-            this.TSSdate.Name = "TSSdate";
-            this.TSSdate.Size = new System.Drawing.Size(85, 17);
-            this.TSSdate.Text = "30-12-2015";
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(404, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 45);
-            this.button1.TabIndex = 4;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(465, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 45);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(526, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(45, 45);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(626, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(45, 45);
-            this.button8.TabIndex = 8;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(735, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(45, 45);
-            this.button10.TabIndex = 10;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(684, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(45, 45);
-            this.button11.TabIndex = 9;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(840, 4);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(45, 45);
-            this.button12.TabIndex = 12;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buy;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(789, 4);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(45, 45);
-            this.button13.TabIndex = 11;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.BackgroundImage = global::Proyect_Kardex.Properties.Resources.close_off_512;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(914, 4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(45, 45);
-            this.button14.TabIndex = 13;
-            this.button14.UseVisualStyleBackColor = true;
             // 
             // Principal
             // 
