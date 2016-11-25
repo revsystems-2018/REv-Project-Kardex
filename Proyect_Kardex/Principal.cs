@@ -338,5 +338,68 @@ namespace Proyect_Kardex
         {
             Application.Exit(e);
         }
+
+        private void minimizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pantallaCompletaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void pantallaNormalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+        }
+
+        private void generadorDeCodigosDeBarrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            REV_BarCode re = new REV_BarCode();
+            re.ShowDialog();
+        }
+
+        private void generadorDeCodigosQRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            REV_CodeQr re = new REV_CodeQr();
+            re.ShowDialog();
+        }
+
+        private void scannerLectorDeCodigosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Read_Code_Qr_Bar re = new Read_Code_Qr_Bar();
+            re.ShowDialog();
+        }
+
+        private void camaraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            REV_Camera re = new REV_Camera();
+            re.ShowDialog();
+        }
+
+        private void enviarSMSACorreoElectrónicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            REV_SendEmail re = new REV_SendEmail();
+            re.ShowDialog();
+        }
+
+        private void googleMapsLocalizaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GMapsLocal goo = new GMapsLocal();
+            goo.ShowDialog();
+        }
+
+        private void calculadoraSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calculadora c = new Calculadora();
+            c.ShowDialog();
+        }
+
+        private void navegadorWebStudioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            REV_WebStudio we = new REV_WebStudio();
+            we.ShowDialog();
+        }
     }
 }
