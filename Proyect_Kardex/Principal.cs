@@ -401,5 +401,30 @@ namespace Proyect_Kardex
             REV_WebStudio we = new REV_WebStudio();
             we.ShowDialog();
         }
+
+        private void buscarciUser_Click(object sender, EventArgs e)
+        {
+            if (buscarciUser.Text != "" && buscarciUser.Font.Italic == true)
+            {
+                buscarciUser.Text = "";
+                buscarciUser.ForeColor = SystemColors.WindowText;
+                buscarciUser.Font = new Font(buscarciUser.Font, FontStyle.Regular);
+                //textBox1.Font.Italic = false;
+
+            }
+            else
+            {
+                buscarciUser.ForeColor = SystemColors.WindowText;
+                buscarciUser.Font = new Font(buscarciUser.Font, FontStyle.Regular);
+            }
+            
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
