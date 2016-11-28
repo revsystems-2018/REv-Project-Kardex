@@ -806,6 +806,7 @@
     <None Include="Resources\solicitudyoUser.png" />
     <None Include="Resources\SolicitudDestacadoUser.png" />
     <None Include="Resources\ProveeGrupo.png" />
+    <None Include="Resources\chart-512.png" />
     <Content Include="REV_Project_Kardex_Logo.ico" />
     <None Include="Resources\weblogo.png" />
     <None Include="Resources\viewfoto.png" />

@@ -49,7 +49,6 @@
             this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator25 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
@@ -89,6 +88,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.lbweb = new System.Windows.Forms.LinkLabel();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.reporteEstadisticoDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteEstadisticoDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PBanun2 = new System.Windows.Forms.PictureBox();
             this.PBanun1 = new System.Windows.Forms.PictureBox();
             this.logoEmp = new System.Windows.Forms.PictureBox();
@@ -130,9 +131,11 @@
             this.reporteDeSolicitudesDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeSolicitudesDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteEstadisticoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeSolicitudesDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroDeProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarciUser = new System.Windows.Forms.ToolStripTextBox();
             this.insertarCUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -290,7 +293,8 @@
             this.toolStripSeparator24,
             this.registroDeClientesToolStripMenuItem,
             this.toolStripSeparator23,
-            this.registroDeSolicitudesDeClientesToolStripMenuItem});
+            this.registroDeSolicitudesDeClientesToolStripMenuItem,
+            this.reporteEstadisticoDeClientesToolStripMenuItem});
             this.toolStripMenuItem1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
@@ -315,7 +319,8 @@
             this.toolStripSeparator26,
             this.reporteDeSolicitudesDeUsuariosToolStripMenuItem,
             this.toolStripSeparator25,
-            this.reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem});
+            this.reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem,
+            this.reporteEstadisticoDeUsuariosToolStripMenuItem});
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
@@ -335,20 +340,13 @@
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registroDeProveedoresToolStripMenuItem});
+            this.registroDeProveedoresToolStripMenuItem,
+            this.reporteEstadisticoDeProveedoresToolStripMenuItem});
             this.toolStripMenuItem3.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
             this.toolStripMenuItem3.Size = new System.Drawing.Size(411, 22);
             this.toolStripMenuItem3.Text = "Reporte de Proveedores";
-            // 
-            // registroDeProveedoresToolStripMenuItem
-            // 
-            this.registroDeProveedoresToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.ProveeGrupo;
-            this.registroDeProveedoresToolStripMenuItem.Name = "registroDeProveedoresToolStripMenuItem";
-            this.registroDeProveedoresToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.NumPad6)));
-            this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(310, 22);
-            this.registroDeProveedoresToolStripMenuItem.Text = "Registro de Proveedores";
             // 
             // toolStripSeparator13
             // 
@@ -699,6 +697,22 @@
             this.gMapControl1.Size = new System.Drawing.Size(453, 573);
             this.gMapControl1.TabIndex = 27;
             this.gMapControl1.Zoom = 0D;
+            // 
+            // reporteEstadisticoDeUsuariosToolStripMenuItem
+            // 
+            this.reporteEstadisticoDeUsuariosToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.chart_512;
+            this.reporteEstadisticoDeUsuariosToolStripMenuItem.Name = "reporteEstadisticoDeUsuariosToolStripMenuItem";
+            this.reporteEstadisticoDeUsuariosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.NumPad8)));
+            this.reporteEstadisticoDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(440, 22);
+            this.reporteEstadisticoDeUsuariosToolStripMenuItem.Text = "Reporte Estadistico de Usuarios";
+            // 
+            // reporteEstadisticoDeProveedoresToolStripMenuItem
+            // 
+            this.reporteEstadisticoDeProveedoresToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.chart_512;
+            this.reporteEstadisticoDeProveedoresToolStripMenuItem.Name = "reporteEstadisticoDeProveedoresToolStripMenuItem";
+            this.reporteEstadisticoDeProveedoresToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.NumPad9)));
+            this.reporteEstadisticoDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(374, 22);
+            this.reporteEstadisticoDeProveedoresToolStripMenuItem.Text = "Reporte Estadistico de Proveedores";
             // 
             // PBanun2
             // 
@@ -1153,6 +1167,14 @@
             this.registroDeSolicitudesDeClientesToolStripMenuItem.Size = new System.Drawing.Size(437, 22);
             this.registroDeSolicitudesDeClientesToolStripMenuItem.Text = "Registro de Solicitudes de Clientes Destacados";
             // 
+            // reporteEstadisticoDeClientesToolStripMenuItem
+            // 
+            this.reporteEstadisticoDeClientesToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.chart_512;
+            this.reporteEstadisticoDeClientesToolStripMenuItem.Name = "reporteEstadisticoDeClientesToolStripMenuItem";
+            this.reporteEstadisticoDeClientesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.NumPad7)));
+            this.reporteEstadisticoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(437, 22);
+            this.reporteEstadisticoDeClientesToolStripMenuItem.Text = "Reporte Estadistico de Clientes";
+            // 
             // registroDeUsuariosToolStripMenuItem
             // 
             this.registroDeUsuariosToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.UserGrupo;
@@ -1176,6 +1198,14 @@
             this.reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.NumPad5)));
             this.reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem.Size = new System.Drawing.Size(440, 22);
             this.reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem.Text = "Reporte de Solicitudes de Usuarios Destacados";
+            // 
+            // registroDeProveedoresToolStripMenuItem
+            // 
+            this.registroDeProveedoresToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.ProveeGrupo;
+            this.registroDeProveedoresToolStripMenuItem.Name = "registroDeProveedoresToolStripMenuItem";
+            this.registroDeProveedoresToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.NumPad6)));
+            this.registroDeProveedoresToolStripMenuItem.Size = new System.Drawing.Size(374, 22);
+            this.registroDeProveedoresToolStripMenuItem.Text = "Registro de Proveedores";
             // 
             // toolStripMenuItem6
             // 
@@ -1570,5 +1600,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator25;
         private System.Windows.Forms.ToolStripMenuItem reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteEstadisticoDeClientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteEstadisticoDeUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteEstadisticoDeProveedoresToolStripMenuItem;
     }
 }

@@ -303,6 +303,16 @@ namespace Proyect_Kardex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap chart_512 {
+            get {
+                object obj = ResourceManager.GetObject("chart-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap clear_List {
             get {
                 object obj = ResourceManager.GetObject("clear-List", resourceCulture);
