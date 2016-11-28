@@ -1413,6 +1413,16 @@ namespace Proyect_Kardex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ProveeGrupo {
+            get {
+                object obj = ResourceManager.GetObject("ProveeGrupo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap qr_code {
             get {
                 object obj = ResourceManager.GetObject("qr_code", resourceCulture);
@@ -1763,9 +1773,29 @@ namespace Proyect_Kardex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap SolicitudDestacadoUser {
+            get {
+                object obj = ResourceManager.GetObject("SolicitudDestacadoUser", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap solicitudyo {
             get {
                 object obj = ResourceManager.GetObject("solicitudyo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap solicitudyoUser {
+            get {
+                object obj = ResourceManager.GetObject("solicitudyoUser", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1916,6 +1946,16 @@ namespace Proyect_Kardex.Properties {
         public static System.Drawing.Bitmap userData {
             get {
                 object obj = ResourceManager.GetObject("userData", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap UserGrupo {
+            get {
+                object obj = ResourceManager.GetObject("UserGrupo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
