@@ -82,6 +82,7 @@
             this.chartProd.Size = new System.Drawing.Size(687, 239);
             this.chartProd.TabIndex = 0;
             this.chartProd.Text = "Productos";
+            this.chartProd.Click += new System.EventHandler(this.chartProd_Click);
             // 
             // chartorta
             // 
@@ -141,6 +142,7 @@
             this.titulolabel.Size = new System.Drawing.Size(162, 19);
             this.titulolabel.TabIndex = 3;
             this.titulolabel.Text = "Reporte De Productos";
+            this.titulolabel.Click += new System.EventHandler(this.titulolabel_Click);
             // 
             // label5
             // 
@@ -151,6 +153,7 @@
             this.label5.Size = new System.Drawing.Size(182, 12);
             this.label5.TabIndex = 217;
             this.label5.Text = "Diagrama % por Precios Unitarios";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label1
             // 

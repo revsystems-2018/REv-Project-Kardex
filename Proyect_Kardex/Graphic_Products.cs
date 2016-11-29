@@ -62,5 +62,20 @@ namespace Proyect_Kardex
             chartorta.Series["Series1"].YValueMembers = "Precio_Unitario";
             chartorta.Series["Series1"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
         }
+
+        private void chartProd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void titulolabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
