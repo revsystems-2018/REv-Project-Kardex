@@ -44,22 +44,22 @@ namespace Proyect_Kardex
 
         private void ReportClientes_Load(object sender, EventArgs e)
         {
-            String lee = "SELECT name_Cliente AS IDC, SUM(num_Prod) AS Cantidad, SUM(pago_Cliente) AS Pay FROM REV_Ventas GROUP BY name_Cliente; ";
+            String lee = "SELECT name_Cliente AS Nombre, SUM(num_Prod) AS Cantidad, SUM(pago_Cliente) AS Efectivo_Compras FROM REV_Ventas GROUP BY name_Cliente; ";
 
             dataprodgrid.DataSource = CargarDatos(lee);
             chartProd.DataSource = CargarDatos(lee);
             chartProd.Series["Series1"].LegendText = "Productos";
-            chartProd.Series["Series1"].XValueMember = "IDC";
+            chartProd.Series["Series1"].XValueMember = "Nombre";
             chartProd.Series["Series1"].YValueMembers = "Cantidad";
 
             chartProd.Series["Series2"].LegendText = "Compras";
-            chartProd.Series["Series2"].XValueMember = "IDC";
-            chartProd.Series["Series2"].YValueMembers = "Pay";
+            chartProd.Series["Series2"].XValueMember = "Nombre";
+            chartProd.Series["Series2"].YValueMembers = "Efectivo_Compras";
 
             chartorta.DataSource = CargarDatos(lee);
-            chartorta.Series["Series1"].XValueMember = "IDC";
+            chartorta.Series["Series1"].XValueMember = "Nombre";
             chartorta.Series["Series1"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
-            chartorta.Series["Series1"].YValueMembers = "Pay";
+            chartorta.Series["Series1"].YValueMembers = "Efectivo_Compras";
             chartorta.Series["Series1"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
         }
     }

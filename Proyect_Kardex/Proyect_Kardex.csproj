@@ -365,6 +365,12 @@
     <Compile Include="ReportClientes.Designer.cs">
       <DependentUpon>ReportClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteUsuarios.Designer.cs">
+      <DependentUpon>ReporteUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportSolClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -636,6 +642,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportClientes.resx">
       <DependentUpon>ReportClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteUsuarios.resx">
+      <DependentUpon>ReporteUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportSolClientes.resx">
       <DependentUpon>ReportSolClientes.cs</DependentUpon>
