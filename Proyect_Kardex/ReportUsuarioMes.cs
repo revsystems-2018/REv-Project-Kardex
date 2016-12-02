@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace Proyect_Kardex
 {
-    public partial class ReporteUsuarios : Form
+    public partial class ReportUsuarioMes : Form
     {
         Conexion cs = new Conexion();
         ValidacionText vt = new ValidacionText();
@@ -28,11 +28,10 @@ namespace Proyect_Kardex
             }
         }
 
-        public ReporteUsuarios()
+        public ReportUsuarioMes()
         {
             InitializeComponent();
             Conectar();
-            toolTip1.SetToolTip(chart1, "Grafico de Barras de los Usuarios Cantidad y Efectivo en Ventas");
             toolTip1.SetToolTip(chartorta, "Grafico de Pastel de Pagos en Ventas Realizadas");
             toolTip1.SetToolTip(dataprodgrid, "Datos de los Usuarios");
             toolTip1.SetToolTip(txtCant, "Cantidad de Productos Vendidos");
@@ -40,6 +39,7 @@ namespace Proyect_Kardex
             toolTip1.SetToolTip(txtname, "Nombre Completo del Empleado/Usuario del Mes");
             toolTip1.SetToolTip(txtci, "Codigo de Registro/C.I. del Usuario del Mes");
             toolTip1.SetToolTip(PBFoto, "Fotografia del Empleado/Usuario del Mes");
+
         }
 
         public DataTable CargarDatos(String slq)
@@ -52,7 +52,7 @@ namespace Proyect_Kardex
 
         public String SacarUsuario()
         {
-            String res="";
+            String res = "";
             Double res2 = 0;
             Double aux = 0;
 
@@ -60,16 +60,16 @@ namespace Proyect_Kardex
             {
                 res2 = Convert.ToDouble(row.Cells[1].Value);
 
-                if(res2 >= aux)
+                if (res2 >= aux)
                 {
                     aux = res2;
                     res = Convert.ToString(row.Cells[0].Value);
                 }
-            }                
+            }
             return res;
         }
 
-        public Double SacarEfective() 
+        public Double SacarEfective()
         {
             Double res = 0;
             Double res2 = 0;
@@ -88,7 +88,7 @@ namespace Proyect_Kardex
             return res;
         }
 
-        public int SacarCant() 
+        public int SacarCant()
         {
             int res = 0;
             Double res2 = 0;
@@ -108,7 +108,7 @@ namespace Proyect_Kardex
         }
 
 
-        public void GetCodeUsr(String nvl) 
+        public void GetCodeUsr(String nvl)
         {
             Conexion f = new Conexion();
 
@@ -132,13 +132,15 @@ namespace Proyect_Kardex
                 {
                     txtci.Text = read.GetInt32(0).ToString();
                     txtname.Text = read.GetString(1) + " " + read.GetString(2);
-              
-                    byte[] imageBuffer = (byte[])(read[3]);                       
 
-                    if (imageBuffer == null || read[3] == null)  {      PBFoto.Image = null;  }
-                    else  {
+                    byte[] imageBuffer = (byte[])(read[3]);
+
+                    if (imageBuffer == null || read[3] == null) { PBFoto.Image = null; }
+                    else
+                    {
                         System.IO.MemoryStream ms = new System.IO.MemoryStream(imageBuffer);
-                        PBFoto.Image = Image.FromStream(ms);  }
+                        PBFoto.Image = Image.FromStream(ms);
+                    }
                 }
                 f.CerrarCnn();
             }
@@ -150,22 +152,13 @@ namespace Proyect_Kardex
         }
 
 
-        private void ReporteUsuarios_Load(object sender, EventArgs e)
+        private void ReportUsuarioMes_Load(object sender, EventArgs e)
         {
-            String lee = "SELECT name_User AS Nombre_Usuario, SUM (pago_Cliente) AS Efectivo_En_Ventas, SUM (num_Prod) AS Cantidad FROM REV_Ventas GROUP BY name_User;";
-            String mes = "SELECT name_User AS Nombre_Usuario, SUM (pago_Cliente) AS Efectivo_En_Ventas, SUM (num_Prod) AS Cantidad FROM REV_Ventas WHERE DATEPART (mm, Fecha_Venta) = (DATEPART (mm, GETDATE())-2)  GROUP BY name_User;";  
-        
-            dataprodgrid.DataSource = CargarDatos(lee);
-            chart1.DataSource = CargarDatos(lee);
-            chart1.Series["Series1"].LegendText = "Productos";
-            chart1.Series["Series1"].XValueMember = "Nombre_Usuario";
-            chart1.Series["Series1"].YValueMembers = "Cantidad";
+            String mes = "SELECT name_User AS Nombre_Usuario, SUM (pago_Cliente) AS Efectivo_En_Ventas, SUM (num_Prod) AS Cantidad FROM REV_Ventas WHERE DATEPART (mm, Fecha_Venta) = (DATEPART (mm, GETDATE())-2)  GROUP BY name_User;";
 
-            chart1.Series["Series2"].LegendText = "Efectivo Ventas";
-            chart1.Series["Series2"].XValueMember = "Nombre_Usuario";
-            chart1.Series["Series2"].YValueMembers = "Efectivo_En_Ventas";
+            dataprodgrid.DataSource = CargarDatos(mes);          
 
-            chartorta.DataSource = CargarDatos(lee);
+            chartorta.DataSource = CargarDatos(mes);
             chartorta.Series["Series1"].XValueMember = "Nombre_Usuario";
             chartorta.Series["Series1"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.String;
             chartorta.Series["Series1"].YValueMembers = "Efectivo_En_Ventas";
@@ -176,7 +169,6 @@ namespace Proyect_Kardex
             txtCant.Text = Convert.ToString(SacarCant());
 
             GetCodeUsr(nameUsr);
-
         }
 
         private void PBFoto_Click(object sender, EventArgs e)

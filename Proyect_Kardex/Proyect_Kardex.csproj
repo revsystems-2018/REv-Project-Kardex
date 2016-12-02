@@ -377,6 +377,12 @@
     <Compile Include="ReportSolClientes.Designer.cs">
       <DependentUpon>ReportSolClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportUsuarioMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportUsuarioMes.Designer.cs">
+      <DependentUpon>ReportUsuarioMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report_DetalleVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -648,6 +654,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportSolClientes.resx">
       <DependentUpon>ReportSolClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportUsuarioMes.resx">
+      <DependentUpon>ReportUsuarioMes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report_DetalleVenta.resx">
       <DependentUpon>Report_DetalleVenta.cs</DependentUpon>
