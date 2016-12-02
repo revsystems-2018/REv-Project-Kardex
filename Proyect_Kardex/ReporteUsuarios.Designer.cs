@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReporteUsuarios));
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,13 +46,21 @@
             this.titulolabel = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtci = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtEfective = new System.Windows.Forms.TextBox();
+            this.txtCant = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.PBFoto = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataprodgrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartorta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,23 +93,23 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataprodgrid.BackgroundColor = System.Drawing.SystemColors.MenuBar;
             this.dataprodgrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataprodgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataprodgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataprodgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataprodgrid.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataprodgrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataprodgrid.Location = new System.Drawing.Point(320, 314);
             this.dataprodgrid.Name = "dataprodgrid";
             this.dataprodgrid.ReadOnly = true;
@@ -113,19 +121,19 @@
             this.chartorta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chartorta.BackColor = System.Drawing.SystemColors.MenuBar;
-            chartArea3.Name = "ChartArea1";
-            this.chartorta.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartorta.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chartorta.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartorta.Legends.Add(legend1);
             this.chartorta.Location = new System.Drawing.Point(0, 314);
             this.chartorta.Name = "chartorta";
             this.chartorta.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            series4.YValuesPerPoint = 4;
-            this.chartorta.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 4;
+            this.chartorta.Series.Add(series1);
             this.chartorta.Size = new System.Drawing.Size(314, 222);
             this.chartorta.TabIndex = 223;
             this.chartorta.Text = "chart1";
@@ -146,31 +154,39 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chart1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.chart1.BorderlineColor = System.Drawing.SystemColors.ControlLight;
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(1, 12);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series5.Legend = "Legend1";
-            series5.LegendToolTip = "Cantidad de Clientes Atendidos";
-            series5.Name = "SCliente";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.LegendToolTip = "Cantidad de Productos Vendidos";
-            series6.Name = "SNum";
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
+            series2.Legend = "Legend1";
+            series2.LegendToolTip = "Cantidad de Clientes Atendidos";
+            series2.Name = "Series1";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.LegendToolTip = "Cantidad de Productos Vendidos";
+            series3.Name = "Series2";
+            this.chart1.Series.Add(series2);
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(841, 271);
             this.chart1.TabIndex = 222;
             this.chart1.Text = "chamoney";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.txtci);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtname);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtEfective);
+            this.groupBox1.Controls.Add(this.txtCant);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.PBFoto);
             this.groupBox1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(630, 299);
             this.groupBox1.Name = "groupBox1";
@@ -179,13 +195,107 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empleado del Mes";
             // 
-            // pictureBox1
+            // txtci
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 142);
-            this.pictureBox1.TabIndex = 231;
-            this.pictureBox1.TabStop = false;
+            this.txtci.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtci.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtci.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtci.Location = new System.Drawing.Point(6, 215);
+            this.txtci.Name = "txtci";
+            this.txtci.Size = new System.Drawing.Size(199, 16);
+            this.txtci.TabIndex = 238;
+            this.txtci.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtci_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 200);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 12);
+            this.label6.TabIndex = 237;
+            this.label6.Text = "Codigo/C.I:";
+            // 
+            // txtname
+            // 
+            this.txtname.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtname.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtname.Location = new System.Drawing.Point(6, 179);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(199, 16);
+            this.txtname.TabIndex = 236;
+            this.txtname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtname_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 164);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 12);
+            this.label4.TabIndex = 235;
+            this.label4.Text = "Nombre:";
+            // 
+            // txtEfective
+            // 
+            this.txtEfective.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtEfective.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEfective.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEfective.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtEfective.Location = new System.Drawing.Point(118, 105);
+            this.txtEfective.Name = "txtEfective";
+            this.txtEfective.Size = new System.Drawing.Size(87, 28);
+            this.txtEfective.TabIndex = 234;
+            this.txtEfective.Text = "125556";
+            this.txtEfective.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEfective_KeyPress);
+            // 
+            // txtCant
+            // 
+            this.txtCant.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtCant.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCant.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCant.ForeColor = System.Drawing.Color.Green;
+            this.txtCant.Location = new System.Drawing.Point(118, 34);
+            this.txtCant.Name = "txtCant";
+            this.txtCant.Size = new System.Drawing.Size(87, 28);
+            this.txtCant.TabIndex = 233;
+            this.txtCant.Text = "125";
+            this.txtCant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCant_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(118, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 12);
+            this.label3.TabIndex = 232;
+            this.label3.Text = "Efectivo";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(118, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 12);
+            this.label2.TabIndex = 231;
+            this.label2.Text = "Productos";
+            // 
+            // PBFoto
+            // 
+            this.PBFoto.Location = new System.Drawing.Point(6, 19);
+            this.PBFoto.Name = "PBFoto";
+            this.PBFoto.Size = new System.Drawing.Size(106, 142);
+            this.PBFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBFoto.TabIndex = 231;
+            this.PBFoto.TabStop = false;
+            this.PBFoto.Click += new System.EventHandler(this.PBFoto_Click);
             // 
             // ReporteUsuarios
             // 
@@ -210,7 +320,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartorta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,7 +336,15 @@
         public System.Windows.Forms.Label titulolabel;
         public System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox txtEfective;
+        public System.Windows.Forms.TextBox txtCant;
+        public System.Windows.Forms.TextBox txtci;
+        public System.Windows.Forms.TextBox txtname;
+        public System.Windows.Forms.PictureBox PBFoto;
     }
 }

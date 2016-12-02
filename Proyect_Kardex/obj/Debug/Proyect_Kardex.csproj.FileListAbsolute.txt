@@ -258,3 +258,4 @@ C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyec
 C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyect_Kardex\bin\Debug\GMap.NET.WindowsForms.xml
 C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyect_Kardex\obj\Debug\Proyect_Kardex.GMapsLocal.resources
 C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyect_Kardex\obj\Debug\Proyect_Kardex.ReportClientes.resources
+C:\Users\Ricardo\Documents\Visual Studio 2013\Projects\REv-Project-Kardex\Proyect_Kardex\obj\Debug\Proyect_Kardex.ReporteUsuarios.resources
