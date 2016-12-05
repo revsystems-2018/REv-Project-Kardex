@@ -209,6 +209,10 @@
             this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
             this.button3 = new System.Windows.Forms.Button();
             this.Logobutton = new System.Windows.Forms.Button();
+            this.toolStripSeparator37 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator39 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator40 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator41 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
@@ -1066,6 +1070,7 @@
             // 
             this.marcasDeProductosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaMarcaToolStripMenuItem,
+            this.toolStripSeparator37,
             this.abrirListaDeMarcasToolStripMenuItem});
             this.marcasDeProductosToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.marcasDeProductosToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.bookmark_green_star_512;
@@ -1102,7 +1107,9 @@
             // 
             this.categoriasEnAlmacenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaCategoríaToolStripMenuItem,
+            this.toolStripSeparator39,
             this.toolStripMenuItem9,
+            this.toolStripSeparator40,
             this.registroDeCategoríasToolStripMenuItem});
             this.categoriasEnAlmacenToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoriasEnAlmacenToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.cate;
@@ -1149,6 +1156,7 @@
             // 
             this.tipoDeUnidadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevaMedidaToolStripMenuItem,
+            this.toolStripSeparator41,
             this.registroDeMedidasToolStripMenuItem});
             this.tipoDeUnidadToolStripMenuItem.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipoDeUnidadToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.medidas;
@@ -1972,6 +1980,26 @@
             this.Logobutton.TabIndex = 20;
             this.Logobutton.UseVisualStyleBackColor = false;
             // 
+            // toolStripSeparator37
+            // 
+            this.toolStripSeparator37.Name = "toolStripSeparator37";
+            this.toolStripSeparator37.Size = new System.Drawing.Size(279, 6);
+            // 
+            // toolStripSeparator39
+            // 
+            this.toolStripSeparator39.Name = "toolStripSeparator39";
+            this.toolStripSeparator39.Size = new System.Drawing.Size(297, 6);
+            // 
+            // toolStripSeparator40
+            // 
+            this.toolStripSeparator40.Name = "toolStripSeparator40";
+            this.toolStripSeparator40.Size = new System.Drawing.Size(297, 6);
+            // 
+            // toolStripSeparator41
+            // 
+            this.toolStripSeparator41.Name = "toolStripSeparator41";
+            this.toolStripSeparator41.Size = new System.Drawing.Size(286, 6);
+            // 
             // Principal_UserCajero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2192,5 +2220,9 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem17;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem19;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator38;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator37;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator39;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator40;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator41;
     }
 }
