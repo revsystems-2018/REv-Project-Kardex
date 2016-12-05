@@ -1181,6 +1181,11 @@ namespace Proyect_Kardex
             goo.ShowDialog();
         }
 
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
     }
 }

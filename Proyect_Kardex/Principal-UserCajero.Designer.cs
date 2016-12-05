@@ -1468,6 +1468,7 @@
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
             this.toolStripMenuItem10.Size = new System.Drawing.Size(111, 20);
             this.toolStripMenuItem10.Text = "HERRAMIENTAS";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // generadorDeCodigosDeBarrasToolStripMenuItem
             // 

@@ -50,19 +50,20 @@ namespace Proyect_Kardex
         private void agregarEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RegEmpresa n = new RegEmpresa();
-            n.Show();
+            n.ShowDialog();
         }
 
         private void verEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             VerEmpresa a = new VerEmpresa();
-            a.Show();
+            a.ShowDialog();
         }
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
             VerAdmin n = new VerAdmin();
-            n.Show();
+            n.codUser = Cod;
+            n.ShowDialog();
         }
 
         private void usuarioCajeroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,31 +71,31 @@ namespace Proyect_Kardex
             RegAdmin mn = new RegAdmin();
             mn.Text = "Datos del Usuario";
             mn.label1.Text = "Registro De Usuarios";
-            mn.Show();
+            mn.ShowDialog();
         }
 
         private void usuarioClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RegCliente v = new RegCliente();
-            v.Show();
+            v.ShowDialog();
         }
 
         private void editarUsuarioCajeroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditUser eu = new EditUser();
-            eu.Show();
+            eu.ShowDialog();
         }
 
         private void editarUsuarioClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditCliente ec = new EditCliente();
-            ec.Show();
+            ec.ShowDialog();
         }
 
         private void editarUsuarioProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditProveedor ep = new EditProveedor();
-            ep.Show();
+            ep.ShowDialog();
         }
 
         private void buscarci(object sender, KeyPressEventArgs e)
@@ -139,26 +140,26 @@ namespace Proyect_Kardex
                 bu.citext.Text =""+ buscarciUser.Text;
                 bu.salir.Visible = false;
                 bu.cancel.Visible = false;
-                bu.Show();          
+                bu.ShowDialog();          
             }
         }
 
         private void eliminarUsuarioCajeroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DelUser du = new DelUser();
-            du.Show();
+            du.ShowDialog();
         }
 
         private void eliminarUsuarioClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DelCliente dc = new DelCliente();
-            dc.Show();
+            dc.ShowDialog();
         }
 
         private void eliminarUsuarioProveedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DelProveedor dp = new DelProveedor();
-            dp.Show();
+            dp.ShowDialog();
         }
 
         private void Userboton_Click(object sender, EventArgs e)
@@ -167,23 +168,11 @@ namespace Proyect_Kardex
             ru.ShowDialog();
         }
 
-        private void toolStripMenuItem5_Click(object sender, EventArgs e)
-        {
-            ReportSolClientes nms = new ReportSolClientes();
-            nms.Show();
-        }
-
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RegEmpresa rem = new RegEmpresa();
             rem.tituloemp.Text = "Configuración De La Empresa";
-            rem.Show();
-        }
-
-        private void solicitudesDeCuentasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ReportSolUser ru = new ReportSolUser();
-            ru.Show();
+            rem.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -423,6 +412,77 @@ namespace Proyect_Kardex
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void reporteDeSolicitudesDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro_Clientes re = new Registro_Clientes();
+            re.ShowDialog();
+        }
+
+        private void registroDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowSolClientes sc = new ShowSolClientes();
+            sc.ShowDialog();
+        }
+
+        private void registroDeSolicitudesDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportSolClientes re = new ReportSolClientes();
+            re.ShowDialog();
+        }
+
+        private void reporteEstadisticoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportClientes rs = new ReportClientes();
+            rs.ShowDialog();
+        }
+
+        private void registroDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro_Usuario ru = new Registro_Usuario();
+            ru.ShowDialog();
+        }
+
+        private void reporteDeSolicitudesDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowSolUser ss = new ShowSolUser();
+            ss.ShowDialog();
+        }
+
+        private void reporteDeSolicitudesDeUsuariosDestacadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportSolUser sl = new ReportSolUser();
+            sl.ShowDialog();
+        }
+
+        private void reporteEstadisticoDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteUsuarios re = new ReporteUsuarios();
+            re.ShowDialog();
+        }
+
+        private void registroDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro_Proveedores rp = new Registro_Proveedores();
+            rp.ShowDialog();
+        }
+
+        private void editarCuentaDeAdministradorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditUser ra = new EditUser();
+            ra.tituloEdit.Text = "Configuración De Cuenta";
+            ra.ciedu.Text = "";
+            ra.ciedu.ForeColor = SystemColors.WindowText;
+            ra.ciedu.Font = new Font(ra.ciedu.Font, FontStyle.Regular);
+            ra.ciedu.Text = Cod.ToString();
+            ra.ShowDialog();
+        }
+
+        private void usuarioProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegProveedor rp = new RegProveedor();
+            rp.ShowDialog();
         }
 
 
