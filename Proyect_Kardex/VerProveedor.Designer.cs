@@ -324,6 +324,7 @@
             this.botonmax.Size = new System.Drawing.Size(15, 15);
             this.botonmax.TabIndex = 59;
             this.botonmax.UseVisualStyleBackColor = true;
+            this.botonmax.Click += new System.EventHandler(this.botonmax_Click);
             // 
             // botonmin
             // 

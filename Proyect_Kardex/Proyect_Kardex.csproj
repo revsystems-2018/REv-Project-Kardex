@@ -863,6 +863,7 @@
     <None Include="Resources\chart-512.png" />
     <None Include="Resources\product-edit.png" />
     <None Include="Resources\listEmps.png" />
+    <None Include="Resources\seeProve.png" />
     <Content Include="REV_Project_Kardex_Logo.ico" />
     <None Include="Resources\weblogo.png" />
     <None Include="Resources\viewfoto.png" />

@@ -164,5 +164,10 @@ namespace Proyect_Kardex
                 MessageBox.Show("ERROR, Debe Seleccionar un Proveedor de la Tabla de Registro; Para Proceder la Presentación del Perfil del Proveedor.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void botonmax_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -100,12 +100,28 @@ namespace Proyect_Kardex
 
         private void buscarci(object sender, KeyPressEventArgs e)
         {
-            mn.soloNumeros(e);
+            buscarciUser.ForeColor = SystemColors.WindowText;
+            buscarciUser.Font = new Font(buscarciUser.Font, FontStyle.Regular);
         }
 
         private void insertarCUToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BuscarUser bu = new BuscarUser();
+            if (buscarciUser.Text != "" && buscarciUser.Font.Italic == true)
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else if (buscarciUser.Text == "")
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else
+            {
+                bu.citext.Text = buscarciUser.Text;
+                bu.ShowDialog();
+            }
            
         }
 
@@ -538,6 +554,94 @@ namespace Proyect_Kardex
         {
             Graphic_Products gp = new Graphic_Products();
             gp.ShowDialog();
+        }
+
+        private void buscarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            See_Find_Cliente bu = new See_Find_Cliente();
+            if (findCtxt.Text != "" && findCtxt.Font.Italic == true)
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else if (findCtxt.Text == "")
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else
+            {
+                bu.citext.Text = findCtxt.Text;
+                bu.ShowDialog();
+            }
+        }
+
+        private void buscarCuentaDeProveedorIngresadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            See_Find_Proveedor bu = new See_Find_Proveedor();
+
+            if (findPtxt.Text != "" && findPtxt.Font.Italic == true)
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else if (findPtxt.Text == "")
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else
+            {
+                bu.citext.Text = findPtxt.Text;
+                bu.ShowDialog();
+            }
+        }
+
+        private void findCtxt_Click(object sender, EventArgs e)
+        {
+            if (findCtxt.Text != "" && findCtxt.Font.Italic == true)
+            {
+                findCtxt.Text = "";
+                findCtxt.ForeColor = SystemColors.WindowText;
+                findCtxt.Font = new Font(findCtxt.Font, FontStyle.Regular);
+                //textBox1.Font.Italic = false;
+
+            }
+            else
+            {
+                findCtxt.ForeColor = SystemColors.WindowText;
+                findCtxt.Font = new Font(findCtxt.Font, FontStyle.Regular);
+            }
+            
+        }
+
+        private void findCtxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            findCtxt.ForeColor = SystemColors.WindowText;
+            findCtxt.Font = new Font(findCtxt.Font, FontStyle.Regular);
+        }
+
+        private void findPtxt_Click(object sender, EventArgs e)
+        {
+            if (findPtxt.Text != "" && findPtxt.Font.Italic == true)
+            {
+                findPtxt.Text = "";
+                findPtxt.ForeColor = SystemColors.WindowText;
+                findPtxt.Font = new Font(findPtxt.Font, FontStyle.Regular);
+                //textBox1.Font.Italic = false;
+
+            }
+            else
+            {
+                findPtxt.ForeColor = SystemColors.WindowText;
+                findPtxt.Font = new Font(findPtxt.Font, FontStyle.Regular);
+            }
+        }
+
+        private void findPtxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            findPtxt.ForeColor = SystemColors.WindowText;
+            findPtxt.Font = new Font(findPtxt.Font, FontStyle.Regular);
         }
 
 
