@@ -106,42 +106,7 @@ namespace Proyect_Kardex
         private void insertarCUToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BuscarUser bu = new BuscarUser();
-
-            if (buscarciUser.Text == "")
-            {
-                bu.Width = 560;
-                bu.Height = 77; //360
-                bu.foto.Visible = false;
-                bu.nom.Visible = false;
-                bu.apellido.Visible = false;
-                bu.ci.Visible = false;
-                bu.label5.Visible = false;
-                bu.nivel.Visible = false;
-                bu.label6.Visible = false;
-                bu.user.Visible = false;
-                bu.label9.Visible = false;
-                bu.cargo.Visible = false;
-                bu.depa.Visible = false;
-                bu.dir.Visible = false;
-                bu.prov.Visible = false;
-                bu.label4.Visible = false;
-                bu.correo.Visible = false;
-                bu.label15.Visible = false;
-                bu.tel.Visible = false;
-                bu.label16.Visible = false;
-                bu.cel.Visible = false;
-                bu.label17.Visible = false;
-                bu.fax.Visible = false;            
-                bu.Show();
-            }
-            else{
-                bu.Width = 517;
-                bu.Height = 360;
-                bu.citext.Text =""+ buscarciUser.Text;
-                bu.salir.Visible = false;
-                bu.cancel.Visible = false;
-                bu.ShowDialog();          
-            }
+           
         }
 
         private void eliminarUsuarioCajeroToolStripMenuItem_Click(object sender, EventArgs e)
@@ -483,6 +448,96 @@ namespace Proyect_Kardex
         {
             RegProveedor rp = new RegProveedor();
             rp.ShowDialog();
+        }
+
+        private void productoNuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddProductos ap = new AddProductos();
+            ap.ShowDialog();
+        }
+
+        private void editarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditProductos ep = new EditProductos();
+            ep.ShowDialog();
+        }
+
+        private void eliminarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditProductos df = new EditProductos();
+            df.label26.Visible = false;
+            df.label1.Visible = false;
+            df.codprod.Visible = false;
+            df.nameprod.Visible = false;
+            df.groupBox4.Visible = false;
+            df.deleteboton.Visible = true;
+            df.tituloprod.Text = "Eliminar Producto";
+            df.codbuscprod.Text = "";         
+            df.codbuscprod.ForeColor = SystemColors.WindowText;
+            df.codbuscprod.Font = new Font(df.codbuscprod.Font, FontStyle.Regular);
+            df.Width = 672;
+            df.Height = 95;
+            df.ShowDialog();
+        }
+
+        private void registroDeProductosEnLaEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro_Productos reg = new Registro_Productos();
+            reg.ShowDialog();
+        }
+
+        private void nuevaMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AEEMarca am = new AEEMarca();
+            am.ShowDialog();
+        }
+
+        private void registroDeMarcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroMarcas rm = new RegistroMarcas();
+            rm.ShowDialog();
+        }
+
+        private void nuevaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AEECategoria ac = new AEECategoria();
+            ac.ShowDialog();
+        }
+
+        private void nuevaSubCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AEESubCat ass = new AEESubCat();
+            ass.ShowDialog();
+        }
+
+        private void registroDeCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro_Categoria rc = new Registro_Categoria();
+            rc.ShowDialog();
+        }
+
+        private void nuevaMedidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AEEMedida aem = new AEEMedida();
+            aem.ShowDialog();
+        }
+
+        private void registroDeMedidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroUnidad ru = new RegistroUnidad();
+            ru.ShowDialog();
+        }
+
+        private void buscarProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuscarProductos bp = new BuscarProductos();
+            bp.ShowDialog();
+        }
+
+        private void reporteGraficoDeInventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Graphic_Products gp = new Graphic_Products();
+            gp.ShowDialog();
         }
 
 

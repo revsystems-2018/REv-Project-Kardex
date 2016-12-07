@@ -13,7 +13,8 @@ namespace Proyect_Kardex
 {
     public partial class Registro_Usuario : Form
     {
-        public int codUser = 0;
+        public int CodUsr = 0; // admin o user
+        public int codUser = 0; //mostrar user
         int pos = 0;
         int i = 0;
 
@@ -29,6 +30,7 @@ namespace Proyect_Kardex
             toolRegUser.SetToolTip(save, "Guardar Planillas Excel");
             toolRegUser.SetToolTip(seebtn, "Ver Usuario");
             toolRegUser.SetToolTip(printview, "Pre-Vista");
+            toolRegUser.SetToolTip(botonselect, "Seleccionar Usuario");
             toolRegUser.SetToolTip(salir, "Salir");
         }
 
@@ -74,18 +76,36 @@ namespace Proyect_Kardex
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
+            if (CodUsr == 0)
             {
-                pos = dataGridUsr.CurrentRow.Index;
-                String valor = "";
-                valor = dataGridUsr[0, pos].Value.ToString();
-                codUser = Int32.Parse(valor);
-
-                //botonselect.Enabled = true;
-                //botonselect.BackgroundImage = global::Proyect_Kardex.Properties.Resources.document_Select; 
+                try
+                {
+                    pos = dataGridUsr.CurrentRow.Index;
+                    String valor = "";
+                    valor = dataGridUsr[0, pos].Value.ToString();
+                    codUser = Int32.Parse(valor);
+                }
+                catch (Exception es)
+                {
+                    MessageBox.Show(es.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch(Exception es){
-                MessageBox.Show(es.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                try
+                {
+                    pos = dataGridUsr.CurrentRow.Index;
+                    String valor = "";
+                    valor = dataGridUsr[0, pos].Value.ToString();
+                    codUser = Int32.Parse(valor);
+
+                    botonselect.Enabled = true;
+                    botonselect.BackgroundImage = global::Proyect_Kardex.Properties.Resources.document_Select;
+                }
+                catch (Exception es)
+                {
+                    MessageBox.Show(es.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -295,6 +315,23 @@ namespace Proyect_Kardex
             {
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 r.CerrarCnn();
+            }
+        }
+
+        private void botonselect_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                pos = dataGridUsr.CurrentRow.Index;
+                String valor = "";
+                valor = dataGridUsr[0, pos].Value.ToString();
+                codUser = Int32.Parse(valor);
+
+                this.Close();
+            }
+            catch (Exception es)
+            {
+                MessageBox.Show(es.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

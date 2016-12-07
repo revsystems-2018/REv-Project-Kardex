@@ -821,6 +821,7 @@
             this.tituloprod.Size = new System.Drawing.Size(141, 19);
             this.tituloprod.TabIndex = 1;
             this.tituloprod.Text = "Modificar Producto";
+            this.tituloprod.Click += new System.EventHandler(this.tituloprod_Click);
             // 
             // codprod
             // 
@@ -866,6 +867,7 @@
             this.label12.Size = new System.Drawing.Size(44, 12);
             this.label12.TabIndex = 41;
             this.label12.Text = "Codigo";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // deleteboton
             // 

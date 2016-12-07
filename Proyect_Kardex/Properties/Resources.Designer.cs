@@ -973,6 +973,16 @@ namespace Proyect_Kardex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap listEmps {
+            get {
+                object obj = ResourceManager.GetObject("listEmps", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap listMarca {
             get {
                 object obj = ResourceManager.GetObject("listMarca", resourceCulture);

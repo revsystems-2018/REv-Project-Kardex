@@ -442,6 +442,24 @@
     <Compile Include="SearchMensseger.Designer.cs">
       <DependentUpon>SearchMensseger.cs</DependentUpon>
     </Compile>
+    <Compile Include="See_Find_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="See_Find_Cliente.Designer.cs">
+      <DependentUpon>See_Find_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="See_Find_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="See_Find_Product.Designer.cs">
+      <DependentUpon>See_Find_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="See_Find_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="See_Find_Proveedor.Designer.cs">
+      <DependentUpon>See_Find_Proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShowSolClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -685,6 +703,15 @@
     <EmbeddedResource Include="SearchMensseger.resx">
       <DependentUpon>SearchMensseger.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="See_Find_Cliente.resx">
+      <DependentUpon>See_Find_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="See_Find_Product.resx">
+      <DependentUpon>See_Find_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="See_Find_Proveedor.resx">
+      <DependentUpon>See_Find_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowSolClientes.resx">
       <DependentUpon>ShowSolClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -835,6 +862,7 @@
     <None Include="Resources\ProveeGrupo.png" />
     <None Include="Resources\chart-512.png" />
     <None Include="Resources\product-edit.png" />
+    <None Include="Resources\listEmps.png" />
     <Content Include="REV_Project_Kardex_Logo.ico" />
     <None Include="Resources\weblogo.png" />
     <None Include="Resources\viewfoto.png" />

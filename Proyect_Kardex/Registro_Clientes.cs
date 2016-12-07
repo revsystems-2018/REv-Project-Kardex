@@ -13,8 +13,8 @@ namespace Proyect_Kardex
 {
     public partial class Registro_Clientes : Form
     {
-        public int codUser = 0;
-        public int CodUsr = 0;
+        public int codUser = 0; //mostrar cliente
+        public int CodUsr = 7906442; //admin o user
 
         public String nitCli = "";
         int pos = 0;

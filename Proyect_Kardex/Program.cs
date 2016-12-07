@@ -16,7 +16,7 @@ namespace Proyect_Kardex
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ReportUsuarioMes());
+            Application.Run(new See_Find_Product());
         }
     }
 }

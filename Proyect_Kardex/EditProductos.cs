@@ -1541,5 +1541,20 @@ namespace Proyect_Kardex
                 }
             }
         }
+
+        private void tituloprod_Click(object sender, EventArgs e)
+        {
+            List_Productos lp = new List_Productos();
+            codbuscprod.Text = "";
+            codbuscprod.ForeColor = SystemColors.WindowText;
+            codbuscprod.Font = new Font(codbuscprod.Font, FontStyle.Regular);
+            codbuscprod.Text = lp.codUser.ToString();
+            lp.ShowDialog();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

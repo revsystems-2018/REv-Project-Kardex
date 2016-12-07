@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Usuario));
             this.dataGridUsr = new System.Windows.Forms.DataGridView();
             this.ciUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +68,7 @@
             this.printMain = new System.Windows.Forms.PrintDialog();
             this.printDocx = new System.Drawing.Printing.PrintDocument();
             this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
+            this.botonselect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEV_DataBaseDataSet)).BeginInit();
@@ -84,14 +85,14 @@
             this.dataGridUsr.AutoGenerateColumns = false;
             this.dataGridUsr.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridUsr.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridUsr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridUsr.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridUsr.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridUsr.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ciUserDataGridViewTextBoxColumn,
@@ -112,18 +113,18 @@
             this.idUserDataGridViewTextBoxColumn,
             this.codDepaUDataGridViewTextBoxColumn});
             this.dataGridUsr.DataSource = this.usuarioBindingSource1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Menu;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridUsr.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Menu;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridUsr.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridUsr.Location = new System.Drawing.Point(0, 51);
             this.dataGridUsr.Name = "dataGridUsr";
             this.dataGridUsr.ReadOnly = true;
-            this.dataGridUsr.Size = new System.Drawing.Size(539, 442);
+            this.dataGridUsr.Size = new System.Drawing.Size(568, 442);
             this.dataGridUsr.TabIndex = 299;
             this.dataGridUsr.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -271,6 +272,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel1.Controls.Add(this.botonselect);
             this.panel1.Controls.Add(this.printview);
             this.panel1.Controls.Add(this.seebtn);
             this.panel1.Controls.Add(this.actualizar);
@@ -282,7 +284,7 @@
             this.panel1.Controls.Add(this.salir);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 51);
+            this.panel1.Size = new System.Drawing.Size(570, 51);
             this.panel1.TabIndex = 298;
             // 
             // printview
@@ -295,7 +297,7 @@
             this.printview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.printview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.printview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printview.Location = new System.Drawing.Point(363, 4);
+            this.printview.Location = new System.Drawing.Point(391, 4);
             this.printview.Name = "printview";
             this.printview.Size = new System.Drawing.Size(20, 20);
             this.printview.TabIndex = 295;
@@ -312,7 +314,7 @@
             this.seebtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.seebtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.seebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.seebtn.Location = new System.Drawing.Point(206, 5);
+            this.seebtn.Location = new System.Drawing.Point(234, 5);
             this.seebtn.Name = "seebtn";
             this.seebtn.Size = new System.Drawing.Size(40, 40);
             this.seebtn.TabIndex = 294;
@@ -329,7 +331,7 @@
             this.actualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.actualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.actualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.actualizar.Location = new System.Drawing.Point(271, 5);
+            this.actualizar.Location = new System.Drawing.Point(299, 5);
             this.actualizar.Name = "actualizar";
             this.actualizar.Size = new System.Drawing.Size(40, 40);
             this.actualizar.TabIndex = 293;
@@ -346,7 +348,7 @@
             this.print.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.print.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.print.Location = new System.Drawing.Point(336, 5);
+            this.print.Location = new System.Drawing.Point(364, 5);
             this.print.Name = "print";
             this.print.Size = new System.Drawing.Size(40, 40);
             this.print.TabIndex = 292;
@@ -363,7 +365,7 @@
             this.editar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.editar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editar.Location = new System.Drawing.Point(79, 5);
+            this.editar.Location = new System.Drawing.Point(117, 5);
             this.editar.Name = "editar";
             this.editar.Size = new System.Drawing.Size(40, 40);
             this.editar.TabIndex = 291;
@@ -380,7 +382,7 @@
             this.nuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.nuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nuevo.Location = new System.Drawing.Point(23, 5);
+            this.nuevo.Location = new System.Drawing.Point(68, 5);
             this.nuevo.Name = "nuevo";
             this.nuevo.Size = new System.Drawing.Size(40, 40);
             this.nuevo.TabIndex = 290;
@@ -397,7 +399,7 @@
             this.eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eliminar.Location = new System.Drawing.Point(133, 5);
+            this.eliminar.Location = new System.Drawing.Point(166, 5);
             this.eliminar.Name = "eliminar";
             this.eliminar.Size = new System.Drawing.Size(40, 40);
             this.eliminar.TabIndex = 289;
@@ -414,7 +416,7 @@
             this.save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.save.Location = new System.Drawing.Point(422, 5);
+            this.save.Location = new System.Drawing.Point(450, 5);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(40, 40);
             this.save.TabIndex = 250;
@@ -431,7 +433,7 @@
             this.salir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.salir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.salir.Location = new System.Drawing.Point(489, 5);
+            this.salir.Location = new System.Drawing.Point(517, 5);
             this.salir.Name = "salir";
             this.salir.Size = new System.Drawing.Size(40, 40);
             this.salir.TabIndex = 251;
@@ -450,7 +452,9 @@
             this.tableAdapterManager.DepartamentoTableAdapter = null;
             this.tableAdapterManager.Detalle_VentaTableAdapter = null;
             this.tableAdapterManager.DetallePedidosTableAdapter = null;
+            this.tableAdapterManager.Devolucion_VentasTableAdapter = null;
             this.tableAdapterManager.EmpresaTableAdapter = null;
+            this.tableAdapterManager.FacturasTableAdapter = null;
             this.tableAdapterManager.MarcasTableAdapter = null;
             this.tableAdapterManager.MedidasTableAdapter = null;
             this.tableAdapterManager.PedidosTableAdapter = null;
@@ -486,12 +490,30 @@
             this.printPreview.ShowIcon = false;
             this.printPreview.Visible = false;
             // 
+            // botonselect
+            // 
+            this.botonselect.BackColor = System.Drawing.Color.Transparent;
+            this.botonselect.BackgroundImage = global::Proyect_Kardex.Properties.Resources.document_Selectb;
+            this.botonselect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.botonselect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonselect.Enabled = false;
+            this.botonselect.FlatAppearance.BorderSize = 0;
+            this.botonselect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.botonselect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.botonselect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonselect.Location = new System.Drawing.Point(12, 5);
+            this.botonselect.Name = "botonselect";
+            this.botonselect.Size = new System.Drawing.Size(40, 40);
+            this.botonselect.TabIndex = 300;
+            this.botonselect.UseVisualStyleBackColor = false;
+            this.botonselect.Click += new System.EventHandler(this.botonselect_Click);
+            // 
             // Registro_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(540, 494);
+            this.ClientSize = new System.Drawing.Size(569, 494);
             this.Controls.Add(this.dataGridUsr);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -546,5 +568,6 @@
         public System.Windows.Forms.PrintDialog printMain;
         public System.Drawing.Printing.PrintDocument printDocx;
         public System.Windows.Forms.PrintPreviewDialog printPreview;
+        public System.Windows.Forms.Button botonselect;
     }
 }
