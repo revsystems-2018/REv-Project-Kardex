@@ -644,6 +644,186 @@ namespace Proyect_Kardex
             findPtxt.Font = new Font(findPtxt.Font, FontStyle.Regular);
         }
 
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+            if (findProdtxt.Text != "" && findProdtxt.Font.Italic == true)
+            {
+                findProdtxt.Text = "";
+                findProdtxt.ForeColor = SystemColors.WindowText;
+                findProdtxt.Font = new Font(findProdtxt.Font, FontStyle.Regular);
+                //textBox1.Font.Italic = false;
+
+            }
+            else
+            {
+                findProdtxt.ForeColor = SystemColors.WindowText;
+                findProdtxt.Font = new Font(findProdtxt.Font, FontStyle.Regular);
+            }
+        }
+
+        private void findProdtxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            findProdtxt.ForeColor = SystemColors.WindowText;
+            findProdtxt.Font = new Font(findProdtxt.Font, FontStyle.Regular);
+        }
+
+        private void buscarDatosDelProducctoIngresadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            See_Find_Product bu = new See_Find_Product();
+
+            if (findProdtxt.Text != "" && findProdtxt.Font.Italic == true)
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else if (findProdtxt.Text == "")
+            {
+                bu.citext.Text = "";
+                bu.ShowDialog();
+            }
+            else
+            {
+                bu.citext.Text = findProdtxt.Text;
+                bu.ShowDialog();
+            }
+        }
+
+        private void herramientasDeVisiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stockMaximoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion w = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE CantProd <= SMinProd ;";
+            sda = new SqlDataAdapter(sql, w.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+            de.ShowDialog();
+        }
+
+        private void stockMáximoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE CantProd >= SMaxProd ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void puntoDePedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion t = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE CantProd <= SMinProd OR CantProd <= SMinProd+10 ;";
+            sda = new SqlDataAdapter(sql, t.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void bajosPreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE PVUProd <= 100.0 ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void altosPreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE PVUProd >= 100.0 ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void sinVencimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE fnProd = NULL ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void productosNuevosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE EstadoProd = 'Nuevo' ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void productosDisponiblesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE EstadoProd = 'Activo' ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void productosInactivosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE EstadoProd = 'Inactivo' ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
+        private void productosSuspendidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            List_Productos de = new List_Productos();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE EstadoProd = 'Suspendido' ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            de.regprodtable.DataSource = dt;
+        }
+
 
     }
 }
