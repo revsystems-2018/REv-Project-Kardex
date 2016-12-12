@@ -115,7 +115,7 @@ namespace Proyect_Kardex
 
             try
             {
-                c.OpenCnn();
+                cs.OpenCnn();
                 read = sqlQ.ExecuteReader();
                 while (read.Read())
                 {

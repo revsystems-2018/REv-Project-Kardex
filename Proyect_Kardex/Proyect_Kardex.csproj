@@ -490,6 +490,12 @@
     <Compile Include="SolUser.Designer.cs">
       <DependentUpon>SolUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateAnunciosEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAnunciosEmp.Designer.cs">
+      <DependentUpon>UpdateAnunciosEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update_FacturaEmp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -732,6 +738,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SolUser.resx">
       <DependentUpon>SolUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAnunciosEmp.resx">
+      <DependentUpon>UpdateAnunciosEmp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update_FacturaEmp.resx">
       <DependentUpon>Update_FacturaEmp.cs</DependentUpon>
