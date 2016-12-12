@@ -824,6 +824,48 @@ namespace Proyect_Kardex
             de.regprodtable.DataSource = dt;
         }
 
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            Update_FacturaEmp upf = new Update_FacturaEmp();
+            upf.ShowDialog();
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            UpdateAnunciosEmp uae = new UpdateAnunciosEmp();
+            uae.ShowDialog();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            List_Productos lbd = new List_Productos();
+
+            DataTable dt = new DataTable();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE EstadoProd = 'Promoción' ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            lbd.regprodtable.DataSource = dt;
+            lbd.ShowDialog();
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            List_Productos lbd = new List_Productos();
+
+            DataTable dt = new DataTable();
+            Conexion r = new Conexion();
+            SqlDataAdapter sda;
+            String sql;
+            sql = "SELECT * FROM Productos WHERE fnProd <= GETDATE() ;";
+            sda = new SqlDataAdapter(sql, r.GetCONN());
+            sda.Fill(dt);
+            lbd.regprodtable.DataSource = dt;
+            lbd.ShowDialog();
+        }
+
 
     }
 }

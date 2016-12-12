@@ -100,6 +100,8 @@
             this.agregarEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.verEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aLMACENToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -152,7 +154,37 @@
             this.productosInactivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosSuspendidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vENTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventaNuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator45 = new System.Windows.Forms.ToolStripSeparator();
+            this.registroEnVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator46 = new System.Windows.Forms.ToolStripSeparator();
+            this.registroEnDetalleDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator47 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroEnDevolucionesDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator48 = new System.Windows.Forms.ToolStripSeparator();
+            this.registroDeFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator49 = new System.Windows.Forms.ToolStripSeparator();
+            this.reporteGraficoDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cOMPRASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator50 = new System.Windows.Forms.ToolStripSeparator();
+            this.registroDeComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator51 = new System.Windows.Forms.ToolStripSeparator();
+            this.nuevoPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator52 = new System.Windows.Forms.ToolStripSeparator();
+            this.registroDePedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator53 = new System.Windows.Forms.ToolStripSeparator();
+            this.realizarDevolucionEnCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroEnDevolucionesDeComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator54 = new System.Windows.Forms.ToolStripSeparator();
+            this.reporteDeComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uTILIDADESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generadorDeCodigosDeBarrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
@@ -212,21 +244,6 @@
             this.PBanun2 = new System.Windows.Forms.PictureBox();
             this.PBanun1 = new System.Windows.Forms.PictureBox();
             this.logoEmp = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventaNuevaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroEnVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator45 = new System.Windows.Forms.ToolStripSeparator();
-            this.registroEnDetalleDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroEnDevolucionesDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroDeFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteGraficoDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator46 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator47 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator48 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator49 = new System.Windows.Forms.ToolStripSeparator();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -872,6 +889,26 @@
             this.editarToolStripMenuItem.Text = "Configuracion de la Empresa";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Image = global::Proyect_Kardex.Properties.Resources.factureinfo;
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.F)));
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(358, 22);
+            this.toolStripMenuItem11.Text = "Actualizar Codigos de Factura";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Image = global::Proyect_Kardex.Properties.Resources.ver;
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.A)));
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(358, 22);
+            this.toolStripMenuItem12.Text = "Actualizar Anuncios Comerciales";
+            this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
+            // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
@@ -1154,7 +1191,7 @@
             // 
             this.reporteGraficoDeInventarioToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.chart_512;
             this.reporteGraficoDeInventarioToolStripMenuItem.Name = "reporteGraficoDeInventarioToolStripMenuItem";
-            this.reporteGraficoDeInventarioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.I)));
+            this.reporteGraficoDeInventarioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
             this.reporteGraficoDeInventarioToolStripMenuItem.Size = new System.Drawing.Size(364, 22);
             this.reporteGraficoDeInventarioToolStripMenuItem.Text = "Reporte Grafico de Inventario";
             this.reporteGraficoDeInventarioToolStripMenuItem.Click += new System.EventHandler(this.reporteGraficoDeInventarioToolStripMenuItem_Click);
@@ -1171,6 +1208,7 @@
             this.toolStripMenuItem10.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.M)));
             this.toolStripMenuItem10.Size = new System.Drawing.Size(364, 22);
             this.toolStripMenuItem10.Text = "Productos en Promoción";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // toolStripMenuItem9
             // 
@@ -1179,6 +1217,7 @@
             this.toolStripMenuItem9.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.N)));
             this.toolStripMenuItem9.Size = new System.Drawing.Size(364, 22);
             this.toolStripMenuItem9.Text = "Productos en Vencimiento";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
             // 
             // toolStripSeparator44
             // 
@@ -1313,6 +1352,7 @@
             this.toolStripSeparator46,
             this.registroEnDetalleDeVentasToolStripMenuItem,
             this.toolStripSeparator47,
+            this.toolStripMenuItem13,
             this.registroEnDevolucionesDeVentasToolStripMenuItem,
             this.toolStripSeparator48,
             this.registroDeFacturasToolStripMenuItem,
@@ -1322,11 +1362,223 @@
             this.vENTASToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.vENTASToolStripMenuItem.Text = "VENTAS";
             // 
+            // ventaNuevaToolStripMenuItem
+            // 
+            this.ventaNuevaToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.Sell_add;
+            this.ventaNuevaToolStripMenuItem.Name = "ventaNuevaToolStripMenuItem";
+            this.ventaNuevaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.V)));
+            this.ventaNuevaToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.ventaNuevaToolStripMenuItem.Text = "Nueva Venta";
+            // 
+            // editarVentaToolStripMenuItem
+            // 
+            this.editarVentaToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.Sell_edit;
+            this.editarVentaToolStripMenuItem.Name = "editarVentaToolStripMenuItem";
+            this.editarVentaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.E)));
+            this.editarVentaToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.editarVentaToolStripMenuItem.Text = "Editar Venta";
+            // 
+            // eliminarVentaToolStripMenuItem
+            // 
+            this.eliminarVentaToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.Sell_cancel;
+            this.eliminarVentaToolStripMenuItem.Name = "eliminarVentaToolStripMenuItem";
+            this.eliminarVentaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.D)));
+            this.eliminarVentaToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.eliminarVentaToolStripMenuItem.Text = "Eliminar Venta";
+            // 
+            // toolStripSeparator45
+            // 
+            this.toolStripSeparator45.Name = "toolStripSeparator45";
+            this.toolStripSeparator45.Size = new System.Drawing.Size(349, 6);
+            // 
+            // registroEnVentasToolStripMenuItem
+            // 
+            this.registroEnVentasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.VentasIngresos;
+            this.registroEnVentasToolStripMenuItem.Name = "registroEnVentasToolStripMenuItem";
+            this.registroEnVentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.V)));
+            this.registroEnVentasToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.registroEnVentasToolStripMenuItem.Text = "Registro de Ventas";
+            // 
+            // toolStripSeparator46
+            // 
+            this.toolStripSeparator46.Name = "toolStripSeparator46";
+            this.toolStripSeparator46.Size = new System.Drawing.Size(349, 6);
+            // 
+            // registroEnDetalleDeVentasToolStripMenuItem
+            // 
+            this.registroEnDetalleDeVentasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.detalleDocx;
+            this.registroEnDetalleDeVentasToolStripMenuItem.Name = "registroEnDetalleDeVentasToolStripMenuItem";
+            this.registroEnDetalleDeVentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.D)));
+            this.registroEnDetalleDeVentasToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.registroEnDetalleDeVentasToolStripMenuItem.Text = "Registro en Detalle de Ventas";
+            // 
+            // toolStripSeparator47
+            // 
+            this.toolStripSeparator47.Name = "toolStripSeparator47";
+            this.toolStripSeparator47.Size = new System.Drawing.Size(349, 6);
+            // 
+            // toolStripMenuItem13
+            // 
+            this.toolStripMenuItem13.Image = global::Proyect_Kardex.Properties.Resources.devolucionVentas;
+            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(352, 22);
+            this.toolStripMenuItem13.Text = "Realizar Devolución de Ventas";
+            // 
+            // registroEnDevolucionesDeVentasToolStripMenuItem
+            // 
+            this.registroEnDevolucionesDeVentasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.devolDocxs;
+            this.registroEnDevolucionesDeVentasToolStripMenuItem.Name = "registroEnDevolucionesDeVentasToolStripMenuItem";
+            this.registroEnDevolucionesDeVentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.Z)));
+            this.registroEnDevolucionesDeVentasToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.registroEnDevolucionesDeVentasToolStripMenuItem.Text = "Registro en Devoluciones de Ventas";
+            // 
+            // toolStripSeparator48
+            // 
+            this.toolStripSeparator48.Name = "toolStripSeparator48";
+            this.toolStripSeparator48.Size = new System.Drawing.Size(349, 6);
+            // 
+            // registroDeFacturasToolStripMenuItem
+            // 
+            this.registroDeFacturasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.factureinfo;
+            this.registroDeFacturasToolStripMenuItem.Name = "registroDeFacturasToolStripMenuItem";
+            this.registroDeFacturasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.F)));
+            this.registroDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.registroDeFacturasToolStripMenuItem.Text = "Registro de Facturas";
+            // 
+            // toolStripSeparator49
+            // 
+            this.toolStripSeparator49.Name = "toolStripSeparator49";
+            this.toolStripSeparator49.Size = new System.Drawing.Size(349, 6);
+            // 
+            // reporteGraficoDeVentasToolStripMenuItem
+            // 
+            this.reporteGraficoDeVentasToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.chart_512;
+            this.reporteGraficoDeVentasToolStripMenuItem.Name = "reporteGraficoDeVentasToolStripMenuItem";
+            this.reporteGraficoDeVentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F2)));
+            this.reporteGraficoDeVentasToolStripMenuItem.Size = new System.Drawing.Size(352, 22);
+            this.reporteGraficoDeVentasToolStripMenuItem.Text = "Reporte Grafico de Ventas";
+            // 
             // cOMPRASToolStripMenuItem
             // 
+            this.cOMPRASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaCompraToolStripMenuItem,
+            this.editarCompraToolStripMenuItem,
+            this.eliminarCompraToolStripMenuItem,
+            this.toolStripSeparator50,
+            this.registroDeComprasToolStripMenuItem,
+            this.toolStripSeparator51,
+            this.nuevoPedidoToolStripMenuItem,
+            this.editarPedidoToolStripMenuItem,
+            this.eliminarPedidoToolStripMenuItem,
+            this.toolStripSeparator52,
+            this.registroDePedidosToolStripMenuItem,
+            this.toolStripSeparator53,
+            this.realizarDevolucionEnCompraToolStripMenuItem,
+            this.registroEnDevolucionesDeComprasToolStripMenuItem,
+            this.toolStripSeparator54,
+            this.reporteDeComprasToolStripMenuItem});
             this.cOMPRASToolStripMenuItem.Name = "cOMPRASToolStripMenuItem";
             this.cOMPRASToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.cOMPRASToolStripMenuItem.Text = "COMPRAS";
+            // 
+            // nuevaCompraToolStripMenuItem
+            // 
+            this.nuevaCompraToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.compra_add;
+            this.nuevaCompraToolStripMenuItem.Name = "nuevaCompraToolStripMenuItem";
+            this.nuevaCompraToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.nuevaCompraToolStripMenuItem.Text = "Nueva Compra";
+            // 
+            // editarCompraToolStripMenuItem
+            // 
+            this.editarCompraToolStripMenuItem.Name = "editarCompraToolStripMenuItem";
+            this.editarCompraToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.editarCompraToolStripMenuItem.Text = "Editar Compra";
+            // 
+            // eliminarCompraToolStripMenuItem
+            // 
+            this.eliminarCompraToolStripMenuItem.Name = "eliminarCompraToolStripMenuItem";
+            this.eliminarCompraToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.eliminarCompraToolStripMenuItem.Text = "Eliminar Compra";
+            // 
+            // toolStripSeparator50
+            // 
+            this.toolStripSeparator50.Name = "toolStripSeparator50";
+            this.toolStripSeparator50.Size = new System.Drawing.Size(292, 6);
+            // 
+            // registroDeComprasToolStripMenuItem
+            // 
+            this.registroDeComprasToolStripMenuItem.Name = "registroDeComprasToolStripMenuItem";
+            this.registroDeComprasToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.registroDeComprasToolStripMenuItem.Text = "Registro de Compras";
+            // 
+            // toolStripSeparator51
+            // 
+            this.toolStripSeparator51.Name = "toolStripSeparator51";
+            this.toolStripSeparator51.Size = new System.Drawing.Size(292, 6);
+            // 
+            // nuevoPedidoToolStripMenuItem
+            // 
+            this.nuevoPedidoToolStripMenuItem.Name = "nuevoPedidoToolStripMenuItem";
+            this.nuevoPedidoToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.nuevoPedidoToolStripMenuItem.Text = "Nuevo Pedido";
+            // 
+            // editarPedidoToolStripMenuItem
+            // 
+            this.editarPedidoToolStripMenuItem.Name = "editarPedidoToolStripMenuItem";
+            this.editarPedidoToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.editarPedidoToolStripMenuItem.Text = "Editar Pedido";
+            // 
+            // eliminarPedidoToolStripMenuItem
+            // 
+            this.eliminarPedidoToolStripMenuItem.Name = "eliminarPedidoToolStripMenuItem";
+            this.eliminarPedidoToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.eliminarPedidoToolStripMenuItem.Text = "Eliminar Pedido";
+            // 
+            // toolStripSeparator52
+            // 
+            this.toolStripSeparator52.Name = "toolStripSeparator52";
+            this.toolStripSeparator52.Size = new System.Drawing.Size(292, 6);
+            // 
+            // registroDePedidosToolStripMenuItem
+            // 
+            this.registroDePedidosToolStripMenuItem.Name = "registroDePedidosToolStripMenuItem";
+            this.registroDePedidosToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.registroDePedidosToolStripMenuItem.Text = "Registro de Pedidos";
+            // 
+            // toolStripSeparator53
+            // 
+            this.toolStripSeparator53.Name = "toolStripSeparator53";
+            this.toolStripSeparator53.Size = new System.Drawing.Size(292, 6);
+            // 
+            // realizarDevolucionEnCompraToolStripMenuItem
+            // 
+            this.realizarDevolucionEnCompraToolStripMenuItem.Name = "realizarDevolucionEnCompraToolStripMenuItem";
+            this.realizarDevolucionEnCompraToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.realizarDevolucionEnCompraToolStripMenuItem.Text = "Realizar Devolución en Compra";
+            // 
+            // registroEnDevolucionesDeComprasToolStripMenuItem
+            // 
+            this.registroEnDevolucionesDeComprasToolStripMenuItem.Name = "registroEnDevolucionesDeComprasToolStripMenuItem";
+            this.registroEnDevolucionesDeComprasToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.registroEnDevolucionesDeComprasToolStripMenuItem.Text = "Registro en Devoluciones de Compras";
+            // 
+            // toolStripSeparator54
+            // 
+            this.toolStripSeparator54.Name = "toolStripSeparator54";
+            this.toolStripSeparator54.Size = new System.Drawing.Size(292, 6);
+            // 
+            // reporteDeComprasToolStripMenuItem
+            // 
+            this.reporteDeComprasToolStripMenuItem.Name = "reporteDeComprasToolStripMenuItem";
+            this.reporteDeComprasToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
+            this.reporteDeComprasToolStripMenuItem.Text = "Reporte Grafico de Compras";
             // 
             // uTILIDADESToolStripMenuItem
             // 
@@ -1987,97 +2239,6 @@
             this.logoEmp.TabIndex = 4;
             this.logoEmp.TabStop = false;
             // 
-            // toolStripMenuItem11
-            // 
-            this.toolStripMenuItem11.Image = global::Proyect_Kardex.Properties.Resources.factureinfo;
-            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.F)));
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(358, 22);
-            this.toolStripMenuItem11.Text = "Actualizar Codigos de Factura";
-            // 
-            // toolStripMenuItem12
-            // 
-            this.toolStripMenuItem12.Image = global::Proyect_Kardex.Properties.Resources.ver;
-            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.A)));
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(358, 22);
-            this.toolStripMenuItem12.Text = "Actualizar Anuncios Comerciales";
-            // 
-            // ventaNuevaToolStripMenuItem
-            // 
-            this.ventaNuevaToolStripMenuItem.Name = "ventaNuevaToolStripMenuItem";
-            this.ventaNuevaToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.ventaNuevaToolStripMenuItem.Text = "Nueva Venta";
-            // 
-            // editarVentaToolStripMenuItem
-            // 
-            this.editarVentaToolStripMenuItem.Name = "editarVentaToolStripMenuItem";
-            this.editarVentaToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.editarVentaToolStripMenuItem.Text = "Editar Venta";
-            // 
-            // eliminarVentaToolStripMenuItem
-            // 
-            this.eliminarVentaToolStripMenuItem.Name = "eliminarVentaToolStripMenuItem";
-            this.eliminarVentaToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.eliminarVentaToolStripMenuItem.Text = "Eliminar Venta";
-            // 
-            // registroEnVentasToolStripMenuItem
-            // 
-            this.registroEnVentasToolStripMenuItem.Name = "registroEnVentasToolStripMenuItem";
-            this.registroEnVentasToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.registroEnVentasToolStripMenuItem.Text = "Registro de Ventas";
-            // 
-            // toolStripSeparator45
-            // 
-            this.toolStripSeparator45.Name = "toolStripSeparator45";
-            this.toolStripSeparator45.Size = new System.Drawing.Size(279, 6);
-            // 
-            // registroEnDetalleDeVentasToolStripMenuItem
-            // 
-            this.registroEnDetalleDeVentasToolStripMenuItem.Name = "registroEnDetalleDeVentasToolStripMenuItem";
-            this.registroEnDetalleDeVentasToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.registroEnDetalleDeVentasToolStripMenuItem.Text = "Registro en Detalle de Ventas";
-            // 
-            // registroEnDevolucionesDeVentasToolStripMenuItem
-            // 
-            this.registroEnDevolucionesDeVentasToolStripMenuItem.Name = "registroEnDevolucionesDeVentasToolStripMenuItem";
-            this.registroEnDevolucionesDeVentasToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.registroEnDevolucionesDeVentasToolStripMenuItem.Text = "Registro en Devoluciones de Ventas";
-            // 
-            // registroDeFacturasToolStripMenuItem
-            // 
-            this.registroDeFacturasToolStripMenuItem.Name = "registroDeFacturasToolStripMenuItem";
-            this.registroDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.registroDeFacturasToolStripMenuItem.Text = "Registro de Facturas";
-            // 
-            // reporteGraficoDeVentasToolStripMenuItem
-            // 
-            this.reporteGraficoDeVentasToolStripMenuItem.Name = "reporteGraficoDeVentasToolStripMenuItem";
-            this.reporteGraficoDeVentasToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
-            this.reporteGraficoDeVentasToolStripMenuItem.Text = "Reporte Grafico de Ventas";
-            // 
-            // toolStripSeparator46
-            // 
-            this.toolStripSeparator46.Name = "toolStripSeparator46";
-            this.toolStripSeparator46.Size = new System.Drawing.Size(279, 6);
-            // 
-            // toolStripSeparator47
-            // 
-            this.toolStripSeparator47.Name = "toolStripSeparator47";
-            this.toolStripSeparator47.Size = new System.Drawing.Size(279, 6);
-            // 
-            // toolStripSeparator48
-            // 
-            this.toolStripSeparator48.Name = "toolStripSeparator48";
-            this.toolStripSeparator48.Size = new System.Drawing.Size(279, 6);
-            // 
-            // toolStripSeparator49
-            // 
-            this.toolStripSeparator49.Name = "toolStripSeparator49";
-            this.toolStripSeparator49.Size = new System.Drawing.Size(279, 6);
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2325,5 +2486,22 @@
         private System.Windows.Forms.ToolStripMenuItem registroDeFacturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator49;
         private System.Windows.Forms.ToolStripMenuItem reporteGraficoDeVentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
+        private System.Windows.Forms.ToolStripMenuItem nuevaCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator50;
+        private System.Windows.Forms.ToolStripMenuItem registroDeComprasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator51;
+        private System.Windows.Forms.ToolStripMenuItem nuevoPedidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarPedidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarPedidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator52;
+        private System.Windows.Forms.ToolStripMenuItem registroDePedidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator53;
+        private System.Windows.Forms.ToolStripMenuItem realizarDevolucionEnCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroEnDevolucionesDeComprasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator54;
+        private System.Windows.Forms.ToolStripMenuItem reporteDeComprasToolStripMenuItem;
     }
 }

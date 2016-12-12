@@ -343,6 +343,36 @@ namespace Proyect_Kardex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap compra_add {
+            get {
+                object obj = ResourceManager.GetObject("compra-add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap compra_cancel {
+            get {
+                object obj = ResourceManager.GetObject("compra-cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap compra_edit {
+            get {
+                object obj = ResourceManager.GetObject("compra-edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ComprasEgresos {
             get {
                 object obj = ResourceManager.GetObject("ComprasEgresos", resourceCulture);
@@ -1756,6 +1786,36 @@ namespace Proyect_Kardex.Properties {
         public static System.Drawing.Bitmap seguridad {
             get {
                 object obj = ResourceManager.GetObject("seguridad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sell_add {
+            get {
+                object obj = ResourceManager.GetObject("Sell-add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sell_cancel {
+            get {
+                object obj = ResourceManager.GetObject("Sell-cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Sell_edit {
+            get {
+                object obj = ResourceManager.GetObject("Sell-edit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

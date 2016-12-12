@@ -883,6 +883,12 @@
     <None Include="Resources\listEmps.png" />
     <None Include="Resources\seeProve.png" />
     <None Include="Resources\list-512.png" />
+    <None Include="Resources\Sell-add.png" />
+    <None Include="Resources\Sell-cancel.png" />
+    <None Include="Resources\Sell-edit.png" />
+    <None Include="Resources\compra-add.png" />
+    <None Include="Resources\compra-cancel.png" />
+    <None Include="Resources\compra-edit.png" />
     <Content Include="REV_Project_Kardex_Logo.ico" />
     <None Include="Resources\weblogo.png" />
     <None Include="Resources\viewfoto.png" />
