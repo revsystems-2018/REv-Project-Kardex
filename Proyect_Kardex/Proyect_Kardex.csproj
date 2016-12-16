@@ -120,6 +120,12 @@
     <Compile Include="AEESubCat.Designer.cs">
       <DependentUpon>AEESubCat.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarProdAvanz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProdAvanz.Designer.cs">
+      <DependentUpon>BuscarProdAvanz.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -556,6 +562,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AEESubCat.resx">
       <DependentUpon>AEESubCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProdAvanz.resx">
+      <DependentUpon>BuscarProdAvanz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarProductos.resx">
       <DependentUpon>BuscarProductos.cs</DependentUpon>
