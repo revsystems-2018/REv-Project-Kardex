@@ -118,6 +118,7 @@
             this.label1.Size = new System.Drawing.Size(190, 19);
             this.label1.TabIndex = 212;
             this.label1.Text = "Confirmación De Búsqueda ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buscarprod
             // 

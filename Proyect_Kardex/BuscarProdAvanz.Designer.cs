@@ -33,6 +33,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscarProdAvanz));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comprasll = new System.Windows.Forms.LinkLabel();
+            this.ventasll = new System.Windows.Forms.LinkLabel();
+            this.statelb = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.stockminlb = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.stockmaxlb = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.costolb = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.ubicacionprod = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.categoriaprod = new System.Windows.Forms.Label();
@@ -45,22 +58,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.stock = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.imagenprod = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.precio = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listproduct = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buscarprod = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnCode = new System.Windows.Forms.Button();
-            this.btnDet = new System.Windows.Forms.Button();
-            this.btnName = new System.Windows.Forms.Button();
-            this.imagenprod = new System.Windows.Forms.PictureBox();
-            this.searchprod = new System.Windows.Forms.Button();
-            this.rEV_DataBaseDataSet = new Proyect_Kardex.REV_DataBaseDataSet();
-            this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productosTableAdapter = new Proyect_Kardex.REV_DataBaseDataSetTableAdapters.ProductosTableAdapter();
             this.codBarPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomProdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descProdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,27 +85,29 @@
             this.medCodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subCodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idProveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.productosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rEV_DataBaseDataSet = new Proyect_Kardex.REV_DataBaseDataSet();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buscarprod = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnCode = new System.Windows.Forms.Button();
+            this.btnDet = new System.Windows.Forms.Button();
+            this.btnName = new System.Windows.Forms.Button();
+            this.searchprod = new System.Windows.Forms.Button();
+            this.productosTableAdapter = new Proyect_Kardex.REV_DataBaseDataSetTableAdapters.ProductosTableAdapter();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.datevencimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenprod)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listproduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenprod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rEV_DataBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).BeginInit();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rEV_DataBaseDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -110,7 +115,11 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.datevencimiento);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.comprasll);
+            this.groupBox1.Controls.Add(this.ventasll);
+            this.groupBox1.Controls.Add(this.statelb);
             this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox4);
@@ -128,10 +137,150 @@
             this.groupBox1.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(558, 55);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(221, 538);
+            this.groupBox1.Size = new System.Drawing.Size(221, 608);
             this.groupBox1.TabIndex = 224;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Producto";
+            // 
+            // comprasll
+            // 
+            this.comprasll.AutoSize = true;
+            this.comprasll.Location = new System.Drawing.Point(142, 588);
+            this.comprasll.Name = "comprasll";
+            this.comprasll.Size = new System.Drawing.Size(64, 12);
+            this.comprasll.TabIndex = 13;
+            this.comprasll.TabStop = true;
+            this.comprasll.Text = "Compras...";
+            // 
+            // ventasll
+            // 
+            this.ventasll.AutoSize = true;
+            this.ventasll.Location = new System.Drawing.Point(10, 588);
+            this.ventasll.Name = "ventasll";
+            this.ventasll.Size = new System.Drawing.Size(51, 12);
+            this.ventasll.TabIndex = 12;
+            this.ventasll.TabStop = true;
+            this.ventasll.Text = "Ventas...";
+            this.ventasll.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ventasll_LinkClicked);
+            // 
+            // statelb
+            // 
+            this.statelb.AutoSize = true;
+            this.statelb.Font = new System.Drawing.Font("Exotc350 Bd BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statelb.ForeColor = System.Drawing.Color.LimeGreen;
+            this.statelb.Location = new System.Drawing.Point(72, 253);
+            this.statelb.Name = "statelb";
+            this.statelb.Size = new System.Drawing.Size(94, 22);
+            this.statelb.TabIndex = 11;
+            this.statelb.Text = "Disponible";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.stockminlb);
+            this.groupBox6.Controls.Add(this.label18);
+            this.groupBox6.Location = new System.Drawing.Point(117, 326);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(100, 45);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            // 
+            // stockminlb
+            // 
+            this.stockminlb.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stockminlb.ForeColor = System.Drawing.Color.DarkViolet;
+            this.stockminlb.Location = new System.Drawing.Point(6, 23);
+            this.stockminlb.Name = "stockminlb";
+            this.stockminlb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.stockminlb.Size = new System.Drawing.Size(88, 16);
+            this.stockminlb.TabIndex = 1;
+            this.stockminlb.Text = "0";
+            this.stockminlb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Lucida Sans", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(4, 10);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(69, 11);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Stock Mínimo";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.stockmaxlb);
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Location = new System.Drawing.Point(117, 278);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(100, 45);
+            this.groupBox5.TabIndex = 3;
+            this.groupBox5.TabStop = false;
+            // 
+            // stockmaxlb
+            // 
+            this.stockmaxlb.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stockmaxlb.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.stockmaxlb.Location = new System.Drawing.Point(6, 23);
+            this.stockmaxlb.Name = "stockmaxlb";
+            this.stockmaxlb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.stockmaxlb.Size = new System.Drawing.Size(88, 16);
+            this.stockmaxlb.TabIndex = 1;
+            this.stockmaxlb.Text = "0";
+            this.stockmaxlb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Lucida Sans", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(4, 10);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(70, 11);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Stock Máximo";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.costolb);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Location = new System.Drawing.Point(115, 19);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(100, 76);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(4, 61);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 12);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Bs";
+            // 
+            // costolb
+            // 
+            this.costolb.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.costolb.Font = new System.Drawing.Font("Lucida Sans", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.costolb.ForeColor = System.Drawing.Color.Crimson;
+            this.costolb.Location = new System.Drawing.Point(6, 31);
+            this.costolb.Name = "costolb";
+            this.costolb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.costolb.Size = new System.Drawing.Size(88, 20);
+            this.costolb.TabIndex = 1;
+            this.costolb.Text = "0.0";
+            this.costolb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(4, 10);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 12);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Costo";
             // 
             // ubicacionprod
             // 
@@ -147,7 +296,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(14, 499);
+            this.label13.Location = new System.Drawing.Point(10, 500);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(119, 12);
             this.label13.TabIndex = 9;
@@ -167,7 +316,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(14, 459);
+            this.label11.Location = new System.Drawing.Point(10, 460);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 12);
             this.label11.TabIndex = 7;
@@ -187,7 +336,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 419);
+            this.label9.Location = new System.Drawing.Point(10, 420);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(170, 12);
             this.label9.TabIndex = 5;
@@ -207,7 +356,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 379);
+            this.label4.Location = new System.Drawing.Point(10, 379);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 12);
             this.label4.TabIndex = 3;
@@ -255,6 +404,15 @@
             this.label3.Size = new System.Drawing.Size(35, 12);
             this.label3.TabIndex = 0;
             this.label3.Text = "Stock";
+            // 
+            // imagenprod
+            // 
+            this.imagenprod.Location = new System.Drawing.Point(8, 101);
+            this.imagenprod.Name = "imagenprod";
+            this.imagenprod.Size = new System.Drawing.Size(207, 149);
+            this.imagenprod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imagenprod.TabIndex = 2;
+            this.imagenprod.TabStop = false;
             // 
             // groupBox2
             // 
@@ -353,125 +511,9 @@
             this.listproduct.Location = new System.Drawing.Point(1, 55);
             this.listproduct.Name = "listproduct";
             this.listproduct.ReadOnly = true;
-            this.listproduct.Size = new System.Drawing.Size(555, 538);
+            this.listproduct.Size = new System.Drawing.Size(555, 608);
             this.listproduct.TabIndex = 223;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Exotc350 Bd BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 19);
-            this.label1.TabIndex = 221;
-            this.label1.Text = "Confirmación De Búsqueda ";
-            // 
-            // buscarprod
-            // 
-            this.buscarprod.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buscarprod.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.buscarprod.Location = new System.Drawing.Point(209, 29);
-            this.buscarprod.Name = "buscarprod";
-            this.buscarprod.Size = new System.Drawing.Size(465, 20);
-            this.buscarprod.TabIndex = 220;
-            this.buscarprod.Text = "Escribir Codigo de Barras del Producto (Nombre; Descripción)";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(34, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 12);
-            this.label5.TabIndex = 219;
-            this.label5.Text = "Codigo de Barras del Producto";
-            // 
-            // btnCode
-            // 
-            this.btnCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCode.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buscarCode_B;
-            this.btnCode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCode.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCode.FlatAppearance.BorderSize = 0;
-            this.btnCode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCode.Location = new System.Drawing.Point(749, 25);
-            this.btnCode.Name = "btnCode";
-            this.btnCode.Size = new System.Drawing.Size(25, 25);
-            this.btnCode.TabIndex = 227;
-            this.btnCode.UseVisualStyleBackColor = true;
-            // 
-            // btnDet
-            // 
-            this.btnDet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDet.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buscarDetalle_B;
-            this.btnDet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDet.FlatAppearance.BorderSize = 0;
-            this.btnDet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnDet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnDet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDet.Location = new System.Drawing.Point(718, 24);
-            this.btnDet.Name = "btnDet";
-            this.btnDet.Size = new System.Drawing.Size(25, 25);
-            this.btnDet.TabIndex = 226;
-            this.btnDet.UseVisualStyleBackColor = true;
-            // 
-            // btnName
-            // 
-            this.btnName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnName.BackgroundImage = global::Proyect_Kardex.Properties.Resources.BuscarName;
-            this.btnName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnName.FlatAppearance.BorderSize = 0;
-            this.btnName.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnName.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnName.Location = new System.Drawing.Point(687, 24);
-            this.btnName.Name = "btnName";
-            this.btnName.Size = new System.Drawing.Size(25, 25);
-            this.btnName.TabIndex = 225;
-            this.btnName.UseVisualStyleBackColor = true;
-            // 
-            // imagenprod
-            // 
-            this.imagenprod.Location = new System.Drawing.Point(8, 101);
-            this.imagenprod.Name = "imagenprod";
-            this.imagenprod.Size = new System.Drawing.Size(207, 149);
-            this.imagenprod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imagenprod.TabIndex = 2;
-            this.imagenprod.TabStop = false;
-            // 
-            // searchprod
-            // 
-            this.searchprod.BackColor = System.Drawing.SystemColors.Menu;
-            this.searchprod.BackgroundImage = global::Proyect_Kardex.Properties.Resources.lupa;
-            this.searchprod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.searchprod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.searchprod.FlatAppearance.BorderSize = 0;
-            this.searchprod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.searchprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
-            this.searchprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchprod.Location = new System.Drawing.Point(654, 30);
-            this.searchprod.Name = "searchprod";
-            this.searchprod.Size = new System.Drawing.Size(19, 18);
-            this.searchprod.TabIndex = 222;
-            this.searchprod.UseVisualStyleBackColor = false;
-            // 
-            // rEV_DataBaseDataSet
-            // 
-            this.rEV_DataBaseDataSet.DataSetName = "REV_DataBaseDataSet";
-            this.rEV_DataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productosBindingSource
-            // 
-            this.productosBindingSource.DataMember = "Productos";
-            this.productosBindingSource.DataSource = this.rEV_DataBaseDataSet;
-            // 
-            // productosTableAdapter
-            // 
-            this.productosTableAdapter.ClearBeforeFill = true;
+            this.listproduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listproduct_CellClick);
             // 
             // codBarPDataGridViewTextBoxColumn
             // 
@@ -643,131 +685,144 @@
             this.idProveDataGridViewTextBoxColumn.Visible = false;
             this.idProveDataGridViewTextBoxColumn.Width = 150;
             // 
-            // groupBox4
+            // productosBindingSource
             // 
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Location = new System.Drawing.Point(115, 19);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(100, 76);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
+            this.productosBindingSource.DataMember = "Productos";
+            this.productosBindingSource.DataSource = this.rEV_DataBaseDataSet;
             // 
-            // label6
+            // rEV_DataBaseDataSet
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(4, 61);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(17, 12);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Bs";
+            this.rEV_DataBaseDataSet.DataSetName = "REV_DataBaseDataSet";
+            this.rEV_DataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Exotc350 Bd BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 19);
+            this.label1.TabIndex = 221;
+            this.label1.Text = "Confirmación De Búsqueda ";
+            // 
+            // buscarprod
+            // 
+            this.buscarprod.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarprod.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.buscarprod.Location = new System.Drawing.Point(209, 29);
+            this.buscarprod.Name = "buscarprod";
+            this.buscarprod.Size = new System.Drawing.Size(465, 20);
+            this.buscarprod.TabIndex = 220;
+            this.buscarprod.Text = "Escribir Codigo de Barras del Producto (Nombre; Descripción)";
+            this.buscarprod.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buscarprod_MouseClick);
+            this.buscarprod.TextChanged += new System.EventHandler(this.buscarprod_TextChanged);
+            this.buscarprod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.buscarprod_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(34, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(168, 12);
+            this.label5.TabIndex = 219;
+            this.label5.Text = "Codigo de Barras del Producto";
+            // 
+            // btnCode
+            // 
+            this.btnCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCode.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buscarCode_B;
+            this.btnCode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCode.FlatAppearance.BorderSize = 0;
+            this.btnCode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCode.Location = new System.Drawing.Point(749, 25);
+            this.btnCode.Name = "btnCode";
+            this.btnCode.Size = new System.Drawing.Size(25, 25);
+            this.btnCode.TabIndex = 227;
+            this.btnCode.UseVisualStyleBackColor = true;
+            this.btnCode.Click += new System.EventHandler(this.btnCode_Click);
+            // 
+            // btnDet
+            // 
+            this.btnDet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDet.BackgroundImage = global::Proyect_Kardex.Properties.Resources.buscarDetalle_B;
+            this.btnDet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDet.FlatAppearance.BorderSize = 0;
+            this.btnDet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnDet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDet.Location = new System.Drawing.Point(718, 24);
+            this.btnDet.Name = "btnDet";
+            this.btnDet.Size = new System.Drawing.Size(25, 25);
+            this.btnDet.TabIndex = 226;
+            this.btnDet.UseVisualStyleBackColor = true;
+            this.btnDet.Click += new System.EventHandler(this.btnDet_Click);
+            // 
+            // btnName
+            // 
+            this.btnName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnName.BackgroundImage = global::Proyect_Kardex.Properties.Resources.BuscarName;
+            this.btnName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnName.FlatAppearance.BorderSize = 0;
+            this.btnName.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnName.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnName.Location = new System.Drawing.Point(687, 24);
+            this.btnName.Name = "btnName";
+            this.btnName.Size = new System.Drawing.Size(25, 25);
+            this.btnName.TabIndex = 225;
+            this.btnName.UseVisualStyleBackColor = true;
+            this.btnName.Click += new System.EventHandler(this.btnName_Click);
+            // 
+            // searchprod
+            // 
+            this.searchprod.BackColor = System.Drawing.SystemColors.Menu;
+            this.searchprod.BackgroundImage = global::Proyect_Kardex.Properties.Resources.lupa;
+            this.searchprod.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.searchprod.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.searchprod.FlatAppearance.BorderSize = 0;
+            this.searchprod.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.searchprod.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
+            this.searchprod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchprod.Location = new System.Drawing.Point(654, 30);
+            this.searchprod.Name = "searchprod";
+            this.searchprod.Size = new System.Drawing.Size(19, 18);
+            this.searchprod.TabIndex = 222;
+            this.searchprod.UseVisualStyleBackColor = false;
+            this.searchprod.Click += new System.EventHandler(this.searchprod_Click);
+            // 
+            // productosTableAdapter
+            // 
+            this.productosTableAdapter.ClearBeforeFill = true;
             // 
             // label10
             // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label10.Font = new System.Drawing.Font("Lucida Sans", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Crimson;
-            this.label10.Location = new System.Drawing.Point(6, 31);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(10, 539);
             this.label10.Name = "label10";
-            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label10.Size = new System.Drawing.Size(88, 20);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "0.0";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.Size = new System.Drawing.Size(127, 12);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Fecha de Vencimiento";
             // 
-            // label12
+            // datevencimiento
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(4, 10);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 12);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Costo";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Controls.Add(this.label16);
-            this.groupBox5.Location = new System.Drawing.Point(117, 278);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(100, 45);
-            this.groupBox5.TabIndex = 3;
-            this.groupBox5.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label15.Location = new System.Drawing.Point(6, 23);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label15.Size = new System.Drawing.Size(88, 16);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "0";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Lucida Sans", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(4, 10);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(70, 11);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Stock Máximo";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Location = new System.Drawing.Point(117, 326);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(100, 45);
-            this.groupBox6.TabIndex = 4;
-            this.groupBox6.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label14.Location = new System.Drawing.Point(6, 23);
-            this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label14.Size = new System.Drawing.Size(88, 16);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "0";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Lucida Sans", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(4, 10);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 11);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Stock Mínimo";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Exotc350 Bd BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label17.Location = new System.Drawing.Point(72, 253);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(94, 22);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Disponible";
+            this.datevencimiento.Location = new System.Drawing.Point(15, 557);
+            this.datevencimiento.Name = "datevencimiento";
+            this.datevencimiento.Size = new System.Drawing.Size(200, 20);
+            this.datevencimiento.TabIndex = 15;
             // 
             // BuscarProdAvanz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(780, 594);
+            this.ClientSize = new System.Drawing.Size(780, 664);
             this.Controls.Add(this.btnCode);
             this.Controls.Add(this.btnDet);
             this.Controls.Add(this.btnName);
@@ -785,20 +840,20 @@
             this.Load += new System.EventHandler(this.BuscarProdAvanz_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenprod)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listproduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenprod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rEV_DataBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productosBindingSource)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rEV_DataBaseDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -835,16 +890,16 @@
         private REV_DataBaseDataSet rEV_DataBaseDataSet;
         private System.Windows.Forms.BindingSource productosBindingSource;
         private REV_DataBaseDataSetTableAdapters.ProductosTableAdapter productosTableAdapter;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label statelb;
         private System.Windows.Forms.GroupBox groupBox6;
-        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.Label stockminlb;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox5;
-        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.Label stockmaxlb;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label costolb;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridViewTextBoxColumn codBarPDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomProdDataGridViewTextBoxColumn;
@@ -867,5 +922,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn medCodDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn subCodDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProveDataGridViewTextBoxColumn;
+        private System.Windows.Forms.LinkLabel comprasll;
+        private System.Windows.Forms.LinkLabel ventasll;
+        public System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DateTimePicker datevencimiento;
+        private System.Windows.Forms.Label label10;
     }
 }

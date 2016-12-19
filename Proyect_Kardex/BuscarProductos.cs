@@ -273,5 +273,10 @@ namespace Proyect_Kardex
             buscarprod.Font = new Font(buscarprod.Font, FontStyle.Regular);
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
