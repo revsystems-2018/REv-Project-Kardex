@@ -190,6 +190,12 @@
     <Compile Include="Graphic_Ventas.Designer.cs">
       <DependentUpon>Graphic_Ventas.cs</DependentUpon>
     </Compile>
+    <Compile Include="List_DetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_DetalleVenta.Designer.cs">
+      <DependentUpon>List_DetalleVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="List_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -595,6 +601,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Graphic_Ventas.resx">
       <DependentUpon>Graphic_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_DetalleVenta.resx">
+      <DependentUpon>List_DetalleVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List_Productos.resx">
       <DependentUpon>List_Productos.cs</DependentUpon>

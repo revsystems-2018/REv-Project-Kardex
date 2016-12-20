@@ -184,8 +184,9 @@ namespace Proyect_Kardex
 
         private void ventasll_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            List_Ventas lv = new List_Ventas();
-            lv.ShowDialog();
+            List_DetalleVenta ld = new List_DetalleVenta();
+            ld.codP = Convert.ToInt64(codprod.Text);
+            ld.ShowDialog();
         }
 
         private String GetCategory(int value)

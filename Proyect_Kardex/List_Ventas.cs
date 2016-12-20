@@ -52,10 +52,20 @@ namespace Proyect_Kardex
 
             try
             {
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM REV_Ventas WHERE id_User = '" + codUser + "'; ", fu.GetCONN());
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                regprodtable.DataSource = dt;
+                if (codUser > 0)
+                {
+                    SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM REV_Ventas WHERE id_User = '" + codUser + "'; ", fu.GetCONN());
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    regprodtable.DataSource = dt;
+                }
+                else 
+                {
+                    SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM REV_Ventas ; ", fu.GetCONN());
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    regprodtable.DataSource = dt;
+                }
             }
             catch (Exception) { }
         }
