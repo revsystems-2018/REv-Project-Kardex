@@ -1497,12 +1497,14 @@
             // 
             // editarCompraToolStripMenuItem
             // 
+            this.editarCompraToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.compra_edit;
             this.editarCompraToolStripMenuItem.Name = "editarCompraToolStripMenuItem";
             this.editarCompraToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
             this.editarCompraToolStripMenuItem.Text = "Editar Compra";
             // 
             // eliminarCompraToolStripMenuItem
             // 
+            this.eliminarCompraToolStripMenuItem.Image = global::Proyect_Kardex.Properties.Resources.compra_cancel;
             this.eliminarCompraToolStripMenuItem.Name = "eliminarCompraToolStripMenuItem";
             this.eliminarCompraToolStripMenuItem.Size = new System.Drawing.Size(295, 22);
             this.eliminarCompraToolStripMenuItem.Text = "Eliminar Compra";
